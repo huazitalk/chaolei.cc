@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>轴承工厂 · 移动端预览（手机版）</title>
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; }
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", Segoe UI, Roboto, sans-serif;
+    background: #e9eaee; color: #333; min-height: 100vh;
+    display: flex; flex-direction: column; align-items: center;
+  }
+  .bar {
+    flex: 0 0 auto; width: 100%; display: flex; align-items: center; gap: 12px;
+    padding: 10px 18px; background: #1f2430; color: #fff; font-size: 14px;
+  }
+  .bar .dot { width: 10px; height: 10px; border-radius: 50%; background: #2ecc71; }
+  .bar b { font-weight: 700; }
+  .bar .hint { margin-left: auto; opacity: .7; font-size: 12px; }
+  .bar a { color: #c8f5d8; text-decoration: none; }
+  .stage {
+    flex: 1 1 auto; width: 100%; overflow: auto;
+    display: flex; justify-content: center; align-items: flex-start; padding: 22px 12px;
+  }
+  /* 手机外框：iPhone 风格，375 × 812 */
+  .phone {
+    width: 375px; height: 812px; flex: 0 0 auto;
+    background: #111; border-radius: 44px; padding: 12px;
+    box-shadow: 0 20px 60px rgba(0,0,0,.35); position: relative;
+  }
+  .phone::before {
+    content: ""; position: absolute; top: 22px; left: 50%; transform: translateX(-50%);
+    width: 130px; height: 22px; background: #111; border-radius: 0 0 16px 16px; z-index: 3;
+  }
+  .screen {
+    width: 100%; height: 100%; background: #fff; border-radius: 32px; overflow: hidden;
+    position: relative;
+  }
+  iframe { width: 100%; height: 100%; border: 0; display: block; border-radius: 32px; }
+</style>
+</head>
+<body>
+  <div class="bar">
+    <span class="dot"></span>
+    <b>轴承工厂 · 移动端预览（375px 手机）</b>
+    <span class="hint">在手机或桌面均可查看 · <a href="index-markforged.html" target="_blank">↗ 打开独立页面</a></span>
+  </div>
+  <div class="stage">
+    <div class="phone">
+      <div class="screen">
+        <iframe src="index-markforged.html" title="轴承工厂 移动端预览"></iframe>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

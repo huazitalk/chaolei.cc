@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>轴承工厂 · PC 端预览（桌面版）</title>
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; }
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", Segoe UI, Roboto, sans-serif;
+    background: #f2f3f5; color: #333; height: 100vh; overflow: hidden;
+    display: flex; flex-direction: column;
+  }
+  .bar {
+    flex: 0 0 auto; display: flex; align-items: center; gap: 12px;
+    padding: 10px 18px; background: #1f2430; color: #fff; font-size: 14px;
+  }
+  .bar .dot { width: 10px; height: 10px; border-radius: 50%; background: #e8590c; }
+  .bar b { font-weight: 700; }
+  .bar .hint { margin-left: auto; opacity: .7; font-size: 12px; }
+  .bar a { color: #ffd9c2; text-decoration: none; }
+  .stage {
+    flex: 1 1 auto; overflow: auto; padding: 16px;
+    display: flex; justify-content: center; align-items: flex-start;
+  }
+  .frame {
+    width: 1280px; min-width: 1280px; height: 100%;
+    background: #fff; border-radius: 10px; overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0,0,0,.18);
+  }
+  iframe { width: 100%; height: 100%; border: 0; display: block; }
+</style>
+</head>
+<body>
+  <div class="bar">
+    <span class="dot"></span>
+    <b>轴承工厂 · PC / 桌面端预览</b>
+    <span class="hint">以 1280px 桌面宽度渲染 · <a href="index-markforged.html" target="_blank">↗ 打开独立页面</a></span>
+  </div>
+  <div class="stage">
+    <div class="frame">
+      <iframe src="index-markforged.html" title="轴承工厂 PC 预览"></iframe>
+    </div>
+  </div>
+</body>
+</html>
