@@ -31,7 +31,27 @@
   }
   iframe { width: 100%; height: 100%; border: 0; display: block; }
 </style>
-</head>
+<script>
+(function(){
+  try{
+    var beacon=new BeaconAction({
+      appkey:'0WEB06U85YBSLJNL',
+      versionCode:'1.0.0',
+      channelID:'share',
+      delay:1000,
+      sessionDuration:30*60*1000,
+      isOversea:false,
+      needReportRqdEvent:false
+    });
+    beacon.onDirectUserAction('preview_page_view',{
+      'url':location.href,
+      'referrer':document.referrer,
+      'title':document.title,
+      'sandbox_id':'4f31be12e3d44e8094985e6c48bdb4d4'
+    });
+  }catch(e){}
+})();
+</script></head>
 <body>
   <div class="bar">
     <span class="dot"></span>

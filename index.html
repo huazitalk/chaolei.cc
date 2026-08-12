@@ -4,29 +4,692 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title data-i18n="潮磊轴承 — 26年轴承源头工厂直供 | 馆陶·中国轻工轴承之乡">潮磊轴承 — 26年轴承源头工厂直供 | 馆陶·中国轻工轴承之乡</title>
-<meta content="潮磊轴承，26年微型深沟球轴承源头工厂。馆陶产地，608全系列现货，非标定制7天出样，日产40万套，产品出口印度、巴基斯坦、欧洲、迪拜。" data-i18n-attr='{"content": "潮磊轴承，26年微型深沟球轴承源头工厂。馆陶产地，608全系列现货，非标定制7天出样，日产40万套，产品出口印度、巴基斯坦、欧洲、迪拜。"}' name="description"/>
+<title data-i18n="潮磊轴承 — 微型深沟球轴承专业制造商 | 26 年源头工厂">潮磊轴承 — 微型深沟球轴承专业制造商 | 26 年源头工厂</title>
+<meta content="潮磊轴承，26年微型深沟球轴承专业制造商。馆陶源头工厂，3000㎡厂房，200台精密设备，日产40万套，覆盖608等15+型号，支持非标定制与免费寄样，产品出口印度、巴基斯坦、欧洲、迪拜。" data-i18n-attr='{"content": "潮磊轴承，26年微型深沟球轴承专业制造商。馆陶源头工厂，3000㎡厂房，200台精密设备，日产40万套，覆盖608等15+型号，支持非标定制与免费寄样，产品出口印度、巴基斯坦、欧洲、迪拜。"}' name="description"/>
 <meta content="index, follow, max-image-preview:large" name="robots"/>
 <meta content="#0E2A47" name="theme-color"/>
-<link href="https://www.chaolei-bearing.com/index.html" rel="canonical"/>
+<link href="https://www.chaolei-bearing.com/" rel="canonical"/>
 <meta content="website" property="og:type"/>
-<meta content="潮磊轴承 — 26年轴承源头工厂直供" data-i18n-attr='{"content": "潮磊轴承 — 26年轴承源头工厂直供"}' property="og:title"/>
-<meta content="608全系列现货，非标定制7天出样，日产40万套，出口印度、巴基斯坦、欧洲、迪拜。" data-i18n-attr='{"content": "608全系列现货，非标定制7天出样，日产40万套，出口印度、巴基斯坦、欧洲、迪拜。"}' property="og:description"/>
+<meta content="潮磊轴承 — 微型深沟球轴承专业制造商 | 26 年源头工厂" data-i18n-attr='{"content": "潮磊轴承 — 微型深沟球轴承专业制造商 | 26 年源头工厂"}' property="og:title"/>
+<meta content="26年微型深沟球轴承制造经验，馆陶源头工厂，日产40万套，支持非标定制与免费寄样，出口印度、巴基斯坦、欧洲、迪拜。" data-i18n-attr='{"content": "26年微型深沟球轴承制造经验，馆陶源头工厂，日产40万套，支持非标定制与免费寄样，出口印度、巴基斯坦、欧洲、迪拜。"}' property="og:description"/>
 <meta content="zh_CN" property="og:locale"/>
-<link href="css/style.css" rel="stylesheet"/>
-</head>
+<style>
+    /* ============================================
+       潮磊轴承 · Markforged 工业风格首页
+       自包含：HTML + CSS + JS，无外部框架
+       Palette: Deep Navy #0E2A47 + Accent Orange #E8590C
+       ============================================ */
+
+    :root {
+      --navy: #0E2A47;
+      --navy-dark: #081a2b;
+      --navy-2: #14375c;
+      --navy-3: #1a4875;
+      --accent: #E8590C;
+      --accent-hover: #c74a0a;
+      --accent-light: #fff3eb;
+      --ink: #1b2733;
+      --ink-2: #4a5568;
+      --ink-3: #718096;
+      --line: #e2e8f0;
+      --bg: #f7fafc;
+      --white: #ffffff;
+      --radius: 10px;
+      --radius-lg: 16px;
+      --shadow-sm: 0 2px 8px rgba(14,42,71,.06);
+      --shadow-md: 0 8px 24px rgba(14,42,71,.1);
+      --shadow-lg: 0 20px 50px rgba(14,42,71,.14);
+      --transition: .25s ease;
+    }
+
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+      color: var(--ink); background: var(--white); line-height: 1.7; font-size: 15px;
+      -webkit-font-smoothing: antialiased; overflow-x: hidden;
+    }
+    a { color: inherit; text-decoration: none; transition: color var(--transition); }
+    img { max-width: 100%; height: auto; display: block; }
+    ul, ol { list-style: none; }
+
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+    /* ---------- 顶部信息条 ---------- */
+    .top-bar {
+      background: var(--navy-dark); color: rgba(255,255,255,.65);
+      font-size: 12.5px; padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,.06);
+    }
+    .top-bar-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+    .top-bar-left, .top-bar-right { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+    .top-bar-item { display: flex; align-items: center; gap: 6px; }
+    .top-icon { width: 14px; height: 14px; flex-shrink: 0; opacity: .8; }
+    .top-phone { color: var(--accent); font-weight: 700; }
+
+    /* ---------- 导航 ---------- */
+    .header {
+      position: sticky; top: 0; z-index: 1000;
+      background: rgba(255,255,255,.98); backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--line); transition: box-shadow var(--transition);
+    }
+    .header.scrolled { box-shadow: var(--shadow-md); }
+    .header-inner { display: flex; align-items: center; justify-content: space-between; height: 76px; }
+
+    .logo { display: flex; align-items: center; gap: 12px; }
+    .logo img { height: 46px; width: 46px; border-radius: 50%; object-fit: cover; }
+    .logo-group { display: flex; flex-direction: column; line-height: 1.2; }
+    .logo-text { font-size: 22px; font-weight: 800; color: var(--navy); letter-spacing: .5px; }
+    .logo-text span { color: var(--accent); }
+    .logo-sub { font-size: 11.5px; color: var(--ink-3); font-weight: 500; }
+
+    .nav { display: flex; align-items: center; gap: 6px; }
+    .nav a {
+      padding: 10px 16px; font-size: 15px; font-weight: 500; color: var(--ink-2);
+      border-radius: 6px; transition: all var(--transition); white-space: nowrap;
+    }
+    .nav a:hover { color: var(--navy); background: rgba(14,42,71,.04); }
+    .nav a.active { color: var(--accent); font-weight: 700; }
+
+
+    .mobile-toggle { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
+    .mobile-toggle span {
+      display: block; width: 24px; height: 2px; background: var(--navy);
+      margin: 5px 0; transition: .3s; border-radius: 2px;
+    }
+    .mobile-toggle.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .mobile-toggle.active span:nth-child(2) { opacity: 0; }
+    .mobile-toggle.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    .mobile-nav {
+      display: none; position: fixed; top: 76px; left: 0; right: 0; bottom: 0;
+      background: rgba(255,255,255,.98); z-index: 999; padding: 24px; overflow-y: auto;
+    }
+    .mobile-nav.open { display: block; animation: fadeDown .25s ease; }
+    .mobile-nav a {
+      display: block; padding: 14px 18px; font-size: 16px; font-weight: 600;
+      color: var(--ink); border-bottom: 1px solid var(--line); border-radius: 8px;
+    }
+    .mobile-nav a:hover, .mobile-nav a.active { color: var(--accent); background: var(--accent-light); }
+    .mobile-cta {
+      display: block; margin-top: 18px; padding: 14px; text-align: center;
+      background: var(--accent); color: #fff; border-radius: 8px; font-weight: 700;
+    }
+
+    @keyframes fadeDown { from{opacity:0;transform:translateY(-10px)} to{opacity:1;transform:translateY(0)} }
+
+    /* ---------- Hero ---------- */
+    .hero {
+      position: relative; min-height: 620px; display: flex; align-items: center;
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-2) 55%, var(--navy-dark) 100%);
+      color: #fff; overflow: hidden; padding: 48px 0 100px;
+    }
+    .hero::before {
+      content: ''; position: absolute; top: -20%; right: -10%;
+      width: 680px; height: 680px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(232,89,12,.14) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .hero-grid {
+      position: relative; z-index: 2; display: grid;
+      grid-template-columns: 1.1fr .9fr; gap: 60px; align-items: center;
+    }
+    .hero-tag {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.15);
+      padding: 8px 18px; border-radius: 30px; font-size: 13px; font-weight: 500;
+      margin-bottom: 18px; backdrop-filter: blur(4px);
+    }
+    .hero-tag .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
+    .hero h1 {
+      font-size: clamp(36px, 5.5vw, 58px); font-weight: 800; line-height: 1.15;
+      letter-spacing: -.02em; margin-bottom: 18px; color: #fff;
+    }
+    .hero h1 .accent { color: var(--accent); }
+    .hero-desc {
+      font-size: clamp(16px, 2vw, 19px); color: rgba(255,255,255,.78);
+      line-height: 1.8; max-width: 580px; margin-bottom: 28px;
+    }
+    .hero-btns { display: flex; gap: 16px; flex-wrap: wrap; }
+
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      padding: 14px 30px; border-radius: 8px; font-weight: 700; font-size: 15px;
+      transition: all var(--transition); border: none; cursor: pointer;
+    }
+    .btn-primary { background: var(--accent); color: #fff; }
+    .btn-primary:hover { background: var(--accent-hover); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(232,89,12,.35); }
+    .btn-outline-light { background: transparent; color: #fff; border: 2px solid rgba(255,255,255,.5); }
+    .btn-outline-light:hover { background: rgba(255,255,255,.1); border-color: rgba(255,255,255,.85); transform: translateY(-2px); }
+    .btn-dark { background: var(--navy); color: #fff; }
+    .btn-dark:hover { background: var(--navy-2); transform: translateY(-2px); }
+
+    .hero-visual {
+      position: relative; display: flex; align-items: center; justify-content: center;
+      min-height: 360px;
+    }
+    .bearing-graphic {
+      position: relative; width: 360px; height: 360px; border-radius: 50%;
+      background: radial-gradient(circle at 35% 35%, rgba(255,255,255,.08), transparent 60%);
+      box-shadow:
+        inset 0 0 0 28px rgba(255,255,255,.08),
+        inset 0 0 0 56px rgba(255,255,255,.05),
+        inset 0 0 0 90px rgba(255,255,255,.03),
+        0 0 80px rgba(0,0,0,.2);
+      animation: slowRotate 60s linear infinite;
+    }
+    .bearing-graphic::before {
+      content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+      width: 120px; height: 120px; border-radius: 50%; background: rgba(255,255,255,.06);
+      box-shadow: 0 0 0 16px rgba(255,255,255,.04);
+    }
+    .ball {
+      position: absolute; top: 50%; left: 50%;
+      width: var(--ball-size, 28px); height: var(--ball-size, 28px);
+      margin: calc(var(--ball-size, 28px) / -2) 0 0 calc(var(--ball-size, 28px) / -2);
+      border-radius: 50%;
+      background: radial-gradient(circle at 30% 30%, rgba(255,255,255,.95), rgba(232,89,12,.78));
+      box-shadow: 0 4px 14px rgba(0,0,0,.25), inset 0 -2px 4px rgba(0,0,0,.1);
+      transform: translate(var(--tx, 0px), var(--ty, 0px));
+      will-change: transform;
+      animation: ballPulse 3s ease-in-out infinite;
+      animation-delay: var(--delay, 0s);
+    }
+
+    @keyframes slowRotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+    @keyframes ballPulse {
+      0%, 100% { transform: translate(var(--tx, 0px), var(--ty, 0px)) scale(1); }
+      50% { transform: translate(var(--tx, 0px), var(--ty, 0px)) scale(1.12); }
+    }
+
+    .hero-trust {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      background: rgba(255,255,255,.04); border-top: 1px solid rgba(255,255,255,.08);
+      backdrop-filter: blur(6px); padding: 18px 0;
+    }
+    .trust-inner { display: flex; align-items: center; justify-content: center; gap: 40px; flex-wrap: wrap; }
+    .trust-item { display: flex; align-items: center; gap: 8px; font-size: 13.5px; color: rgba(255,255,255,.7); }
+    .trust-item svg { width: 18px; height: 18px; color: var(--accent); }
+
+    /* ---------- 数据浮层 ---------- */
+    .stats-bar {
+      position: relative; z-index: 5; margin-top: -55px; padding-bottom: 0;
+    }
+    .stats-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px;
+      background: var(--white); border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg); padding: 32px 28px; border: 1px solid var(--line);
+    }
+    .stat-item { text-align: center; position: relative; }
+    .stat-item:not(:last-child)::after {
+      content: ''; position: absolute; right: -12px; top: 15%; bottom: 15%; width: 1px; background: var(--line);
+    }
+    .stat-number { font-size: 42px; font-weight: 800; color: var(--accent); line-height: 1; margin-bottom: 8px; }
+    .stat-number small { font-size: 18px; font-weight: 700; }
+    .stat-label { font-size: 14px; color: var(--ink-2); font-weight: 500; }
+
+    /* ---------- 通用区块 ---------- */
+    .section { padding: 72px 0; }
+    .section-alt { background: var(--bg); }
+    .section-dark { background: var(--navy); color: #fff; }
+    .section-dark h2, .section-dark h3, .section-dark h4 { color: #fff; }
+    .section-dark p { color: rgba(255,255,255,.72); }
+    #workshop-tour { padding-bottom: 0; }
+
+    .section-header { max-width: 720px; margin: 0 auto 40px; text-align: center; }
+    .section-header .eyebrow {
+      display: inline-block; font-size: 13px; font-weight: 700; color: var(--accent);
+      text-transform: uppercase; letter-spacing: 2px; margin-bottom: 12px;
+    }
+    .section-header h2 { font-size: clamp(26px, 3.2vw, 38px); color: var(--navy); margin-bottom: 16px; }
+    .section-header p { font-size: 17px; color: var(--ink-2); }
+    .section-dark .section-header h2 { color: #fff; }
+    .section-dark .section-header p { color: rgba(255,255,255,.72); }
+
+    /* ---------- 特色能力卡片 ---------- */
+    .cap-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .cap-card {
+      background: var(--white); border: 1px solid var(--line); border-radius: var(--radius-lg);
+      padding: 30px 26px; transition: all var(--transition);
+    }
+    .cap-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-md); border-color: transparent; }
+    .cap-icon {
+      width: 60px; height: 60px; border-radius: 14px; display: flex; align-items: center; justify-content: center;
+      margin-bottom: 22px; background: var(--accent-light); color: var(--accent);
+    }
+    .cap-icon svg { width: 28px; height: 28px; }
+    .cap-card h3 { font-size: 20px; color: var(--navy); margin-bottom: 10px; }
+    .cap-card p { font-size: 14.5px; color: var(--ink-2); margin-bottom: 0; }
+    .cap-link {
+      display: inline-flex; align-items: center; gap: 4px; margin-top: 18px;
+      font-size: 14px; font-weight: 700; color: var(--accent);
+    }
+    .cap-link:hover { gap: 8px; }
+
+    /* ---------- 解决方案（行业）---------- */
+    .solution-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+    .solution-card {
+      display: flex; gap: 24px; background: var(--white); border: 1px solid var(--line);
+      border-radius: var(--radius-lg); padding: 24px; transition: all var(--transition);
+    }
+    .solution-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: transparent; }
+    .solution-icon {
+      flex-shrink: 0; width: 64px; height: 64px; border-radius: 12px;
+      background: var(--navy); color: #fff; display: flex; align-items: center; justify-content: center;
+      font-size: 26px;
+    }
+    .solution-info h3 { font-size: 18px; color: var(--navy); margin-bottom: 8px; }
+    .solution-info p { font-size: 14px; color: var(--ink-2); margin-bottom: 10px; }
+    .solution-tags { display: flex; gap: 6px; flex-wrap: wrap; }
+    .tag {
+      display: inline-block; padding: 4px 10px; border-radius: 20px;
+      font-size: 11.5px; font-weight: 600; background: #edf2f7; color: var(--navy);
+    }
+
+    /* ---------- 产品速览 ---------- */
+    .product-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+    .product-card {
+      background: var(--white); border: 1px solid var(--line); border-radius: var(--radius-lg);
+      padding: 24px 20px; text-align: center; transition: all var(--transition);
+    }
+    .product-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-md); border-color: transparent; }
+    .product-visual {
+      height: 150px; display: flex; align-items: center; justify-content: center;
+      background: linear-gradient(135deg, #f8fafc, #eef3f8); border-radius: 12px;
+      margin-bottom: 18px; overflow: hidden;
+    }
+    .product-visual img { width: 100%; height: 100%; object-fit: contain; padding: 12px; transition: transform .45s cubic-bezier(.22,.61,.36,1); will-change: transform; backface-visibility: hidden; }
+    .product-card:hover .product-visual img { transform: scale(1.12); }
+    .product-card h4 { font-size: 17px; color: var(--navy); margin-bottom: 4px; }
+    .product-card .spec { font-size: 12.5px; color: var(--ink-3); margin-bottom: 12px; }
+    .product-card p { font-size: 13.5px; color: var(--ink-2); margin-bottom: 0; }
+
+    /* ---------- 案例 / 动态 ---------- */
+    .news-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .news-card {
+      background: var(--white); border: 1px solid var(--line); border-radius: var(--radius-lg);
+      overflow: hidden; transition: all var(--transition); display: flex; flex-direction: column;
+    }
+    .news-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-md); border-color: transparent; }
+    .news-thumb {
+      height: 190px; background: linear-gradient(135deg, var(--navy-2), var(--navy));
+      display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,.25);
+      font-size: 64px; position: relative; overflow: hidden;
+    }
+    .news-thumb::after {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(14,42,71,.5), transparent 60%);
+    }
+    .news-body { padding: 22px; display: flex; flex-direction: column; flex: 1; }
+    .news-meta { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+    .news-category {
+      display: inline-block; padding: 3px 10px; border-radius: 4px;
+      font-size: 11px; font-weight: 700; background: var(--accent-light); color: var(--accent); text-transform: uppercase;
+    }
+    .news-date { font-size: 12.5px; color: var(--ink-3); }
+    .news-card h3 { font-size: 17px; color: var(--navy); margin-bottom: 10px; line-height: 1.45; }
+    .news-card p { font-size: 14px; color: var(--ink-2); margin-bottom: 18px; flex: 1; }
+    .read-more { font-size: 14px; font-weight: 700; color: var(--accent); display: inline-flex; align-items: center; gap: 4px; }
+    .read-more:hover { gap: 8px; }
+
+    /* ---------- FAQ 问答列表（与「关于我们」页完全一致） ---------- */
+    .section-header .label {
+      display: inline-block; font-size: 13px; font-weight: 700; color: var(--accent);
+      text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px;
+    }
+    .faq-list { max-width: 880px; margin: 0 auto; display: grid; gap: 16px; }
+    .faq-item {
+      background: var(--white); border: 1px solid var(--line); border-radius: var(--radius-lg);
+      padding: 24px 28px; transition: box-shadow var(--transition);
+    }
+    .faq-item:hover { box-shadow: var(--shadow-sm); }
+    .faq-item h3 {
+      font-size: 17px; color: var(--navy); margin-bottom: 10px;
+      display: flex; align-items: baseline; gap: 10px; line-height: 1.5;
+    }
+    .faq-item h3 .q {
+      flex-shrink: 0; width: 26px; height: 26px; border-radius: 50%;
+      background: var(--accent); color: #fff; font-size: 13px; font-weight: 800;
+      display: inline-flex; align-items: center; justify-content: center;
+    }
+    .faq-item p { font-size: 14.5px; color: var(--ink-2); margin: 0; line-height: 1.8; }
+
+    /* ---------- CTA 横幅 ---------- */
+    .cta-section { padding: 72px 0 100px; }
+    .cta-banner {
+      background: linear-gradient(135deg, var(--navy), var(--navy-2));
+      border-radius: var(--radius-lg); padding: 56px 40px; text-align: center;
+      position: relative; overflow: hidden;
+    }
+    .cta-banner::before {
+      content: ''; position: absolute; top: -40%; right: -10%;
+      width: 480px; height: 480px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(232,89,12,.18) 0%, transparent 65%);
+    }
+    .cta-banner h2 { color: #fff; font-size: clamp(26px, 3.5vw, 38px); margin-bottom: 14px; position: relative; z-index: 1; }
+    .cta-banner p { color: rgba(255,255,255,.75); font-size: 17px; max-width: 620px; margin: 0 auto 30px; position: relative; z-index: 1; }
+    .cta-banner .btns { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; position: relative; z-index: 1; }
+
+    /* ---------- 页脚 ---------- */
+    .footer { background: var(--navy-dark); color: rgba(255,255,255,.65); padding: 72px 0 28px; }
+    .footer-grid {
+      display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start;
+      gap: 36px; margin-bottom: 44px;
+    }
+    .footer-brand { flex: 2 1 260px; min-width: 0; }
+    .footer-col { flex: 1 1 140px; display: flex; flex-direction: column; min-width: 0; }
+    .footer-brand .logo-text { color: #fff; font-size: 24px; font-weight: 800; margin-bottom: 14px; display: block; }
+    .footer-brand .logo-text span { color: var(--accent); }
+    .footer-brand p { color: rgba(255,255,255,.55); font-size: 14px; line-height: 1.8; margin-bottom: 20px; }
+    .social-links { display: flex; gap: 12px; }
+    .social-links a {
+      width: 38px; height: 38px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      background: rgba(255,255,255,.08); color: #fff; transition: all var(--transition);
+    }
+    .social-links a:hover { background: var(--accent); transform: translateY(-2px); }
+    .social-links svg { width: 18px; height: 18px; }
+
+    .footer-col h4 { color: #fff; font-size: 15px; margin-bottom: 18px; font-weight: 700; }
+    .footer-col a {
+      display: block; color: rgba(255,255,255,.55); font-size: 14px; padding: 6px 0; line-height: 1.4; transition: color .2s;
+    }
+    .footer-col a:hover { color: var(--accent); }
+    .footer-contact p { color: rgba(255,255,255,.55); font-size: 14px; line-height: 1.4; padding: 6px 0; margin: 0; display: flex; align-items: center; flex-wrap: wrap; gap: 6px; }
+    .footer-contact strong { color: #fff; font-weight: 600; }
+    .footer-contact-line { line-height: 1.2; }
+    .ci { display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; width: 1.1em; }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,.1); padding-top: 24px;
+      display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap;
+      font-size: 13px; color: rgba(255,255,255,.4);
+    }
+
+    /* ---------- 走进潮磊轴承生产车间 视频组件 ---------- */
+    .wt-player {
+      position: relative; width: 100%; max-width: 980px; margin: 0 auto;
+      aspect-ratio: 16 / 9; background: #000; border-radius: var(--radius-lg);
+      overflow: hidden; box-shadow: var(--shadow-lg);
+    }
+    .wt-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; background: #000; }
+    .wt-bigplay {
+      position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+      width: 84px; height: 84px; border-radius: 50%; border: none; cursor: pointer;
+      background: rgba(232,89,12,.92); color: #fff; display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,.45); transition: all .25s; z-index: 4;
+    }
+    .wt-bigplay svg { width: 38px; height: 38px; margin-left: 5px; }
+    .wt-bigplay:hover { transform: translate(-50%,-50%) scale(1.06); background: var(--accent); }
+    .wt-player.playing .wt-bigplay { opacity: 0; pointer-events: none; }
+
+    .wt-controls {
+      position: absolute; left: 0; right: 0; bottom: 0; z-index: 5;
+      display: flex; align-items: center; gap: 12px; padding: 16px 16px 14px;
+      background: linear-gradient(to top, rgba(0,0,0,.72), transparent);
+    }
+    .wt-btn {
+      flex-shrink: 0; width: 38px; height: 38px; border-radius: 8px; border: none; cursor: pointer;
+      background: rgba(255,255,255,.14); color: #fff; display: flex; align-items: center; justify-content: center;
+      transition: background .2s;
+    }
+    .wt-btn:hover { background: rgba(255,255,255,.28); }
+    .wt-btn svg { width: 20px; height: 20px; }
+    .wt-btn .i-pause, .wt-btn .i-mute { display: none; }
+    .wt-player.playing .wt-play .i-play { display: none; }
+    .wt-player.playing .wt-play .i-pause { display: block; }
+    .wt-player.muted .wt-mute .i-sound { display: none; }
+    .wt-player.muted .wt-mute .i-mute { display: block; }
+
+    .wt-progress {
+      position: relative; flex: 1; height: 6px; border-radius: 3px; background: rgba(255,255,255,.25);
+      cursor: pointer; touch-action: none;
+    }
+    .wt-progress-buffer { position: absolute; left: 0; top: 0; bottom: 0; width: 0; background: rgba(255,255,255,.18); border-radius: 3px; }
+    .wt-progress-played { position: absolute; left: 0; top: 0; bottom: 0; width: 0; background: var(--accent); border-radius: 3px; }
+    .wt-progress-handle {
+      position: absolute; top: 50%; left: 0; width: 14px; height: 14px; border-radius: 50%; background: #fff;
+      transform: translate(-50%,-50%); box-shadow: 0 1px 4px rgba(0,0,0,.45); transition: transform .1s;
+    }
+    .wt-progress:hover .wt-progress-handle { transform: translate(-50%,-50%) scale(1.25); }
+    .wt-time {
+      flex-shrink: 0; font-size: 13px; color: rgba(255,255,255,.92); font-variant-numeric: tabular-nums;
+      min-width: 96px; text-align: center;
+    }
+    .wt-fallback { text-align: center; color: rgba(255,255,255,.72); font-size: 14px; margin-top: 18px; line-height: 1.8; }
+    .wt-fallback code { color: #fff; background: rgba(255,255,255,.1); padding: 2px 6px; border-radius: 4px; }
+
+    /* 旧浏览器（不支持 aspect-ratio）回退：用 padding-top 维持 16:9 */
+    @supports not (aspect-ratio: 16 / 9) {
+      .wt-player { height: 0; padding-top: 56.25%; }
+    }
+
+    /* ---------- 响应式 ---------- */
+    @media (max-width: 1024px) {
+      .hero { padding: 44px 0 90px; }
+      .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+      .hero-visual { order: -1; min-height: 280px; }
+      .bearing-graphic { width: 280px; height: 280px; }
+      .cap-grid { grid-template-columns: repeat(2, 1fr); }
+      .product-grid { grid-template-columns: repeat(2, 1fr); }
+      .news-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+      .stat-item:not(:last-child)::after,
+      .stat-item:nth-child(2)::after { display: none; }
+    }
+
+    @media (max-width: 768px) {
+      .top-bar { display: none; }
+      .header-inner { height: 66px; }
+      .logo img { width: 40px; height: 40px; }
+      .logo-text { font-size: 19px; }
+      .logo-sub { font-size: 10px; }
+      .nav { display: none; }
+      .mobile-toggle { display: block; }
+      .mobile-nav { top: 66px; }
+
+      .hero { min-height: auto; padding: 36px 0 76px; text-align: center; }
+      .hero-desc { margin-left: auto; margin-right: auto; }
+      .hero-btns { justify-content: center; }
+      .hero-btns .btn { width: 100%; }
+      .hero-visual { min-height: 220px; }
+      .bearing-graphic { width: 220px; height: 220px; }
+      .ball { --ball-size: 22px; }
+      .trust-inner { gap: 16px 28px; }
+
+      .stats-bar { margin-top: -40px; }
+      .stats-grid { padding: 28px 20px; gap: 28px 16px; }
+      .stat-number { font-size: 32px; }
+      .stat-number small { font-size: 15px; }
+      .stat-label { font-size: 12.5px; }
+
+      .section { padding: 52px 0; }
+      .cap-grid, .solution-grid, .product-grid, .news-grid { grid-template-columns: 1fr; }
+      .solution-card { flex-direction: column; gap: 16px; }
+      .cta-banner { padding: 48px 24px; }
+      .cta-banner .btns { flex-direction: column; }
+      .cta-banner .btn { width: 100%; }
+      .faq-item { padding: 20px 18px; }
+      .faq-item h3 { font-size: 15.5px; }
+
+      .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+      .footer-bottom { flex-direction: column; text-align: center; }
+    }
+
+    @media (max-width: 480px) {
+      .container { padding: 0 16px; }
+      .hero h1 { font-size: 32px; }
+      .btn { padding: 13px 22px; font-size: 14px; }
+      .section-header h2 { font-size: 26px; }
+      .cap-card, .solution-card, .news-card, .product-card { padding: 24px 20px; }
+      .faq-item { padding: 20px 18px; }
+      .faq-item h3 { font-size: 15.5px; }
+      .wt-bigplay { width: 64px; height: 64px; }
+      .wt-bigplay svg { width: 28px; height: 28px; }
+      .wt-controls { gap: 8px; padding: 12px 10px 10px; }
+      .wt-btn { width: 34px; height: 34px; }
+      .wt-time { min-width: 72px; font-size: 11.5px; }
+    }
+  /* ---------- 语言切换 Language Switch ---------- */
+.lang-switch { display: inline-flex; align-items: center; gap: 2px; margin-left: 16px; padding: 3px 4px; border: 1px solid var(--line); border-radius: 20px; background: #fff; flex-shrink: 0; }
+.lang-btn { border: none; background: transparent; cursor: pointer; font-size: 13px; font-weight: 600; color: var(--ink-2); padding: 5px 11px; border-radius: 16px; transition: all .2s; line-height: 1; font-family: inherit; }
+.lang-btn:hover { color: var(--accent); }
+.lang-btn.active { background: var(--accent); color: #fff; }
+.lang-sep { color: var(--line); user-select: none; }
+.mobile-nav .lang-switch { margin: 18px 0 0; align-self: flex-start; }
+@media (max-width: 900px) { .header-inner .lang-switch { margin-left: 10px; } }
+
+  /* ---------- 移动端增强：触控区域 / 表单 / 表格 / 媒体 ---------- */
+  @media (max-width: 768px) {
+    .lang-btn { padding: 8px 13px; min-height: 36px; }
+    .mobile-toggle { padding: 10px; min-height: 44px; min-width: 44px; }
+    input, textarea, select { font-size: 16px; width: 100%; max-width: 100%; box-sizing: border-box; }
+    .data-table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    .footer-contact-line { white-space: normal; overflow: visible; }
+    a, button, .lang-btn { -webkit-tap-highlight-color: transparent; }
+  }
+  @media (max-width: 480px) {
+    .logo-sub { display: none; }
+  }
+  svg, video, iframe, canvas { max-width: 100%; }
+  </style>
+<!-- ===== 结构化数据：Organization + LocalBusiness + Breadcrumb + FAQPage ===== -->
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.chaolei-bearing.com/#organization",
+        "name": "潮磊轴承",
+        "alternateName": "潮磊轴承厂",
+        "url": "https://www.chaolei-bearing.com/",
+        "logo": "https://www.chaolei-bearing.com/img/logo.jpg",
+        "description": "潮磊轴承成立于2000年，是中国河北省邯郸市馆陶县魏僧寨镇杨草厂村的微型深沟球轴承专业制造商，拥有3000㎡标准厂房、200台精密设备，日产40万套，产品出口印度、巴基斯坦、欧洲、迪拜。",
+        "email": "sales@chaolei-bearing.com",
+        "telephone": "+86-13168867664",
+        "foundingDate": "2000",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "CN",
+          "addressRegion": "河北省",
+          "addressLocality": "邯郸市馆陶县",
+          "streetAddress": "魏僧寨镇杨草厂村"
+        },
+        "areaServed": [
+          { "@type": "Country", "name": "CN" },
+          { "@type": "Country", "name": "IN" },
+          { "@type": "Country", "name": "PK" },
+          { "@type": "Country", "name": "EU" },
+          { "@type": "Country", "name": "AE" }
+        ]
+      },
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://www.chaolei-bearing.com/#localbusiness",
+        "name": "潮磊轴承厂",
+        "image": "https://www.chaolei-bearing.com/img/logo.jpg",
+        "url": "https://www.chaolei-bearing.com/",
+        "telephone": "+86-13168867664",
+        "priceRange": "￥",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "CN",
+          "addressRegion": "河北省",
+          "addressLocality": "邯郸市馆陶县",
+          "streetAddress": "魏僧寨镇杨草厂村"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+          "opens": "08:00",
+          "closes": "18:00"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://www.chaolei-bearing.com/" }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.chaolei-bearing.com/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "潮磊轴承主要生产什么类型的轴承？",
+            "acceptedAnswer": { "@type": "Answer", "text": "潮磊轴承专注微型深沟球轴承制造，主力为 608 系列（轴承钢、碳钢、单凸、双凸等变体）及 626、607、698、627、696、6800、688、687、689、803、6900、6901 等 15+ 型号，并提供非标来图定制。" }
+          },
+          {
+            "@type": "Question",
+            "name": "是否支持非标轴承定制？",
+            "acceptedAnswer": { "@type": "Answer", "text": "支持。工厂具备磨削—超精—合套全流程自主管控能力，可按客户来图来样定制非标深沟球轴承，非标定制 7 天出样、10 天交货。" }
+          },
+          {
+            "@type": "Question",
+            "name": "交货周期一般多久？",
+            "acceptedAnswer": { "@type": "Answer", "text": "标准件常年备货、当天发货；非标定制 7 天出样、10 天交货，源头工厂直做的速度可保障供应链稳定。" }
+          },
+          {
+            "@type": "Question",
+            "name": "是否提供免费寄样？",
+            "acceptedAnswer": { "@type": "Answer", "text": "提供。标准件支持免费寄样，客户收到后自行验收满意再下单；若出现品质问题，7 天包退、15 天包换，往返运费由工厂承担。" }
+          },
+          {
+            "@type": "Question",
+            "name": "产品出口哪些国家和地区？",
+            "acceptedAnswer": { "@type": "Answer", "text": "产品远销印度、巴基斯坦、欧洲、迪拜（中东）等市场，支持外贸验厂与多语种资料需求。" }
+          },
+          {
+            "@type": "Question",
+            "name": "产品质量如何保证？是否有认证？",
+            "acceptedAnswer": { "@type": "Answer", "text": "工厂通过磨削—超精—合套全流程自主管控，50 台合套仪实现合套 100% 全检；目前暂未获得第三方认证证书（如 ISO 9001），坚持以产品实测与稳定交付建立信任。" }
+          },
+          {
+            "@type": "Question",
+            "name": "如何联系潮磊轴承询价或预约参观？",
+            "acceptedAnswer": { "@type": "Answer", "text": "访问‘联系我们’页面提交需求，或预约实地参观工厂。" }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+<script>
+(function(){
+  try{
+    var beacon=new BeaconAction({
+      appkey:'0WEB06U85YBSLJNL',
+      versionCode:'1.0.0',
+      channelID:'share',
+      delay:1000,
+      sessionDuration:30*60*1000,
+      isOversea:false,
+      needReportRqdEvent:false
+    });
+    beacon.onDirectUserAction('preview_page_view',{
+      'url':location.href,
+      'referrer':document.referrer,
+      'title':document.title,
+      'sandbox_id':'4f31be12e3d44e8094985e6c48bdb4d4'
+    });
+  }catch(e){}
+})();
+</script></head>
 <body>
-<!-- ========== TOP BAR ========== -->
+<!-- 顶部信息条 -->
 <div class="top-bar">
 <div class="container top-bar-inner">
 <div class="top-bar-left">
+<div class="top-bar-item">
 <svg class="top-icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"></path><circle cx="12" cy="9" r="2.5"></circle></svg>
 <span><span data-i18n="中国河北省邯郸市馆陶县魏僧寨镇杨草厂村">中国河北省邯郸市馆陶县魏僧寨镇杨草厂村</span></span>
+</div>
 </div>
 <div class="top-bar-right">
 <div class="top-bar-item">
 <svg class="top-icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
-<span><span data-i18n="周一至周六 8:00-18:00（周日微信值班）">周一至周六 8:00-18:00（周日微信值班）</span></span>
+<span><span data-i18n="周一至周六 8:00-18:00">周一至周六 8:00-18:00</span></span>
 </div>
 <div class="top-bar-item top-phone">
 <svg class="top-icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"></path></svg>
@@ -35,25 +698,25 @@
 </div>
 </div>
 </div>
-<!-- ========== HEADER ========== -->
+<!-- 导航 -->
 <header class="header" id="header">
 <div class="container header-inner">
-<a class="logo" href="index.html">
+<a class="logo" href="index-markforged.html">
 <img alt="潮磊轴承 Logo" src="img/logo.jpg"/>
 <div class="logo-group">
 <span class="logo-text"><span data-i18n="潮磊">潮磊</span><span><span data-i18n="轴承">轴承</span></span></span>
-<span class="logo-sub"><span data-i18n="26年源头工厂 · 馆陶">26年源头工厂 · 馆陶</span></span>
+<span class="logo-sub"><span data-i18n="26 年源头工厂 · 馆陶">26 年源头工厂 · 馆陶</span></span>
 </div>
 </a>
-<nav class="nav" id="mainNav">
-<a class="active" href="index.html"><span data-i18n="首页">首页</span></a>
+<nav class="nav">
+<a class="active" href="index-markforged.html"><span data-i18n="首页">首页</span></a>
 <a href="about.html"><span data-i18n="关于我们">关于我们</span></a>
 <a href="products.html"><span data-i18n="产品中心">产品中心</span></a>
 <a href="applications.html"><span data-i18n="应用案例">应用案例</span></a>
-<a href="capabilities.html"><span data-i18n="定制服务">定制服务</span></a>
+<a href="capabilities.html"><span data-i18n="生产能力">生产能力</span></a>
 <a href="contact.html"><span data-i18n="联系我们">联系我们</span></a>
 </nav>
-<button aria-label="菜单" class="mobile-toggle" id="mobileToggle">
+<button aria-label="切换菜单" class="mobile-toggle" id="mobileToggle">
 <span></span><span></span><span></span>
 </button>
 
@@ -64,264 +727,552 @@
 </div>
 </div>
 </header>
+<!-- 移动端菜单 -->
 <div class="mobile-nav" id="mobileNav">
-<a href="index.html"><span data-i18n="首页">首页</span></a>
+<a class="active" href="index-markforged.html"><span data-i18n="首页">首页</span></a>
 <a href="about.html"><span data-i18n="关于我们">关于我们</span></a>
 <a href="products.html"><span data-i18n="产品中心">产品中心</span></a>
 <a href="applications.html"><span data-i18n="应用案例">应用案例</span></a>
-<a href="capabilities.html"><span data-i18n="定制服务">定制服务</span></a>
+<a href="capabilities.html"><span data-i18n="生产能力">生产能力</span></a>
 <a href="contact.html"><span data-i18n="联系我们">联系我们</span></a>
+<a class="mobile-cta" href="contact.html"><span data-i18n="立即询价">立即询价</span></a>
 
 </div>
 <main id="main">
-<!-- ========== HERO ========== -->
+<!-- Hero 主视觉 -->
 <section class="hero">
-<!-- 背景装饰：轴承图案 -->
-<div class="hero-bg-pattern">
-<div class="ball"></div>
-<div class="ball"></div>
-<div class="ball"></div>
-<div class="ball"></div>
-<div class="ball"></div>
-<div class="ball"></div>
-<div class="ball"></div>
-<div class="ball"></div>
-</div>
-<div class="container hero-content">
-<!-- 标签徽章 -->
-<div class="hero-tag"><span data-i18n="馆陶 · 中国轻工轴承之乡 · 源头工厂">馆陶 · 中国轻工轴承之乡 · 源头工厂</span></div>
-<!-- 主标题 -->
-<h1><span data-i18n="26年轴承源头工厂直供">26年轴承源头工厂直供</span></h1>
-<!-- 副标题 -->
-<p class="hero-desc"><span data-i18n="馆陶·中国轻工轴承之乡 | 608全系列现货 · 非标定制7天出样 · 出厂价比1688低30%">馆陶·中国轻工轴承之乡 | 608全系列现货 · 非标定制7天出样 · 出厂价比1688低30%</span></p>
-<!-- 按钮组 -->
+<div class="container hero-grid">
+<div class="hero-content">
+<div class="hero-tag"><span class="dot"></span><span data-i18n="馆陶 · 中国轻工轴承之乡 · 源头工厂">馆陶 · 中国轻工轴承之乡 · 源头工厂</span></div>
+<h1><span data-i18n="微型深沟球轴承">微型深沟球轴承</span><br/><span class="accent"><span data-i18n="专业制造商">专业制造商</span></span></h1>
+<p class="hero-desc"><span data-i18n="
+        26 年制造基因，3000㎡ 标准化厂房，200 台磨床 / 超精 / 合套设备，日产 40 万套稳定交付。产品远销印度、巴基斯坦、欧洲、迪拜，为全球客户提供可靠传动解决方案。
+      ">
+        26 年制造基因，3000㎡ 标准化厂房，200 台磨床 / 超精 / 合套设备，日产 40 万套稳定交付。产品远销印度、巴基斯坦、欧洲、迪拜，为全球客户提供可靠传动解决方案。
+      </span></p>
 <div class="hero-btns">
-<a class="btn-hero-primary" href="contact.html"><span data-i18n="立即询价">立即询价</span></a>
-<a class="btn-hero-outline" href="products.html"><span data-i18n="查看产品">查看产品</span></a>
+<a class="btn btn-primary" href="contact.html"><span data-i18n="获取报价 / 样品">获取报价 / 样品</span></a>
+<a class="btn btn-outline-light" href="products.html"><span data-i18n="浏览产品系列">浏览产品系列</span></a>
 </div>
-<!-- 底部承诺列表 -->
-<div class="hero-promises">
-<div class="promise-item">
-<svg class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg>
-<span><span data-i18n="26年工厂历史">26年工厂历史</span></span>
 </div>
-<div class="promise-item">
-<svg class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg>
+<div class="hero-visual">
+<div class="bearing-graphic" id="bearingGraphic"></div>
+</div>
+</div>
+<div class="hero-trust">
+<div class="container trust-inner">
+<div class="trust-item">
+<svg fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg>
+<span><span data-i18n="26 年工厂历史">26 年工厂历史</span></span>
+</div>
+<div class="trust-item">
+<svg fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg>
 <span><span data-i18n="馆陶源头产地">馆陶源头产地</span></span>
 </div>
-<div class="promise-item">
-<svg class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg>
+<div class="trust-item">
+<svg fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg>
 <span><span data-i18n="工厂直做非标">工厂直做非标</span></span>
 </div>
-<div class="promise-item">
-<svg class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg>
-<span><span data-i18n="品质有保障">品质有保障</span></span>
+<div class="trust-item">
+<svg fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg>
+<span><span data-i18n="合套全检品质">合套全检品质</span></span>
 </div>
 </div>
-</div>
-<!-- 右侧悬浮工具栏 -->
-<div class="float-toolbar">
-<a class="float-item" href="contact.html" title="微信咨询">
-<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"></path></svg>
-<span><span data-i18n="微信">微信</span></span>
-</a>
-<a class="float-item" href="tel:13168867664" title="电话咨询">
-<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"></path></svg>
-<span><span data-i18n="电话">电话</span></span>
-</a>
-<a class="float-item" href="contact.html" title="在线询价">
-<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"></path><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"></path></svg>
-<span><span data-i18n="询价">询价</span></span>
-</a>
 </div>
 </section>
-<!-- ========== STATS CARDS (overlapping hero) ========== -->
-<section class="stats-section">
+<!-- 数据浮层 -->
+<section class="section stats-bar" style="padding-top:0;">
 <div class="container">
 <div class="stats-grid">
-<div class="stat-card">
-<div class="stat-number">26<span class="stat-unit"><span data-i18n="年">年</span></span></div>
-<div class="stat-text"><span data-i18n="工厂历史 · 2000年至今">工厂历史 · 2000年至今</span></div>
+<div class="stat-item">
+<div class="stat-number">26<small><span data-i18n="年">年</span></small></div>
+<div class="stat-label"><span data-i18n="工厂历史 · 2000 年至今">工厂历史 · 2000 年至今</span></div>
 </div>
-<div class="stat-card">
-<div class="stat-number">2000<span class="stat-unit">+</span></div>
-<div class="stat-text"><span data-i18n="可供型号 · 全系列覆盖">可供型号 · 全系列覆盖</span></div>
+<div class="stat-item">
+<div class="stat-number">3000<small>㎡</small></div>
+<div class="stat-label"><span data-i18n="现代化标准厂房">现代化标准厂房</span></div>
 </div>
-<div class="stat-card">
-<div class="stat-number">7<span class="stat-unit"><span data-i18n="天">天</span></span></div>
-<div class="stat-text"><span data-i18n="非标定制出样">非标定制出样</span></div>
+<div class="stat-item">
+<div class="stat-number">40<small><span data-i18n="万">万</span></small></div>
+<div class="stat-label"><span data-i18n="套 / 日产能">套 / 日产能</span></div>
 </div>
-<div class="stat-card">
-<div class="stat-number">60<span class="stat-unit"><span data-i18n="亿套">亿套</span></span></div>
-<div class="stat-text"><span data-i18n="馆陶区域年产能">馆陶区域年产能</span></div>
+<div class="stat-item">
+<div class="stat-number">15<small>+</small></div>
+<div class="stat-label"><span data-i18n="覆盖轴承型号">覆盖轴承型号</span></div>
 </div>
 </div>
 </div>
 </section>
-<!-- ========== WHY CHOOSE US (Trust Badges) ========== -->
+<!-- 核心能力 -->
 <section class="section section-alt">
 <div class="container">
 <div class="section-header">
-<div class="label">Why Choose Chaolei</div>
-<h2><span data-i18n="为什么选择潮磊轴承">为什么选择潮磊轴承</span></h2>
-<p><span data-i18n="以设备规模与产能数据说话，用真实制造实力赢得信任">以设备规模与产能数据说话，用真实制造实力赢得信任</span></p>
+<span class="eyebrow">Capabilities</span>
+<h2><span data-i18n="从磨削到合套，全流程自主管控">从磨削到合套，全流程自主管控</span></h2>
+<p><span data-i18n="以设备规模与工艺完整性保障批量一致性，让每一颗轴承都经得起终端验证。">以设备规模与工艺完整性保障批量一致性，让每一颗轴承都经得起终端验证。</span></p>
 </div>
-<div class="badges-grid">
-<div class="badge-card">
-<div class="icon">🏭</div>
-<b>3000m²</b><span><span data-i18n="现代化标准厂房">现代化标准厂房</span></span>
+<div class="cap-grid">
+<div class="cap-card">
+<div class="cap-icon">
+<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="4"></circle><path d="M12 2v4M12 18v4M2 12h4M18 12h4"></path></svg>
 </div>
-<div class="badge-card">
-<div class="icon">⚙️</div>
-<b><span data-i18n="100台">100台</span></b><span><span data-i18n="精密数控磨床">精密数控磨床</span></span>
+<h3><span data-i18n="精密磨削">精密磨削</span></h3>
+<p><span data-i18n="100 台数控磨床覆盖内径、外径、沟道精磨，尺寸与形位精度稳定可控。">100 台数控磨床覆盖内径、外径、沟道精磨，尺寸与形位精度稳定可控。</span></p>
+<a class="cap-link" href="capabilities.html"><span data-i18n="了解设备 →">了解设备 →</span></a>
 </div>
-<div class="badge-card">
-<div class="icon">🎯</div>
-<b><span data-i18n="50台">50台</span></b><span><span data-i18n="超精机（沟道精研）">超精机（沟道精研）</span></span>
+<div class="cap-card">
+<div class="cap-icon">
+<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
 </div>
-<div class="badge-card">
-<div class="icon">✅</div>
-<b><span data-i18n="50台">50台</span></b><span><span data-i18n="合套仪（全检合套）">合套仪（全检合套）</span></span>
+<h3><span data-i18n="沟道超精">沟道超精</span></h3>
+<p><span data-i18n="50 台超精机降低沟道粗糙度，提升轴承顺滑度与疲劳寿命。">50 台超精机降低沟道粗糙度，提升轴承顺滑度与疲劳寿命。</span></p>
+<a class="cap-link" href="capabilities.html"><span data-i18n="了解工艺 →">了解工艺 →</span></a>
 </div>
-<div class="badge-card">
-<div class="icon">📦</div>
-<b><span data-i18n="40万">40万</span></b><span><span data-i18n="套 / 日产能">套 / 日产能</span></span>
+<div class="cap-card">
+<div class="cap-icon">
+<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
 </div>
-<div class="badge-card">
-<div class="icon">🌍</div>
-<b>4+</b><span><span data-i18n="出口国家地区">出口国家地区</span></span>
+<h3><span data-i18n="合套全检">合套全检</span></h3>
+<p><span data-i18n="50 台合套仪实现合套工序全检，游隙与旋转灵活性逐批可控。">50 台合套仪实现合套工序全检，游隙与旋转灵活性逐批可控。</span></p>
+<a class="cap-link" href="capabilities.html"><span data-i18n="了解质检 →">了解质检 →</span></a>
 </div>
 </div>
 </div>
 </section>
-<!-- ========== FEATURED PRODUCTS ========== -->
+<!-- 行业解决方案 -->
 <section class="section">
 <div class="container">
 <div class="section-header">
-<div class="label">Featured Products</div>
+<span class="eyebrow">Applications</span>
+<h2><span data-i18n="为多元行业提供可靠传动">为多元行业提供可靠传动</span></h2>
+<p><span data-i18n="深沟球轴承应用场景广泛，潮磊以稳定批次与快速响应，满足不同行业工况需求。">深沟球轴承应用场景广泛，潮磊以稳定批次与快速响应，满足不同行业工况需求。</span></p>
+</div>
+<div class="solution-grid">
+<div class="solution-card">
+<div class="solution-icon">⚡</div>
+<div class="solution-info">
+<h3><span data-i18n="电动工具">电动工具</span></h3>
+<p><span data-i18n="高转速、冲击工况下的长寿命需求，608 / 627 系列提供稳定支撑。">高转速、冲击工况下的长寿命需求，608 / 627 系列提供稳定支撑。</span></p>
+<div class="solution-tags"><span class="tag"><span data-i18n="高转速">高转速</span></span><span class="tag"><span data-i18n="抗冲击">抗冲击</span></span><span class="tag">608</span></div>
+</div>
+</div>
+<div class="solution-card">
+<div class="solution-icon">🏠</div>
+<div class="solution-info">
+<h3><span data-i18n="家电电机">家电电机</span></h3>
+<p><span data-i18n="低噪音、低摩擦要求，助力电机能效达标与静音运行。">低噪音、低摩擦要求，助力电机能效达标与静音运行。</span></p>
+<div class="solution-tags"><span class="tag"><span data-i18n="低噪音">低噪音</span></span><span class="tag">688</span><span class="tag">6900</span></div>
+</div>
+</div>
+<div class="solution-card">
+<div class="solution-icon">🛹</div>
+<div class="solution-info">
+<h3><span data-i18n="滑轮 / 滑板 / 健身">滑轮 / 滑板 / 健身</span></h3>
+<p><span data-i18n="608 系列加强版兼顾承重与顺滑，是滑板轮与健身器材的标配。">608 系列加强版兼顾承重与顺滑，是滑板轮与健身器材的标配。</span></p>
+<div class="solution-tags"><span class="tag"><span data-i18n="高载荷">高载荷</span></span><span class="tag"><span data-i18n="顺滑">顺滑</span></span><span class="tag"><span data-i18n="608 轴钢">608 轴钢</span></span></div>
+</div>
+</div>
+<div class="solution-card">
+<div class="solution-icon">🚗</div>
+<div class="solution-info">
+<h3><span data-i18n="汽车与工业传动">汽车与工业传动</span></h3>
+<p><span data-i18n="小型深沟球轴承在耐温、可靠承载场景中稳定输出。">小型深沟球轴承在耐温、可靠承载场景中稳定输出。</span></p>
+<div class="solution-tags"><span class="tag"><span data-i18n="可靠">可靠</span></span><span class="tag">803</span><span class="tag">6901</span></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 产品系列 -->
+<section class="section section-alt">
+<div class="container">
+<div class="section-header">
+<span class="eyebrow">Products</span>
 <h2><span data-i18n="旗舰产品系列">旗舰产品系列</span></h2>
-<p><span data-i18n="608 系列是潮磊轴承的代表作，5 种材质/结构变体满足不同工况需求">608 系列是潮磊轴承的代表作，5 种材质/结构变体满足不同工况需求</span></p>
+<p><span data-i18n="608 系列是工厂代表作，5 种材质与结构变体覆盖主流应用场景。">608 系列是工厂代表作，5 种材质与结构变体覆盖主流应用场景。</span></p>
 </div>
-<div class="cards-grid">
-<div class="card product-card">
-<div class="product-img"><img alt="608 轴承钢产品图" loading="lazy" src="img/products/dg-chrome-rs.png"/></div>
+<div class="product-grid">
+<div class="product-card">
+<div class="product-visual"><img alt="608 碳钢产品图" loading="lazy" src="img/products/608-tg.png"/></div>
 <h4><span data-i18n="608 轴承钢">608 轴承钢</span></h4>
-<div class="specs"><span data-i18n="8×22×7 mm · GCr15 轴承钢">8×22×7 mm · GCr15 轴承钢</span></div>
-<div class="tag-row"><span class="tag-pill"><span data-i18n="高耐磨">高耐磨</span></span><span class="tag-pill"><span data-i18n="长寿命">长寿命</span></span><span class="tag-pill"><span data-i18n="滑板标配">滑板标配</span></span></div>
-<p style="font-size:13.5px;"><span data-i18n="GCr15 轴承钢材质，硬度高、耐磨性强，适用于滑板车轮、电机、高载荷场景。">GCr15 轴承钢材质，硬度高、耐磨性强，适用于滑板车轮、电机、高载荷场景。</span></p>
+<div class="spec">8×22×7 mm · GCr15</div>
+<p><span data-i18n="高耐磨、长寿命，滑板 / 电机高载荷首选。">高耐磨、长寿命，滑板 / 电机高载荷首选。</span></p>
 </div>
-<div class="card product-card">
-<div class="product-img"><img alt="608 碳钢产品图" loading="lazy" src="img/products/dg-carbon.png"/></div>
+<div class="product-card">
+<div class="product-visual"><img alt="608 碳钢产品图" loading="lazy" src="img/products/608-tg.png"/></div>
 <h4><span data-i18n="608 碳钢">608 碳钢</span></h4>
-<div class="specs"><span data-i18n="8×22×7 mm · 高品质碳钢">8×22×7 mm · 高品质碳钢</span></div>
-<div class="tag-row"><span class="tag-pill"><span data-i18n="成本优">成本优</span></span><span class="tag-pill"><span data-i18n="轻载适用">轻载适用</span></span><span class="tag-pill"><span data-i18n="玩具标配">玩具标配</span></span></div>
-<p style="font-size:13.5px;"><span data-i18n="优质碳钢材质，性价比突出，适合普通玩具、指尖陀螺等轻载荷低转速场景。">优质碳钢材质，性价比突出，适合普通玩具、指尖陀螺等轻载荷低转速场景。</span></p>
+<div class="spec"><span data-i18n="8×22×7 mm · 碳钢">8×22×7 mm · 碳钢</span></div>
+<p><span data-i18n="成本优、性能稳，适合普通玩具与轻载场景。">成本优、性能稳，适合普通玩具与轻载场景。</span></p>
 </div>
-<div class="card product-card">
-<div class="product-img"><img alt="608 凸缘系列产品图" loading="lazy" src="img/products/dg-flange.png"/></div>
-<h4><span data-i18n="608 凸缘系列">608 凸缘系列</span></h4>
-<div class="specs"><span data-i18n="单凸一 / 单凸二 / 双凸一">单凸一 / 单凸二 / 双凸一</span></div>
-<div class="tag-row"><span class="tag-pill"><span data-i18n="轴向定位">轴向定位</span></span><span class="tag-pill"><span data-i18n="防窜动">防窜动</span></span><span class="tag-pill"><span data-i18n="传动机构">传动机构</span></span></div>
-<p style="font-size:13.5px;"><span data-i18n="带凸缘结构设计，实现卡簧定位或双向防窜动，适用于精密传动机构。">带凸缘结构设计，实现卡簧定位或双向防窜动，适用于精密传动机构。</span></p>
+<div class="product-card">
+<div class="product-visual"><img alt="608 单凸系列产品图" loading="lazy" src="img/products/608-dt1.png"/></div>
+<h4><span data-i18n="608 单凸系列">608 单凸系列</span></h4>
+<div class="spec"><span data-i18n="单凸一 / 单凸二">单凸一 / 单凸二</span></div>
+<p><span data-i18n="单面凸缘结构，便于卡簧定位与传动机构安装。">单面凸缘结构，便于卡簧定位与传动机构安装。</span></p>
+</div>
+<div class="product-card">
+<div class="product-visual"><img alt="608 双凸系列产品图" loading="lazy" src="img/products/608-st1.png"/></div>
+<h4><span data-i18n="608 双凸系列">608 双凸系列</span></h4>
+<div class="spec"><span data-i18n="双面凸缘">双面凸缘</span></div>
+<p><span data-i18n="双向防轴向窜动，适用于精密轴向定位场景。">双向防轴向窜动，适用于精密轴向定位场景。</span></p>
 </div>
 </div>
-<div class="text-center mt-4">
-<a class="btn btn-navy" href="products.html"><span data-i18n="浏览全部 15+ 型号 →">浏览全部 15+ 型号 →</span></a>
+<div class="section-header" style="margin-top: 42px; margin-bottom: 0;">
+<a class="btn btn-dark" href="products.html"><span data-i18n="浏览全部 15+ 型号 →">浏览全部 15+ 型号 →</span></a>
 </div>
 </div>
 </section>
-<!-- ========== EXPORT MARKETS ========== -->
-<section class="section section-alt">
+<!-- 最新动态 -->
+<section class="section">
 <div class="container">
 <div class="section-header">
-<div class="label">Global Markets</div>
-<h2><span data-i18n="出口全球市场">出口全球市场</span></h2>
-<p><span data-i18n="产品远销多个国家和地区，支持外贸验厂与多语种资料">产品远销多个国家和地区，支持外贸验厂与多语种资料</span></p>
+<span class="eyebrow">News &amp; Insights</span>
+<h2><span data-i18n="工厂动态与行业资讯">工厂动态与行业资讯</span></h2>
+<p><span data-i18n="分享产能升级、工艺改进与轴承应用场景的最新实践。">分享产能升级、工艺改进与轴承应用场景的最新实践。</span></p>
 </div>
-<div class="export-bar">
-<div class="export-item"><div class="export-flag">🇮🇳</div><div class="export-name"><span data-i18n="印度 India">印度 India</span></div></div>
-<div class="export-item"><div class="export-flag">🇵🇰</div><div class="export-name"><span data-i18n="巴基斯坦 Pakistan">巴基斯坦 Pakistan</span></div></div>
-<div class="export-item"><div class="export-flag">🇪🇺</div><div class="export-name"><span data-i18n="欧洲 Europe">欧洲 Europe</span></div></div>
-<div class="export-item"><div class="export-flag">🇦🇪</div><div class="export-name"><span data-i18n="迪拜 Dubai">迪拜 Dubai</span></div></div>
+<div class="news-grid">
+<article class="news-card">
+<div class="news-thumb">🏭</div>
+<div class="news-body">
+<div class="news-meta">
+<span class="news-category"><span data-i18n="工厂动态">工厂动态</span></span>
+<span class="news-date">2026-07-18</span>
+</div>
+<h3><span data-i18n="新增合套检测设备，合套全检能力再升级">新增合套检测设备，合套全检能力再升级</span></h3>
+<p><span data-i18n="为进一步提升出厂一致性，工厂新增多台合套仪，实现关键型号合套工序 100% 全检。">为进一步提升出厂一致性，工厂新增多台合套仪，实现关键型号合套工序 100% 全检。</span></p>
+<a class="read-more" href="#"><span data-i18n="阅读更多 →">阅读更多 →</span></a>
+</div>
+</article>
+<article class="news-card">
+<div class="news-thumb">🌍</div>
+<div class="news-body">
+<div class="news-meta">
+<span class="news-category"><span data-i18n="出口业务">出口业务</span></span>
+<span class="news-date">2026-06-22</span>
+</div>
+<h3><span data-i18n="批量订单发往中东与南亚市场">批量订单发往中东与南亚市场</span></h3>
+<p><span data-i18n="本月完成多批次 608 系列与微型轴承出口交付，支持客户外贸验厂与多语种资料需求。">本月完成多批次 608 系列与微型轴承出口交付，支持客户外贸验厂与多语种资料需求。</span></p>
+<a class="read-more" href="#"><span data-i18n="阅读更多 →">阅读更多 →</span></a>
+</div>
+</article>
+<article class="news-card">
+<div class="news-thumb">🔧</div>
+<div class="news-body">
+<div class="news-meta">
+<span class="news-category"><span data-i18n="技术分享">技术分享</span></span>
+<span class="news-date">2026-05-10</span>
+</div>
+<h3><span data-i18n="如何为电动工具选择匹配的深沟球轴承">如何为电动工具选择匹配的深沟球轴承</span></h3>
+<p><span data-i18n="从转速、载荷、游隙与润滑四个维度，解析电动工具轴承选型要点。">从转速、载荷、游隙与润滑四个维度，解析电动工具轴承选型要点。</span></p>
+<a class="read-more" href="#"><span data-i18n="阅读更多 →">阅读更多 →</span></a>
+</div>
+</article>
 </div>
 </div>
 </section>
-<!-- ========== CTA BANNER ========== -->
-<section class="section">
+<!-- 走进潮磊轴承生产车间 -->
+<section class="section section-dark" id="workshop-tour">
+<div class="container">
+<div class="section-header">
+<span class="eyebrow">Workshop Tour</span>
+<h2><span data-i18n="走进潮磊轴承生产车间">走进潮磊轴承生产车间</span></h2>
+<p><span data-i18n="真实记录车间的设备运转与工人操作，直观呈现制造实力与规范流程。">真实记录车间的设备运转与工人操作，直观呈现制造实力与规范流程。</span></p>
+</div>
+<div class="wt-player" data-video-poster="" data-video-src="video/workshop.mp4" id="wtPlayer">
+<video class="wt-video" playsinline="" preload="metadata"></video>
+<button aria-label="播放视频" class="wt-bigplay" type="button">
+<svg fill="currentColor" viewbox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg>
+</button>
+<div aria-label="视频控制" class="wt-controls" role="group">
+<button aria-label="播放 / 暂停" class="wt-btn wt-play" type="button">
+<svg class="i-play" fill="currentColor" viewbox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg>
+<svg class="i-pause" fill="currentColor" viewbox="0 0 24 24"><path d="M6 5h4v14H6zM14 5h4v14h-4z"></path></svg>
+</button>
+<div aria-label="播放进度" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="wt-progress" id="wtProgress" role="slider" tabindex="0">
+<div class="wt-progress-buffer"></div>
+<div class="wt-progress-played"></div>
+<div class="wt-progress-handle"></div>
+</div>
+<span class="wt-time" id="wtTime">00:00 / 00:00</span>
+<button aria-label="静音切换" class="wt-btn wt-mute" type="button">
+<svg class="i-sound" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M11 5L6 9H2v6h4l5 4V5z"></path><path d="M15.5 8.5a5 5 0 010 7M19 5a9 9 0 010 14"></path></svg>
+<svg class="i-mute" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M11 5L6 9H2v6h4l5 4V5z"></path><line x1="23" x2="17" y1="9" y2="15"></line><line x1="17" x2="23" y1="9" y2="15"></line></svg>
+</button>
+<button aria-label="全屏" class="wt-btn wt-fs" type="button">
+<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M8 3H5a2 2 0 00-2 2v3M16 3h3a2 2 0 012 2v3M8 21H5a2 2 0 01-2-2v-3M16 21h3a2 2 0 002-2v-3"></path></svg>
+</button>
+</div>
+</div>
+<p class="wt-fallback" hidden="" id="wtFallback"><span data-i18n="视频暂时无法加载。请确认 ">视频暂时无法加载。请确认 </span><code>video/workshop.mp4</code><span data-i18n=" 文件存在，或将组件 "> 文件存在，或将组件 </span><code>data-video-src</code><span data-i18n=" 改为你的远程视频 URL（支持本地文件或远程地址）。"> 改为你的远程视频 URL（支持本地文件或远程地址）。</span></p>
+</div>
+</section>
+<!-- CTA 横幅 -->
+<section class="cta-section">
 <div class="container">
 <div class="cta-banner">
 <h2><span data-i18n="需要轴承解决方案？">需要轴承解决方案？</span></h2>
-<p><span data-i18n="26 年制造经验，日产 40 万套稳定交付。欢迎来电咨询或预约参观工厂。">26 年制造经验，日产 40 万套稳定交付。欢迎来电咨询或预约参观工厂。</span></p>
+<p><span data-i18n="26 年制造经验，日产 40 万套稳定交付。无论标准型号还是来图定制，欢迎来电咨询或预约参观工厂。">26 年制造经验，日产 40 万套稳定交付。无论标准型号还是来图定制，欢迎来电咨询或预约参观工厂。</span></p>
 <div class="btns">
-<a class="btn btn-primary btn-lg" href="contact.html"><span data-i18n="联系我们">联系我们</span></a>
-<a class="btn btn-outline btn-lg" href="capabilities.html"><span data-i18n="参观工厂">参观工厂</span></a>
+<a class="btn btn-primary" href="contact.html"><span data-i18n="立即联系我们">立即联系我们</span></a>
+<a class="btn btn-outline-light" href="capabilities.html"><span data-i18n="预约工厂参观">预约工厂参观</span></a>
 </div>
+</div>
+</div>
+</section>
+<!-- 常见问题（自然语言问答，便于 AI 检索与引用） -->
+<section class="section section-alt" id="faq">
+<div class="container">
+<div class="section-header">
+<div class="label">FAQ</div>
+<h2><span data-i18n="关于潮磊轴承，您可能想问">关于潮磊轴承，您可能想问</span></h2>
+<p><span data-i18n="以下问答覆盖选型、定制、交期、寄样、出口与联系方式等常见需求，帮助您快速决策。">以下问答覆盖选型、定制、交期、寄样、出口与联系方式等常见需求，帮助您快速决策。</span></p>
+</div>
+<div class="faq-list">
+<article class="faq-item">
+<h3><span class="q">Q</span><span data-i18n="主要生产什么类型的轴承？">主要生产什么类型的轴承？</span></h3>
+<p><span data-i18n="潮磊轴承专注微型深沟球轴承制造，主力为 608 系列（轴承钢、碳钢、单凸、双凸等变体）及 626、607、698、627、696、6800、688、687、689、803、6900、6901 等 15+ 型号，并提供非标来图定制。">潮磊轴承专注微型深沟球轴承制造，主力为 608 系列（轴承钢、碳钢、单凸、双凸等变体）及 626、607、698、627、696、6800、688、687、689、803、6900、6901 等 15+ 型号，并提供非标来图定制。</span></p>
+</article>
+<article class="faq-item">
+<h3><span class="q">Q</span><span data-i18n="是否支持非标轴承定制？">是否支持非标轴承定制？</span></h3>
+<p><span data-i18n="支持。工厂具备磨削—超精—合套全流程自主管控能力，可按客户来图来样定制非标深沟球轴承，非标定制 7 天出样、10 天交货。">支持。工厂具备磨削—超精—合套全流程自主管控能力，可按客户来图来样定制非标深沟球轴承，非标定制 7 天出样、10 天交货。</span></p>
+</article>
+<article class="faq-item">
+<h3><span class="q">Q</span><span data-i18n="交货周期一般多久？">交货周期一般多久？</span></h3>
+<p><span data-i18n="标准件常年备货、当天发货；非标定制 7 天出样、10 天交货，源头工厂直做的速度可保障供应链稳定。">标准件常年备货、当天发货；非标定制 7 天出样、10 天交货，源头工厂直做的速度可保障供应链稳定。</span></p>
+</article>
+<article class="faq-item">
+<h3><span class="q">Q</span><span data-i18n="是否提供免费寄样？">是否提供免费寄样？</span></h3>
+<p><span data-i18n="提供。标准件支持免费寄样，客户收到后自行验收满意再下单；若出现品质问题，7 天包退、15 天包换，往返运费由工厂承担。">提供。标准件支持免费寄样，客户收到后自行验收满意再下单；若出现品质问题，7 天包退、15 天包换，往返运费由工厂承担。</span></p>
+</article>
+<article class="faq-item">
+<h3><span class="q">Q</span><span data-i18n="产品出口哪些国家和地区？">产品出口哪些国家和地区？</span></h3>
+<p><span data-i18n="产品远销印度、巴基斯坦、欧洲、迪拜（中东）等市场，支持外贸验厂与多语种资料需求。">产品远销印度、巴基斯坦、欧洲、迪拜（中东）等市场，支持外贸验厂与多语种资料需求。</span></p>
+</article>
+<article class="faq-item">
+<h3><span class="q">Q</span><span data-i18n="产品质量如何保证？是否有认证？">产品质量如何保证？是否有认证？</span></h3>
+<p><span data-i18n="工厂通过磨削—超精—合套全流程自主管控，50 台合套仪实现合套 100% 全检；目前暂未获得第三方认证证书（如 ISO 9001），坚持以产品实测与稳定交付建立信任。">工厂通过磨削—超精—合套全流程自主管控，50 台合套仪实现合套 100% 全检；目前暂未获得第三方认证证书（如 ISO 9001），坚持以产品实测与稳定交付建立信任。</span></p>
+</article>
+<article class="faq-item">
+<h3><span class="q">Q</span><span data-i18n="如何联系潮磊轴承询价或预约参观？">如何联系潮磊轴承询价或预约参观？</span></h3>
+<p><span data-i18n="访问‘联系我们’页面提交需求，或预约实地参观工厂。">访问‘联系我们’页面提交需求，或预约实地参观工厂。</span></p>
+</article>
 </div>
 </div>
 </section>
 </main>
-<!-- ========== FOOTER ========== -->
+<!-- 页脚 -->
 <div id="siteFooter"></div>
-<!-- ===== 结构化数据：Organization + LocalBusiness + Breadcrumb + FAQPage（首页） ===== -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://www.chaolei-bearing.com/#organization",
-      "name": "潮磊轴承",
-      "alternateName": "潮磊轴承厂",
-      "url": "https://www.chaolei-bearing.com/",
-      "logo": "https://www.chaolei-bearing.com/img/logo.jpg",
-      "description": "潮磊轴承成立于2000年，是中国河北省邯郸市馆陶县魏僧寨镇杨草厂村的微型深沟球轴承专业制造商，3000㎡厂房、200台设备、日产40万套。",
-      "email": "sales@chaolei-bearing.com",
-      "telephone": "+86-13168867664",
-      "foundingDate": "2000",
-      "address": { "@type": "PostalAddress", "addressCountry": "CN", "addressRegion": "河北省", "addressLocality": "邯郸市馆陶县", "streetAddress": "魏僧寨镇杨草厂村" }
-    },
-    {
-      "@type": "LocalBusiness",
-      "@id": "https://www.chaolei-bearing.com/#localbusiness",
-      "name": "潮磊轴承厂",
-      "url": "https://www.chaolei-bearing.com/",
-      "telephone": "+86-13168867664",
-      "priceRange": "￥",
-      "address": { "@type": "PostalAddress", "addressCountry": "CN", "addressRegion": "河北省", "addressLocality": "邯郸市馆陶县", "streetAddress": "魏僧寨镇杨草厂村" }
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://www.chaolei-bearing.com/" }
-      ]
-    },
-    {
-      "@type": "FAQPage",
-      "@id": "https://www.chaolei-bearing.com/index.html#faq",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "潮磊轴承主要生产什么类型的轴承？",
-          "acceptedAnswer": { "@type": "Answer", "text": "潮磊轴承专注微型深沟球轴承制造，主力为 608 系列及 626、607、698、627、696、6800、688、687、689、803、6900、6901 等 15+ 型号，并提供非标来图定制。" }
-        },
-        {
-          "@type": "Question",
-          "name": "是否支持非标轴承定制？",
-          "acceptedAnswer": { "@type": "Answer", "text": "支持。可按客户来图来样定制非标深沟球轴承，非标定制 7 天出样、10 天交货。" }
-        },
-        {
-          "@type": "Question",
-          "name": "是否提供免费寄样？",
-          "acceptedAnswer": { "@type": "Answer", "text": "提供。标准件支持免费寄样，客户收到后自行验收满意再下单；品质问题 7 天包退、15 天包换。" }
-        }
-      ]
+<script>
+  (function () {
+    // 移动端菜单切换
+    var toggle = document.getElementById('mobileToggle');
+    var mobileNav = document.getElementById('mobileNav');
+    if (toggle && mobileNav) {
+      toggle.addEventListener('click', function () {
+        mobileNav.classList.toggle('open');
+        toggle.classList.toggle('active');
+        document.body.style.overflow = mobileNav.classList.contains('open') ? 'hidden' : '';
+      });
+      mobileNav.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', function () {
+          mobileNav.classList.remove('open');
+          toggle.classList.remove('active');
+          document.body.style.overflow = '';
+        });
+      });
     }
-  ]
-}
+
+    // 头部滚动阴影
+    var header = document.getElementById('header');
+    if (header) {
+      window.addEventListener('scroll', function () {
+        header.classList.toggle('scrolled', window.scrollY > 10);
+      }, { passive: true });
+    }
+
+    // ---- 首页轴承滚珠动画：均匀分布 + 自然运动 ----
+    (function initBearingBalls() {
+      var graphic = document.getElementById('bearingGraphic');
+      if (!graphic) return;
+
+      var BALL_COUNT = 10;
+      var ANGLE_STEP = 360 / BALL_COUNT;
+      var resizeTimer;
+
+      function createBalls() {
+        // 清空旧滚珠，便于响应式重绘
+        graphic.querySelectorAll('.ball').forEach(function (b) { b.remove(); });
+
+        var size = graphic.offsetWidth || 360;
+        var radius = size * 0.38;
+        var ballSize = Math.max(18, Math.round(size * 0.075));
+        var centerOffset = ballSize / 2;
+
+        for (var i = 0; i < BALL_COUNT; i++) {
+          var ball = document.createElement('div');
+          ball.className = 'ball';
+
+          // 基准角度 + 微小随机偏移，避免机械感
+          var angleDeg = (i * ANGLE_STEP) + (Math.random() * 6 - 3);
+          var r = radius + (Math.random() * 12 - 6);
+
+          // CSS 坐标系：0° 为 3 点钟方向，减去 90° 从 12 点钟方向开始
+          var rad = (angleDeg - 90) * Math.PI / 180;
+          var tx = Math.cos(rad) * r;
+          var ty = Math.sin(rad) * r;
+
+          ball.style.setProperty('--tx', tx.toFixed(1) + 'px');
+          ball.style.setProperty('--ty', ty.toFixed(1) + 'px');
+          ball.style.setProperty('--ball-size', ballSize + 'px');
+          ball.style.setProperty('--delay', (i * 0.22) + 's');
+          ball.style.marginTop = '-' + centerOffset + 'px';
+          ball.style.marginLeft = '-' + centerOffset + 'px';
+
+          graphic.appendChild(ball);
+        }
+      }
+
+      createBalls();
+      window.addEventListener('resize', function () {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(createBalls, 150);
+      });
+    })();
+
+    // 锚点平滑滚动
+    document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+      anchor.addEventListener('click', function (e) {
+        var targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        var target = document.querySelector(targetId);
+        if (target) {
+          e.preventDefault();
+          var offset = target.getBoundingClientRect().top + window.pageYOffset - 90;
+          window.scrollTo({ top: offset, behavior: 'smooth' });
+        }
+      });
+    });
+
+    // ---- 走进潮磊轴承生产车间 视频组件 ----
+    (function initWorkshopTour() {
+      var player = document.getElementById('wtPlayer');
+      if (!player) return;
+      var video = player.querySelector('.wt-video');
+      if (!video) return;
+
+      var src = player.getAttribute('data-video-src');
+      var poster = player.getAttribute('data-video-poster');
+      var fallback = document.getElementById('wtFallback');
+      if (poster) video.setAttribute('poster', poster);
+      if (src) { video.src = src; } else { if (fallback) fallback.hidden = false; return; }
+
+      var bigPlay = player.querySelector('.wt-bigplay');
+      var playBtn = player.querySelector('.wt-play');
+      var muteBtn = player.querySelector('.wt-mute');
+      var fsBtn = player.querySelector('.wt-fs');
+      var progress = player.querySelector('.wt-progress');
+      var played = player.querySelector('.wt-progress-played');
+      var buffer = player.querySelector('.wt-progress-buffer');
+      var handle = player.querySelector('.wt-progress-handle');
+      var timeEl = player.querySelector('.wt-time');
+
+      function fmt(t) {
+        if (!isFinite(t)) t = 0;
+        t = Math.max(0, Math.floor(t));
+        var m = Math.floor(t / 60), s = t % 60;
+        return (m < 10 ? '0' : '') + m + ':' + (s < 10 ? '0' : '') + s;
+      }
+      function setPlaying(state) {
+        player.classList.toggle('playing', state);
+        player.classList.toggle('paused', !state);
+      }
+      function toggle() {
+        if (video.paused) {
+          var p = video.play();
+          if (p && p.catch) p.catch(function () { if (fallback) fallback.hidden = false; });
+        } else { video.pause(); }
+      }
+
+      video.addEventListener('play', function () { setPlaying(true); });
+      video.addEventListener('pause', function () { setPlaying(false); });
+      video.addEventListener('ended', function () { setPlaying(false); });
+      video.addEventListener('error', function () { if (fallback) fallback.hidden = false; });
+
+      if (bigPlay) bigPlay.addEventListener('click', toggle);
+      if (playBtn) playBtn.addEventListener('click', toggle);
+
+      video.addEventListener('timeupdate', function () {
+        var d = video.duration || 0;
+        var pct = d ? (video.currentTime / d * 100) : 0;
+        played.style.width = pct + '%';
+        handle.style.left = pct + '%';
+        timeEl.textContent = fmt(video.currentTime) + ' / ' + fmt(d);
+        progress.setAttribute('aria-valuenow', Math.round(pct));
+      });
+      video.addEventListener('progress', function () {
+        if (video.buffered && video.buffered.length) {
+          var end = video.buffered.end(video.buffered.length - 1);
+          var d = video.duration || 1;
+          buffer.style.width = Math.min(100, end / d * 100) + '%';
+        }
+      });
+      video.addEventListener('loadedmetadata', function () {
+        timeEl.textContent = fmt(video.currentTime) + ' / ' + fmt(video.duration);
+      });
+
+      function seek(clientX) {
+        var rect = progress.getBoundingClientRect();
+        var ratio = (clientX - rect.left) / rect.width;
+        ratio = Math.max(0, Math.min(1, ratio));
+        if (video.duration) video.currentTime = ratio * video.duration;
+      }
+      var dragging = false;
+      progress.addEventListener('mousedown', function (e) { dragging = true; seek(e.clientX); });
+      window.addEventListener('mousemove', function (e) { if (dragging) seek(e.clientX); });
+      window.addEventListener('mouseup', function () { dragging = false; });
+      progress.addEventListener('click', function (e) { seek(e.clientX); });
+      progress.addEventListener('touchstart', function (e) { if (e.touches[0]) seek(e.touches[0].clientX); }, { passive: true });
+      progress.addEventListener('touchmove', function (e) { if (e.touches[0]) seek(e.touches[0].clientX); }, { passive: true });
+      progress.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight') { video.currentTime = Math.min(video.duration || 0, video.currentTime + 5); }
+        if (e.key === 'ArrowLeft') { video.currentTime = Math.max(0, video.currentTime - 5); }
+      });
+
+      if (muteBtn) muteBtn.addEventListener('click', function () {
+        video.muted = !video.muted;
+        player.classList.toggle('muted', video.muted);
+      });
+      player.classList.toggle('muted', video.muted);
+
+      if (fsBtn) fsBtn.addEventListener('click', function () {
+        if (player.requestFullscreen) player.requestFullscreen();
+        else if (video.webkitEnterFullscreen) video.webkitEnterFullscreen();
+      });
+    })();
+
+    // 数字进入视口时的淡入动画
+    var statNumbers = document.querySelectorAll('.stat-number');
+    if (statNumbers.length && 'IntersectionObserver' in window) {
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.3 });
+      statNumbers.forEach(function (num) {
+        num.style.opacity = '0';
+        num.style.transform = 'translateY(16px)';
+        num.style.transition = 'opacity .6s ease, transform .6s ease';
+        observer.observe(num);
+      });
+    }
+  })();
 </script>
   <script src="js/i18n-data.js"></script>
   <script src="js/i18n.js"></script>
-  <script src="js/main.js"></script>
   <script src="js/footer.js"></script>
 </body>
 </html>

@@ -14,7 +14,27 @@
 <meta content="3000㎡厂房、200台设备、日产40万套，磨削-超精-合套全流程自主管控。" data-i18n-attr='{"content": "3000㎡厂房、200台设备、日产40万套，磨削-超精-合套全流程自主管控。"}' property="og:description"/>
 <meta content="zh_CN" property="og:locale"/>
 <link href="css/style.css" rel="stylesheet"/>
-</head>
+<script>
+(function(){
+  try{
+    var beacon=new BeaconAction({
+      appkey:'0WEB06U85YBSLJNL',
+      versionCode:'1.0.0',
+      channelID:'share',
+      delay:1000,
+      sessionDuration:30*60*1000,
+      isOversea:false,
+      needReportRqdEvent:false
+    });
+    beacon.onDirectUserAction('preview_page_view',{
+      'url':location.href,
+      'referrer':document.referrer,
+      'title':document.title,
+      'sandbox_id':'4f31be12e3d44e8094985e6c48bdb4d4'
+    });
+  }catch(e){}
+})();
+</script></head>
 <body>
 <!-- TOP BAR -->
 <div class="top-bar">

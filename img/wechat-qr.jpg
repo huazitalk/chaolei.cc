@@ -655,6 +655,7 @@
     ]
   }
   </script>
+<script src="https://beacon.cdn.qq.com/sdk/4.5.9/beacon_web.min.js"></script>
 <script>
 (function(){
   try{

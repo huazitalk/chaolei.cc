@@ -14,7 +14,27 @@
 <meta content="2000年创立至今26年，从一颗608做起，到日产40万套、服务全球市场。" data-i18n-attr='{"content": "2000年创立至今26年，从一颗608做起，到日产40万套、服务全球市场。"}' property="og:description"/>
 <meta content="zh_CN" property="og:locale"/>
 <link href="css/style.css" rel="stylesheet"/>
-</head>
+<script>
+(function(){
+  try{
+    var beacon=new BeaconAction({
+      appkey:'0WEB06U85YBSLJNL',
+      versionCode:'1.0.0',
+      channelID:'share',
+      delay:1000,
+      sessionDuration:30*60*1000,
+      isOversea:false,
+      needReportRqdEvent:false
+    });
+    beacon.onDirectUserAction('preview_page_view',{
+      'url':location.href,
+      'referrer':document.referrer,
+      'title':document.title,
+      'sandbox_id':'4f31be12e3d44e8094985e6c48bdb4d4'
+    });
+  }catch(e){}
+})();
+</script></head>
 <body>
 <!-- TOP BAR -->
 <div class="top-bar">
