@@ -1,4 +1,53 @@
 User-agent: *
 Allow: /
 
+# ===== 允许主流 AI 搜索引擎 / 生成式 AI 抓取，支持 GEO（生成式引擎优化）=====
+# 这些爬虫负责为 ChatGPT / Bing / Claude / Perplexity / Gemini / Apple Intelligence 等
+# 提供检索增强（RAG）与训练语料，放行有助于品牌在 AI 回答中被准确引用。
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: omgili
+Allow: /
+
+User-agent: omgilibot
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
 Sitemap: https://www.chaolei.cc/sitemap.xml
