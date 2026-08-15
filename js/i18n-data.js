@@ -506,7 +506,7 @@ window.ZH2EN = {
  "发展历程": "Our History",
  "工厂历史 · 2000 年至今": "Factory History · Since 2000",
  "工厂历史 · 2000年至今": "Factory History · Since 2000",
- "在广东创办轴承加工业务，从基础设备起步，专注于微型轴承的加工制造。那一年，整个行业还处于早期发展阶段。": "Started bearing processing in Guangdong with basic equipment, focused on miniature bearings; the industry was then in its early stage.",
+ "在河北馆陶创办轴承外圈加工业务，从基础设备起步，专注于微型轴承的加工制造。那一年，整个行业还处于早期发展阶段。": "Started bearing outer ring processing in Guantao, Hebei with basic equipment, focused on miniature bearings; the industry was then in its early stage.",
  "从单一 608 型号扩展到多型号覆盖（626、607、698 等）。引入非标定制能力，开始承接客户的特殊规格需求。": "Expanded from a single 608 to many (626, 607, 698…); added custom capability.",
  "潮磊轴承品牌正式确立。超精机 50 台、合套仪 50 台全部到位，实现合套 100% 全检。日产能力达到 40 万套级别。": "The Chaolei brand was formally established. 50 superfinishers & 50 testers in place, 100% assembly inspection. Daily capacity reached 400k.",
  "不靠证书说话，靠客户回头。": "We let repeat customers speak, not certificates.",
