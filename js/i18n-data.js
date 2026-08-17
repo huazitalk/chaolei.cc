@@ -617,4 +617,5 @@ window.ZH2EN = {
  "\"潮磊轴承\"品牌正式确立。超精机 50 台、合套仪 50 台全部到位，实现合套 100% 全检。日产能力达到 40 万套级别。": "The 'Chaolei Bearings' brand was formally established. 50 superfinishers and 50 assembly testers in place, achieving 100% assembly inspection. Daily capacity reached 400k sets.",
  "。标准件常年备货、当天发货；非标定制 7 天出样、10 天交货 —— 源头工厂直做的速度，保障您的供应链稳定。": ". Standard parts stocked year-round, shipped same day; custom 7-day sampling, 10-day delivery — source-factory speed secures your supply chain.",
  "馆陶县潮磊轴承制造有限责任公司": "Guantao Chaolei Bearing Manufacturing Co., Ltd."
+  "二十六年的专注与积累": "Twenty-Six Years of Dedication and Accumulation",
 };
