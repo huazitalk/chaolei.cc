@@ -615,5 +615,6 @@ window.ZH2EN = {
  "26 年制造基因，3000㎡ 标准化厂房，200 台磨床 / 超精 / 合套设备，日产 40 万套稳定交付。产品远销印度、巴基斯坦、欧洲、迪拜，为全球客户提供可靠传动解决方案。": "26 years of DNA, 3,000 m² standardized plant, 200 grinders/superfinishers/assemblers, 400k sets/day. Exported to India, Pakistan, Europe, Dubai — reliable drivetrain solutions worldwide.",
  "\"标准件现货当天发，非标定制 7 天出样、10 天交货。这是源头工厂直做的速度。\"": "\"Standard parts ship same day; custom 7-day sampling, 10-day delivery — the speed of a source factory.\"",
  "\"潮磊轴承\"品牌正式确立。超精机 50 台、合套仪 50 台全部到位，实现合套 100% 全检。日产能力达到 40 万套级别。": "The 'Chaolei Bearings' brand was formally established. 50 superfinishers and 50 assembly testers in place, achieving 100% assembly inspection. Daily capacity reached 400k sets.",
- "。标准件常年备货、当天发货；非标定制 7 天出样、10 天交货 —— 源头工厂直做的速度，保障您的供应链稳定。": ". Standard parts stocked year-round, shipped same day; custom 7-day sampling, 10-day delivery — source-factory speed secures your supply chain."
+ "。标准件常年备货、当天发货；非标定制 7 天出样、10 天交货 —— 源头工厂直做的速度，保障您的供应链稳定。": ". Standard parts stocked year-round, shipped same day; custom 7-day sampling, 10-day delivery — source-factory speed secures your supply chain.",
+ "馆陶县潮磊轴承制造有限责任公司": "Guantao Chaolei Bearing Manufacturing Co., Ltd."
 };
