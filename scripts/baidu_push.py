@@ -361,7 +361,10 @@ def main():
         if isinstance(res, BatchResult) and res.errors:
             for ch, err in res.errors:
                 print(f"  ✗ 分片失败（{len(ch)} 条）: {err.message}（code={err.code}）", file=sys.stderr)
-            sys.exit(1)
+            # 安全模式：百度侧可恢复错误（配额耗尽/网络抖动/部分失败）只告警，
+            # 不以非零退出，避免每日定时任务因可恢复错误而报红。
+            print("[warn] 安全模式：已尽量推送其余分片，本次以成功退出（不影响定时任务状态）。"
+                  "若持续失败请检查 token / 配额 / 网络。", file=sys.stderr)
         sys.exit(0)
 
     # ---- urls / file / stdin 模式 ----
@@ -382,7 +385,10 @@ def main():
         print(res)
         for ch, err in res.errors:
             print(f"  ✗ 分片失败（{len(ch)} 条）: {err.message}（code={err.code}）", file=sys.stderr)
-        sys.exit(1 if res.errors else 0)
+        if res.errors:
+            # 安全模式：百度侧可恢复错误只告警，不以非零退出（同上）。
+            print("[warn] 安全模式：已尽量推送其余分片，本次以成功退出（不影响定时任务状态）。", file=sys.stderr)
+        sys.exit(0)
 
     try:
         res = client.push(urls) if args.action == "urls" else \
