@@ -52,11 +52,20 @@
 安全提示：百度接口 token 等同站点写入凭证。本仓库版本不硬编码 token，
 必须通过环境变量 BAIDU_PUSH_TOKEN 提供（GitHub Actions 在 Settings → Secrets 配置后由工作流注入）。
 """
-import os, sys, json, socket, argparse, urllib.request, urllib.error
+import os, sys, json, socket, argparse, re, urllib.request, urllib.error
 import xml.etree.ElementTree as ET
 from dataclasses import dataclass, field
 from urllib.parse import urlencode
 from typing import Iterable, List, Optional
+
+
+def _normalize_site(site: str) -> str:
+    """百度接口要求 site 不带协议前缀（如 www.example.com，而非 https://www.example.com）。
+
+    这里统一剥离 http://、https:// 前缀，避免把带协议的站点直接拼进请求而触发 400。
+    """
+    return re.sub(r"^https?://", "", (site or "").strip(), flags=re.I)
+
 
 # ---------- 默认配置（取自你的站点接口）----------
 DEFAULT_SITE  = "https://www.chaolei.cc"
@@ -137,7 +146,7 @@ class BaiduPushClient:
                  timeout: int = 15,
                  max_urls: int = MAX_URLS_PER_POST,
                  user_agent: str = "chaolei-baidu-push/1.0"):
-        self.site = site
+        self.site = _normalize_site(site)
         self.token = token
         if not self.token:
             raise ValueError("百度 token 未配置：请设置环境变量 BAIDU_PUSH_TOKEN（不要在代码中硬编码）")
