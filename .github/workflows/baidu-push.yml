@@ -1,0 +1,27 @@
+name: 百度主动推送（定时）
+
+# 在每天配额重置后，自动把站内 sitemap 提交给百度搜索资源平台
+on:
+  schedule:
+    # GitHub Actions 的 cron 使用 UTC。
+    # 16:10 UTC = 北京时间次日 00:10（百度日配额通常在 0 点重置，重置后第一时间推送）
+    - cron: '10 16 * * *'
+  workflow_dispatch:    # 允许在 Actions 页面手动触发，方便验证 secret 是否配置正确
+
+jobs:
+  baidu-push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      - name: 配置 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: 主动推送 sitemap 至百度搜索资源平台
+        # token 来自仓库 Settings → Secrets 中的 BAIDU_PUSH_TOKEN（不在代码中硬编码）
+        env:
+          BAIDU_PUSH_TOKEN: ${{ secrets.BAIDU_PUSH_TOKEN }}
+        run: python3 scripts/baidu_push.py --sitemap sitemap.xml --safe
