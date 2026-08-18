@@ -77,7 +77,7 @@ DEFAULT_TOKEN = os.environ.get("BAIDU_PUSH_TOKEN", "")  # 仓库内不硬编码 
 
 # 百度接口业务错误码 → 中文释义（响应体未携带 message 时回退使用）
 ERROR_MESSAGES = {
-    400: "请求参数错误（site/token 不匹配，或提交了不支持的 URL）",
+    400: "请求参数错误（site/token 不匹配，或提交了不支持的 URL；也可能是当日配额已用尽——剩余配额不足时百度同样返回 400）",
     401: "校验失败（token 错误，或 site 与 token 不匹配）",
     404: "接口地址错误（请检查 endpoint 拼写）",
     500: "百度接口内部错误，请稍后重试",
