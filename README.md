@@ -19,7 +19,7 @@
 ├── products.html             # 608 系列微型轴承产品中心
 ├── applications.html         # 应用方案（玩具 / 电动工具 / 小家电电机等）
 ├── capabilities.html         # 制造能力（磨床 / 超精机 / 合套仪）
-├── contact.html              # 联系方式（电话 13168867664）
+├── contact.html              # 联系方式（电话/微信/邮件咨询）
 ├── history.html              # 发展历程重定向页（noindex，跳转到 about.html#development-history）
 ├── robots.txt / sitemap.xml  # SEO/GEO 基础文件
 ├── css/  js/  img/  video/   # 资源

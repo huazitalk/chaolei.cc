@@ -564,105 +564,153 @@
   </style>
 <!-- ===== 结构化数据：Organization + LocalBusiness + Breadcrumb + FAQPage ===== -->
 <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://www.chaolei.cc/#organization",
-        "name": "潮磊轴承",
-        "alternateName": "潮磊轴承厂",
-        "url": "https://www.chaolei.cc/",
-        "logo": "https://www.chaolei.cc/img/logo.jpg",
-        "description": "潮磊轴承成立于2000年，是中国河北省邯郸市馆陶县魏僧寨镇杨草厂村的微型深沟球轴承专业制造商，拥有3000㎡标准厂房、200台精密设备，日产40万套，产品出口印度、巴基斯坦、欧洲、迪拜。",        "telephone": "+86-13168867664",
-        "foundingDate": "2000",
-        "address": {
-          "@type": "PostalAddress",
-          "addressCountry": "CN",
-          "addressRegion": "河北省",
-          "addressLocality": "邯郸市馆陶县",
-          "streetAddress": "魏僧寨镇杨草厂村"
-        },
-        "areaServed": [
-          { "@type": "Country", "name": "CN" },
-          { "@type": "Country", "name": "IN" },
-          { "@type": "Country", "name": "PK" },
-          { "@type": "Country", "name": "EU" },
-          { "@type": "Country", "name": "AE" }
-        ]
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.chaolei.cc/#organization",
+      "name": "潮磊轴承",
+      "alternateName": "潮磊轴承厂",
+      "url": "https://www.chaolei.cc/",
+      "logo": "https://www.chaolei.cc/img/logo.jpg",
+      "description": "潮磊轴承成立于2000年，是中国河北省邯郸市馆陶县魏僧寨镇杨草厂村的微型深沟球轴承专业制造商，拥有3000㎡标准厂房、200台精密设备，日产40万套，产品出口印度、巴基斯坦、欧洲、迪拜。",
+      "foundingDate": "2000",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CN",
+        "addressRegion": "河北省",
+        "addressLocality": "邯郸市馆陶县",
+        "streetAddress": "魏僧寨镇杨草厂村"
       },
-      {
-        "@type": "LocalBusiness",
-        "@id": "https://www.chaolei.cc/#localbusiness",
-        "name": "潮磊轴承厂",
-        "image": "https://www.chaolei.cc/img/logo.jpg",
-        "url": "https://www.chaolei.cc/",
-        "telephone": "+86-13168867664",
-        "priceRange": "￥",
-        "address": {
-          "@type": "PostalAddress",
-          "addressCountry": "CN",
-          "addressRegion": "河北省",
-          "addressLocality": "邯郸市馆陶县",
-          "streetAddress": "魏僧寨镇杨草厂村"
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "CN"
         },
-        "openingHoursSpecification": {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
-          "opens": "08:00",
-          "closes": "18:00"
+        {
+          "@type": "Country",
+          "name": "IN"
+        },
+        {
+          "@type": "Country",
+          "name": "PK"
+        },
+        {
+          "@type": "Country",
+          "name": "EU"
+        },
+        {
+          "@type": "Country",
+          "name": "AE"
         }
+      ],
+      "telephone": "+86-13168867664"
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://www.chaolei.cc/#localbusiness",
+      "name": "潮磊轴承厂",
+      "image": "https://www.chaolei.cc/img/logo.jpg",
+      "url": "https://www.chaolei.cc/",
+      "priceRange": "￥",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CN",
+        "addressRegion": "河北省",
+        "addressLocality": "邯郸市馆陶县",
+        "streetAddress": "魏僧寨镇杨草厂村"
       },
-      {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://www.chaolei.cc/" }
-        ]
-      },
-      {
-        "@type": "FAQPage",
-        "@id": "https://www.chaolei.cc/#faq",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "潮磊轴承主要生产什么类型的轴承？",
-            "acceptedAnswer": { "@type": "Answer", "text": "潮磊轴承专注微型深沟球轴承制造，主力为 608 系列（轴承钢、碳钢、单凸、双凸等变体）及 626、607、698、627、696、6800、688、687、689、803、6900、6901 等 15+ 型号，并提供非标来图定制。" }
-          },
-          {
-            "@type": "Question",
-            "name": "是否支持非标轴承定制？",
-            "acceptedAnswer": { "@type": "Answer", "text": "支持。工厂具备磨削—超精—合套全流程自主管控能力，可按客户来图来样定制非标深沟球轴承，非标定制 7 天出样、10 天交货。" }
-          },
-          {
-            "@type": "Question",
-            "name": "交货周期一般多久？",
-            "acceptedAnswer": { "@type": "Answer", "text": "标准件常年备货、当天发货；非标定制 7 天出样、10 天交货，源头工厂直做的速度可保障供应链稳定。" }
-          },
-          {
-            "@type": "Question",
-            "name": "是否提供免费寄样？",
-            "acceptedAnswer": { "@type": "Answer", "text": "提供。标准件支持免费寄样，客户收到后自行验收满意再下单；若出现品质问题，7 天包退、15 天包换，往返运费由工厂承担。" }
-          },
-          {
-            "@type": "Question",
-            "name": "产品出口哪些国家和地区？",
-            "acceptedAnswer": { "@type": "Answer", "text": "产品远销印度、巴基斯坦、欧洲、迪拜（中东）等市场，支持外贸验厂与多语种资料需求。" }
-          },
-          {
-            "@type": "Question",
-            "name": "产品质量如何保证？是否有认证？",
-            "acceptedAnswer": { "@type": "Answer", "text": "工厂通过磨削—超精—合套全流程自主管控，50 台合套仪实现合套 100% 全检；目前暂未获得第三方认证证书（如 ISO 9001），坚持以产品实测与稳定交付建立信任。" }
-          },
-          {
-            "@type": "Question",
-            "name": "如何联系潮磊轴承询价或预约参观？",
-            "acceptedAnswer": { "@type": "Answer", "text": "访问‘联系我们’页面提交需求，或预约实地参观工厂。" }
-          }
-        ]
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "08:00",
+        "closes": "18:00"
       }
-    ]
-  }
-  </script>
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://www.chaolei.cc/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.chaolei.cc/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "潮磊轴承主要生产什么类型的轴承？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "潮磊轴承专注微型深沟球轴承制造，主力为 608 系列（轴承钢、碳钢、单凸、双凸等变体）及 626、607、698、627、696、6800、688、687、689、803、6900、6901 等 15+ 型号，并提供非标来图定制。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "是否支持非标轴承定制？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "支持。工厂具备磨削—超精—合套全流程自主管控能力，可按客户来图来样定制非标深沟球轴承，非标定制 7 天出样、10 天交货。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "交货周期一般多久？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "标准件常年备货、当天发货；非标定制 7 天出样、10 天交货，源头工厂直做的速度可保障供应链稳定。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "是否提供免费寄样？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "提供。标准件支持免费寄样，客户收到后自行验收满意再下单；若出现品质问题，7 天包退、15 天包换，往返运费由工厂承担。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "产品出口哪些国家和地区？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "产品远销印度、巴基斯坦、欧洲、迪拜（中东）等市场，支持外贸验厂与多语种资料需求。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "产品质量如何保证？是否有认证？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "工厂通过磨削—超精—合套全流程自主管控，50 台合套仪实现合套 100% 全检；目前暂未获得第三方认证证书（如 ISO 9001），坚持以产品实测与稳定交付建立信任。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "如何联系潮磊轴承询价或预约参观？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "访问‘联系我们’页面提交需求，或预约实地参观工厂。"
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
 <script>
 (function(){
   try{
@@ -713,10 +761,7 @@
 <svg class="top-icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
 <span><span data-i18n="周一至周六 8:00-18:00">周一至周六 8:00-18:00</span></span>
 </div>
-<div class="top-bar-item top-phone">
-<svg class="top-icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"></path></svg>
-<span>13168867664</span>
-</div>
+
 </div>
 </div>
 </div>
@@ -736,6 +781,7 @@
 <a href="products.html"><span data-i18n="产品中心">产品中心</span></a>
 <a href="applications.html"><span data-i18n="应用案例">应用案例</span></a>
 <a href="capabilities.html"><span data-i18n="生产能力">生产能力</span></a>
+<a href="blog/index.html"><span data-i18n="官网博客">官网博客</span></a>
 <a href="contact.html"><span data-i18n="联系我们">联系我们</span></a>
 </nav>
 <button aria-label="切换菜单" class="mobile-toggle" id="mobileToggle">
@@ -755,7 +801,7 @@
 <a href="products.html"><span data-i18n="产品中心">产品中心</span></a>
 <a href="applications.html"><span data-i18n="应用案例">应用案例</span></a>
 <a href="capabilities.html"><span data-i18n="生产能力">生产能力</span></a>
-<a href="contact.html"><span data-i18n="联系我们">联系我们</span></a>
+<a href="blog/index.html"><span data-i18n="官网博客">官网博客</span></a><a href="contact.html"><span data-i18n="联系我们">联系我们</span></a>
 <a class="mobile-cta" href="contact.html"><span data-i18n="立即询价">立即询价</span></a>
 </div>
 <main id="main">
@@ -1300,16 +1346,39 @@
   "@type": "Product",
   "name": "608 微型深沟球轴承",
   "description": "潮磊轴承 608 系列微型深沟球轴承，内径 8mm、外径 22mm、厚度 7mm，提供轴承钢(GCr15)、碳钢、不锈钢(304)材质，以及 ZZ 双防尘盖、2RS 橡胶密封、开放式多种结构，支持非标来图定制，7 天出样。",
-  "brand": { "@type": "Brand", "name": "潮磊轴承" },
+  "brand": {
+    "@type": "Brand",
+    "name": "潮磊轴承"
+  },
   "image": "https://www.chaolei.cc/img/products/608-tg.png",
   "url": "https://www.chaolei.cc/products.html",
   "category": "微型深沟球轴承",
   "additionalProperty": [
-    { "@type": "PropertyValue", "name": "内径", "value": "8 mm" },
-    { "@type": "PropertyValue", "name": "外径", "value": "22 mm" },
-    { "@type": "PropertyValue", "name": "厚度", "value": "7 mm" },
-    { "@type": "PropertyValue", "name": "材质", "value": "轴承钢 GCr15 / 碳钢 / 不锈钢 304" },
-    { "@type": "PropertyValue", "name": "密封形式", "value": "ZZ 双防尘盖 / 2RS 橡胶密封 / 开放式" }
+    {
+      "@type": "PropertyValue",
+      "name": "内径",
+      "value": "8 mm"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "外径",
+      "value": "22 mm"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "厚度",
+      "value": "7 mm"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "材质",
+      "value": "轴承钢 GCr15 / 碳钢 / 不锈钢 304"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "密封形式",
+      "value": "ZZ 双防尘盖 / 2RS 橡胶密封 / 开放式"
+    }
   ]
 }
 </script>

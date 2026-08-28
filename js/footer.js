@@ -14,7 +14,7 @@
     '<div class="footer-col"><h4><span data-i18n="应用 Applications">应用 Applications</span></h4><a href="applications.html"><span data-i18n="电动工具">电动工具</span></a><a href="applications.html"><span data-i18n="家电电机">家电电机</span></a><a href="applications.html"><span data-i18n="滑板/健身器材">滑板/健身器材</span></a><a href="applications.html"><span data-i18n="出口市场">出口市场</span></a></div>\n' +
     '<div class="footer-col"><h4><span data-i18n="公司 Company">公司 Company</span></h4><a href="about.html"><span data-i18n="关于潮磊">关于潮磊</span></a><a href="history.html"><span data-i18n="发展历程">发展历程</span></a><a href="capabilities.html"><span data-i18n="生产能力">生产能力</span></a><a href="contact.html"><span data-i18n="联系我们">联系我们</span></a></div>\n' +
     '<div class="footer-col footer-contact"><h4><span data-i18n="联系 Contact">联系 Contact</span></h4>\n' +
-    '<p>📞 13168867664</p>\n' +
+    
     '<p><span data-i18n="💬 微信：xingzhitalk">💬 微信：xingzhitalk</span></p>\n' +
     '<p class="footer-contact-line"><span>𝕏</span> <a href="https://x.com/chaoleihb" rel="noopener" style="color:var(--accent);" target="_blank">@chaoleihb</a></p>\n' +
     '<p><span data-i18n="📍 中国河北省邯郸市馆陶县魏僧寨镇杨草厂村">📍 中国河北省邯郸市馆陶县魏僧寨镇杨草厂村</span></p></div>\n' +
