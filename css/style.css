@@ -748,7 +748,7 @@ p { margin-bottom: 14px; color: var(--ink-2); }
   box-shadow: 0 10px 30px rgba(0,0,0,.45); transition: all .25s;
 }
 .video-play-btn:hover { transform: translate(-50%,-50%) scale(1.06); background: var(--accent); }
-.video-frame:not(.paused) .video-play-btn { opacity: 0; pointer-events: none; }
+.video-frame:not(.paused) .video-play-btn { opacity: .92; }
 .video-play-btn svg { width: 38px; height: 38px; margin-left: 5px; }
 .video-controls {
   position: absolute; left: 0; right: 0; bottom: 0; z-index: 5;
