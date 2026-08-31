@@ -108,8 +108,7 @@ document.addEventListener('DOMContentLoaded', function () {
         muteBtn.innerHTML = video.muted ? muteIcon : soundIcon;
       });
     }
-    var auto = video.play();
-    if (auto && auto.catch) { auto.catch(function () { frame.classList.add('paused'); }); }
+    // 改为点击播放：不自动播放，仅保留 play/pause 切换
   });
 
   // ---- Card hover lift effect enhancement ----
