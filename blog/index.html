@@ -119,6 +119,24 @@
 <ul class="article-list">
 
 <li>
+<article class="article-card" data-article="size-chart" data-href="miniature-bearing-size-chart.html" tabindex="0" role="button" aria-label="打开：微型深沟球轴承型号尺寸对照手册（全系列尺寸表）" data-i18n-attr='{"aria-label": "打开：微型深沟球轴承型号尺寸对照手册（全系列尺寸表）"}'>
+<div class="article-card__top">
+<ul class="tag-list" aria-label="文章标签">
+<li class="tag-pill" data-i18n="尺寸手册">尺寸手册</li>
+<li class="tag-pill" data-i18n="608轴承">608轴承</li>
+<li class="tag-pill" data-i18n="微型轴承">微型轴承</li>
+<li class="tag-pill" data-i18n="型号对照">型号对照</li>
+<li class="tag-pill" data-i18n="轴承选型">轴承选型</li>
+</ul>
+<time class="article-card__date" datetime="2026-09-01">2026-09-01</time>
+</div>
+<h2 class="article-card__title" data-i18n="微型深沟球轴承型号尺寸对照手册：68/69/60/62/63/MR/R/F 全系列尺寸表（2026 版）">微型深沟球轴承型号尺寸对照手册：68/69/60/62/63/MR/R/F 全系列尺寸表（2026 版）</h2>
+<p class="article-card__excerpt" data-i18n="一张表查完 100 余个型号的内径 × 外径 × 高度。附后缀代号速查（ZZ/2RS/C3/P6/ABEC）、内径速算法三档规则、精度与游隙等级对照，以及 608 的互换替代规则。依据 GB/T 276 / ISO 15。">一张表查完 100 余个型号的内径 × 外径 × 高度。附后缀代号速查（ZZ/2RS/C3/P6/ABEC）、内径速算法三档规则、精度与游隙等级对照，以及 608 的互换替代规则。依据 GB/T 276 / ISO 15。</p>
+<div class="article-card__more" data-i18n="打开完整尺寸表 →">打开完整尺寸表 →</div>
+</article>
+</li>
+
+<li>
 <article class="article-card" data-article="folding" tabindex="0" role="button" aria-label="阅读全文：折叠门吊轮为何采用深沟球轴承？从结构特性到工况匹配的工程解析" data-i18n-attr='{"aria-label": "阅读全文：折叠门吊轮为何采用深沟球轴承？从结构特性到工况匹配的工程解析"}'>
 <div class="article-card__top">
 <ul class="tag-list" aria-label="文章标签">
@@ -467,6 +485,47 @@
               "articleSection": "选型指南",
               "mainEntityOfPage": "https://www.chaolei.cc/blog/608-bearing-supplier-selection.html"
             }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "BlogPosting",
+              "@id": "https://www.chaolei.cc/blog/miniature-bearing-size-chart.html",
+              "headline": "微型深沟球轴承型号尺寸对照手册：68/69/60/62/63/MR/R/F 全系列尺寸表（2026 版）",
+              "description": "一张表查完微型与小型深沟球轴承尺寸：八大系列共 100 余型号的内径 × 外径 × 高度全表，附后缀代号速查、内径速算法、精度与游隙等级对照、608 互换替代规则。",
+              "datePublished": "2026-09-01",
+              "dateModified": "2026-09-01",
+              "author": {
+                "@type": "Organization",
+                "name": "馆陶县潮磊轴承制造有限责任公司",
+                "url": "https://www.chaolei.cc/",
+                "telephone": "+86-13168867664"
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "潮磊轴承",
+                "logo": {
+                  "@type": "ImageObject",
+                  "url": "https://www.chaolei.cc/img/logo.jpg"
+                },
+                "telephone": "+86-13168867664"
+              },
+              "keywords": [
+                "轴承尺寸表",
+                "微型轴承",
+                "608轴承",
+                "深沟球轴承",
+                "型号对照",
+                "轴承选型",
+                "轴承代号",
+                "内径速算法",
+                "ZZ/2RS",
+                "馆陶轴承"
+              ],
+              "articleSection": "尺寸手册",
+              "mainEntityOfPage": "https://www.chaolei.cc/blog/miniature-bearing-size-chart.html"
+            }
           }
         ]
       }
@@ -550,6 +609,15 @@
   }
 
   document.querySelectorAll('.article-card').forEach(function (card) {
+    // 带 data-href 的卡片直接跳转独立页（内容含大表格时浮窗体验不佳）
+    var href = card.getAttribute('data-href');
+    if (href) {
+      card.addEventListener('click', function () { window.location.href = href; });
+      card.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); window.location.href = href; }
+      });
+      return;
+    }
     card.addEventListener('click', function () { openBlog(card); });
     card.addEventListener('keydown', function (e) {
       if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openBlog(card); }
