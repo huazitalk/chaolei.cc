@@ -43,6 +43,41 @@
 .article-body .step-list li::before{counter-increment:step;content:counter(step);position:absolute;left:0;top:0;width:24px;height:24px;background:#0E2A47;color:#fff;border-radius:50%;text-align:center;line-height:24px;font-size:13px;font-weight:700;}
 .article-body .tip{background:#eaf2fb;border-left:4px solid #E8590C;padding:14px 16px;border-radius:6px;margin:16px 0;}
 #blogModalTags{margin-top:10px;}
+/* ===== 尺寸手册弹窗正文：排版对齐独立页 miniature-bearing-size-chart.html ===== */
+.toc-box{background:#f8fafc;border:1px solid var(--line);border-radius:var(--radius-lg);padding:22px 26px;margin:0 0 30px;}
+.toc-box .toc-title{font-size:15px;font-weight:700;color:var(--navy);margin:0 0 14px;letter-spacing:.3px;}
+.toc-box ol{margin:0;padding-left:20px;columns:2;column-gap:36px;}
+.toc-box li{margin:7px 0;font-size:14.5px;line-height:1.5;break-inside:avoid;}
+.toc-box a{color:var(--ink-2);text-decoration:none;transition:color .2s;}
+.toc-box a:hover{color:var(--accent);}
+.series-nav{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 24px;}
+.series-nav a{display:inline-block;padding:7px 15px;border:1px solid var(--line);border-radius:20px;font-size:13px;color:var(--navy);text-decoration:none;background:#fff;transition:all .2s;}
+.series-nav a:hover{border-color:var(--accent);color:var(--accent);background:#fff5ec;}
+.size-wrap{overflow-x:auto;margin:18px 0;border:1px solid var(--line);border-radius:10px;-webkit-overflow-scrolling:touch;}
+.size-table{width:100%;border-collapse:collapse;font-size:14px;min-width:560px;}
+.size-table th{background:var(--navy);color:#fff;padding:11px 12px;text-align:center;font-weight:600;white-space:nowrap;font-size:13px;}
+.size-table td{padding:9px 12px;border-bottom:1px solid var(--line);text-align:center;vertical-align:middle;}
+.size-table td:first-child{font-weight:700;color:var(--navy);white-space:nowrap;}
+.size-table td.note{text-align:left;color:var(--ink-3);font-size:13px;}
+.size-table tbody tr:nth-child(even) td{background:#fafbfc;}
+.size-table tbody tr:hover td{background:#f0f4f8;}
+.size-table tr.row-key td{background:#fff7ef !important;}
+.size-table tr.row-key td:first-child{color:var(--accent);}
+.def-list{margin:0 0 24px;font-size:15px;line-height:1.8;color:#1f2937;}
+.def-list dt{font-weight:700;color:#0E2A47;margin-top:14px;}
+.def-list dd{margin:4px 0 0 20px;color:#1f2937;}
+.callout{border:1px solid #f3d9a4;background:#fffaf0;border-radius:10px;padding:16px 18px;margin:18px 0;font-size:15px;line-height:1.8;}
+.callout b{color:#854F0B;}
+/* 弹窗内点目录跳转：无需为固定头部预留空间，留 8px 呼吸即可 */
+#blogModal .article-body h2[id],#blogModal .article-body h3[id]{scroll-margin-top:8px;}
+@media (max-width: 640px) {
+  .toc-box ol{columns:1;}
+  .toc-box{padding:18px 18px;}
+  .size-table{font-size:13px;min-width:520px;}
+  .size-table th,.size-table td{padding:8px 9px;}
+  #blogModal .article-body h2{font-size:19px;margin:32px 0 12px;}
+  #blogModal .article-body h3{font-size:16.5px;}
+}
 </style>
 <!-- 百度自动推送：页面被访问时自动通知百度抓取，非阻塞、不影响渲染 -->
 <script>
@@ -119,7 +154,7 @@
 <ul class="article-list">
 
 <li>
-<article class="article-card" data-article="size-chart" data-href="miniature-bearing-size-chart.html" tabindex="0" role="button" aria-label="打开：微型深沟球轴承型号尺寸对照手册（全系列尺寸表）" data-i18n-attr='{"aria-label": "打开：微型深沟球轴承型号尺寸对照手册（全系列尺寸表）"}'>
+<article class="article-card" data-article="size-chart" tabindex="0" role="button" aria-label="阅读全文：微型深沟球轴承型号尺寸对照手册：68/69/60/62/63/MR/R/F 全系列尺寸表（2026 版）" data-i18n-attr='{"aria-label": "阅读全文：微型深沟球轴承型号尺寸对照手册：68/69/60/62/63/MR/R/F 全系列尺寸表（2026 版）"}'>
 <div class="article-card__top">
 <ul class="tag-list" aria-label="文章标签">
 <li class="tag-pill" data-i18n="尺寸手册">尺寸手册</li>
@@ -132,7 +167,7 @@
 </div>
 <h2 class="article-card__title" data-i18n="微型深沟球轴承型号尺寸对照手册：68/69/60/62/63/MR/R/F 全系列尺寸表（2026 版）">微型深沟球轴承型号尺寸对照手册：68/69/60/62/63/MR/R/F 全系列尺寸表（2026 版）</h2>
 <p class="article-card__excerpt" data-i18n="一张表查完 100 余个型号的内径 × 外径 × 高度。附后缀代号速查（ZZ/2RS/C3/P6/ABEC）、内径速算法三档规则、精度与游隙等级对照，以及 608 的互换替代规则。依据 GB/T 276 / ISO 15。">一张表查完 100 余个型号的内径 × 外径 × 高度。附后缀代号速查（ZZ/2RS/C3/P6/ABEC）、内径速算法三档规则、精度与游隙等级对照，以及 608 的互换替代规则。依据 GB/T 276 / ISO 15。</p>
-<div class="article-card__more" data-i18n="打开完整尺寸表 →">打开完整尺寸表 →</div>
+<div class="article-card__more" data-i18n="阅读全文 →">阅读全文 →</div>
 </article>
 </li>
 
@@ -377,6 +412,474 @@
 
 <p data-i18n="作为 608 微型轴承的源头工厂，潮磊在馆陶自有磨床、超精、合套全流程产线，可按吊轮厂、门窗五金厂的工况提供轴承钢 608ZZ / 608-2RS 及非标定制。若您正在为折叠门吊轮选型，欢迎寄样实测——我们先验样、再谈批量。">作为 608 微型轴承的源头工厂，潮磊在馆陶自有磨床、超精、合套全流程产线，可按吊轮厂、门窗五金厂的工况提供<b>轴承钢 608ZZ / 608-2RS 及非标定制</b>。若您正在为折叠门吊轮选型，欢迎寄样实测——我们先验样、再谈批量。</p>
 
+<div class="text-center mt-4">
+<a class="btn btn-primary btn-lg" href="../contact.html" data-i18n="联系我们获取报价 / 免费样品">联系我们获取报价 / 免费样品</a>
+<a class="btn btn-navy" href="../products.html" style="margin-left:12px;" data-i18n="查看 608 等全系产品">查看 608 等全系产品</a>
+</div>
+</div>
+</template>
+
+<!-- 文章完整内容模板：微型深沟球轴承型号尺寸对照手册（68/69/60/62/63/MR/R/F 全系列） -->
+<template id="tpl-size-chart">
+<div class="article-body">
+<!-- GEO: TL;DR 摘要，便于 AI 引擎直接提取 -->
+<div class="tip" style="margin-bottom:24px;">
+<p data-i18n="608 轴承的尺寸是内径 8 mm × 外径 22 mm × 高度 7 mm，倒角 r 最小 0.3 mm（GB/T 276 / ISO 15）。这是全文被查询最多的型号，也是滑板轮、吊轮、玩具、小家电电机使用量最大的规格。本手册给出 68、69、60、62、63、MR、R、F 八大系列共 100 余个型号的 d × D × B 完整尺寸表，并附三条最常用的判断规则：①内径速算法——内径 ≥ 10 mm 时，型号末两位 × 5 即内径毫米数（6204 → 04×5 = 20 mm）；内径 < 10 mm 时，末一位数字就是内径（608 → 8 mm）；②ZZ 与 2RS 的外形尺寸完全相同，只差密封形式，不差安装尺寸；③只有 d、D、B 三项同时相同才能互换，只差一项就必须改轴或改孔。"><b>TL;DR</b>：<b>608 轴承的尺寸是内径 8 mm × 外径 22 mm × 高度 7 mm，倒角 r 最小 0.3 mm</b>（GB/T 276 / ISO 15）。这是全文被查询最多的型号，也是滑板轮、吊轮、玩具、小家电电机使用量最大的规格。本手册给出 68、69、60、62、63、MR、R、F 八大系列共 100 余个型号的 <b>d × D × B 完整尺寸表</b>，并附三条最常用的判断规则：<b>①内径速算法</b>——内径 ≥ 10 mm 时，型号末两位 × 5 即内径毫米数（6204 → 04×5 = 20 mm）；内径 &lt; 10 mm 时，末一位数字就是内径（608 → 8 mm）；<b>②ZZ 与 2RS 的外形尺寸完全相同</b>，只差密封形式，不差安装尺寸；<b>③只有 d、D、B 三项同时相同才能互换</b>，只差一项就必须改轴或改孔。</p>
+</div>
+
+<!-- 目录导航 -->
+<nav class="toc-box" aria-label="文章目录">
+<p class="toc-title" data-i18n="目录">目录</p>
+<ol>
+<li><a href="#summary" data-i18n="一、结论先行：三句话看懂这张表">一、结论先行：三句话看懂这张表</a></li>
+<li><a href="#quick" data-i18n="二、一分钟速查：最常用的 12 个型号">二、一分钟速查：最常用的 12 个型号</a></li>
+<li><a href="#naming" data-i18n="三、轴承型号怎么读：命名规则解码">三、轴承型号怎么读：命名规则解码</a></li>
+<li><a href="#tables" data-i18n="四、全系列尺寸表（八系列）">四、全系列尺寸表（八系列）</a></li>
+<li><a href="#suffix" data-i18n="五、后缀代号速查表">五、后缀代号速查表</a></li>
+<li><a href="#selection" data-i18n="六、选型三步法">六、选型三步法</a></li>
+<li><a href="#interchange" data-i18n="七、互换与替代：608 能用什么代替？">七、互换与替代：608 能用什么代替？</a></li>
+<li><a href="#supply" data-i18n="八、潮磊供货范围">八、潮磊供货范围</a></li>
+<li><a href="#faq" data-i18n="常见问题（FAQ）">常见问题（FAQ）</a></li>
+</ol>
+</nav>
+
+<h2 data-i18n="本文适合谁">本文适合谁</h2>
+<ul class="dot-list">
+<li data-i18n="需要按装配空间反查型号的机械设计 / 结构工程师"><b>机械设计 / 结构工程师</b>：需要按装配空间反查型号</li>
+<li data-i18n="手上有旧型号、要找替代规格的采购与维修（MRO）人员"><b>采购与维修（MRO）人员</b>：手上有旧型号，要找替代规格</li>
+<li data-i18n="玩具、小家电、电动工具、门窗五金、模型整机厂选型人员"><b>整机厂选型人员</b>：玩具、小家电、电动工具、门窗五金、模型</li>
+<li data-i18n="需要给下游客户出规格表的轴承代理商与经销商"><b>轴承代理商与经销商</b>：需要给下游客户出规格表</li>
+</ul>
+
+<!-- GEO: 关键实体定义，便于 AI 提取 -->
+<h2 data-i18n="关键术语定义">关键术语定义</h2>
+<dl class="def-list">
+<dt data-i18n="内径（d / Bore）">内径（d / Bore）</dt>
+<dd data-i18n="轴承内圈的孔径，与轴配合，是选型的第一约束尺寸。单位 mm。">轴承内圈的孔径，与轴配合，是选型的第一约束尺寸。单位 mm。</dd>
+<dt data-i18n="外径（D / O.D.）">外径（D / O.D.）</dt>
+<dd data-i18n="轴承外圈的外径，与座孔（轴承室）配合，决定安装空间。单位 mm。">轴承外圈的外径，与座孔（轴承室）配合，决定安装空间。单位 mm。</dd>
+<dt data-i18n="高度 / 宽度（B / Width）">高度 / 宽度（B / Width）</dt>
+<dd data-i18n="轴承两个端面之间的轴向厚度，决定轴向（推力方向）的占用空间。单位 mm。">轴承两个端面之间的轴向厚度，决定轴向（推力方向）的占用空间。单位 mm。</dd>
+<dt data-i18n="倒角 r（Chamfer）">倒角 r（Chamfer）</dt>
+<dd data-i18n="内外圈端面与滚道交界的圆角半径最小值，影响轴肩与孔肩的设计高度。">内外圈端面与滚道交界的圆角半径最小值，影响轴肩与孔肩的设计高度。</dd>
+<dt data-i18n="深沟球轴承（Deep Groove Ball Bearing, DGBB）">深沟球轴承（Deep Groove Ball Bearing, DGBB）</dt>
+<dd data-i18n="内外圈带连续深沟滚道、以钢球为滚动体的滚动轴承，主要承受径向载荷，可兼受双向轻轴向载荷，是应用最广的轴承类型（GB/T 276、ISO 15）。">内外圈带连续深沟滚道、以钢球为滚动体的滚动轴承，主要承受径向载荷，可兼受双向轻轴向载荷，是应用最广的轴承类型（GB/T 276、ISO 15）。</dd>
+<dt data-i18n="尺寸系列（Dimension Series）">尺寸系列（Dimension Series）</dt>
+<dd data-i18n="轴承代号中表示「外径与高度相对内径的比例」的代号。同一内径下，系列数字越大，外径与高度越大，承载能力越强：68 < 69 < 60 < 62 < 63 < 64。">轴承代号中表示「外径与高度相对内径的比例」的代号。同一内径下，系列数字越大，外径与高度越大，承载能力越强：<b>68 &lt; 69 &lt; 60 &lt; 62 &lt; 63 &lt; 64</b>。</dd>
+<dt data-i18n="径向游隙（Radial Internal Clearance）">径向游隙（Radial Internal Clearance）</dt>
+<dd data-i18n="无载荷时内圈相对外圈可移动的径向位移量，按 GB/T 4604.1 分为 C2 < C0（普通组）< C3 < C4 < C5。">无载荷时内圈相对外圈可移动的径向位移量，按 GB/T 4604.1 分为 C2 &lt; C0（普通组）&lt; C3 &lt; C4 &lt; C5。</dd>
+<dt data-i18n="公差等级（Tolerance Class）">公差等级（Tolerance Class）</dt>
+<dd data-i18n="轴承尺寸与旋转精度的等级，按 GB/T 307.1 分为 P0（普通级，默认不标注）< P6 < P5 < P4 < P2。">轴承尺寸与旋转精度的等级，按 GB/T 307.1 分为 P0（普通级，默认不标注）&lt; P6 &lt; P5 &lt; P4 &lt; P2。</dd>
+</dl>
+
+<h2 id="summary" data-i18n="一、结论先行：三句话看懂这张表">一、结论先行：三句话看懂这张表</h2>
+<ol class="step-list">
+<li data-i18n="尺寸是标准的，性能不是。同一型号（如 608）的 d × D × B 在全球任何厂家都一致，这是 ISO 15 强制的互换性基础；但额定载荷、极限转速、噪声等级、寿命因厂家工艺而异，这才是选型真正要比较的东西。"><b>尺寸是标准的，性能不是。</b>同一型号（如 608）的 d × D × B 在全球任何厂家都一致，这是 ISO 15 强制的互换性基础；但额定载荷、极限转速、噪声等级、寿命因厂家工艺而异，这才是选型真正要比较的东西。</li>
+<li data-i18n="先看空间，后看载荷。选型顺序永远是：轴径定 d → 座孔定 D → 轴向空间定 B → 最后复核载荷与转速。三步走完，型号就唯一了。"><b>先看空间，后看载荷。</b>选型顺序永远是：<b>轴径定 d → 座孔定 D → 轴向空间定 B → 最后复核载荷与转速</b>。三步走完，型号就唯一了。</li>
+<li data-i18n="密封与游隙不改尺寸。ZZ、2RS、C3、P6 这些后缀只改性能，不改 d × D × B。所以 608ZZ、608-2RS、608ZZ-C3 的安装尺寸完全相同，可以直接互换。"><b>密封与游隙不改尺寸。</b>ZZ、2RS、C3、P6 这些后缀只改性能，不改 d × D × B。所以 608ZZ、608-2RS、608ZZ-C3 的安装尺寸完全相同，可以直接互换。</li>
+</ol>
+
+<h2 id="quick" data-i18n="二、一分钟速查：最常用的 12 个型号">二、一分钟速查：最常用的 12 个型号</h2>
+<p data-i18n="90% 的查询集中在这 12 个型号上。若你只需要一个数字，看这张表就够了。">90% 的查询集中在这 12 个型号上。若你只需要一个数字，看这张表就够了。</p>
+<div class="size-wrap">
+<table class="size-table">
+<thead>
+<tr><th data-i18n="型号">型号</th><th data-i18n="内径 d (mm)">内径 d (mm)</th><th data-i18n="外径 D (mm)">外径 D (mm)</th><th data-i18n="高度 B (mm)">高度 B (mm)</th><th data-i18n="典型应用">典型应用</th></tr>
+</thead>
+<tbody>
+<tr class="row-key"><td>608</td><td>8</td><td>22</td><td>7</td><td class="note" data-i18n="滑板轮、折叠门吊轮、玩具、小家电电机">滑板轮、折叠门吊轮、玩具、小家电电机</td></tr>
+<tr><td>688</td><td>8</td><td>16</td><td>5</td><td class="note" data-i18n="模型、微型电机、医疗器械">模型、微型电机、医疗器械</td></tr>
+<tr><td>698</td><td>8</td><td>19</td><td>6</td><td class="note" data-i18n="薄壁结构的微型传动">薄壁结构的微型传动</td></tr>
+<tr><td>628</td><td>8</td><td>24</td><td>8</td><td class="note" data-i18n="需要更高承载的 8 mm 轴">需要更高承载的 8 mm 轴</td></tr>
+<tr><td>607</td><td>7</td><td>19</td><td>6</td><td class="note" data-i18n="小型电机、渔线轮">小型电机、渔线轮</td></tr>
+<tr><td>609</td><td>9</td><td>24</td><td>7</td><td class="note" data-i18n="电动工具、小型风机">电动工具、小型风机</td></tr>
+<tr><td>626</td><td>6</td><td>19</td><td>6</td><td class="note" data-i18n="玩具齿轮箱、微型水泵">玩具齿轮箱、微型水泵</td></tr>
+<tr><td>627</td><td>7</td><td>22</td><td>7</td><td class="note" data-i18n="与 608 同外径不同内径">与 608 同外径不同内径</td></tr>
+<tr><td>629</td><td>9</td><td>26</td><td>8</td><td class="note" data-i18n="需要更大承载的 9 mm 轴">需要更大承载的 9 mm 轴</td></tr>
+<tr><td>6000</td><td>10</td><td>26</td><td>8</td><td class="note" data-i18n="通用小型机械、农机">通用小型机械、农机</td></tr>
+<tr><td>6200</td><td>10</td><td>30</td><td>9</td><td class="note" data-i18n="通用机械、输送辊">通用机械、输送辊</td></tr>
+<tr><td>6203</td><td>17</td><td>40</td><td>12</td><td class="note" data-i18n="电机、泵、风机主力型号">电机、泵、风机主力型号</td></tr>
+</tbody>
+</table>
+</div>
+<p class="tip" data-i18n="潮磊提示：608 是微型轴承里用量最大的规格，也是我们的主力产品。它的通用性极强——外径 22 mm × 高度 7 mm 这个外形，几乎成了玩具、滑板、吊轮行业的默认接口。"><b>潮磊提示</b>：608 是微型轴承里用量最大的规格，也是我们的主力产品。它的通用性极强——<b>外径 22 mm × 高度 7 mm</b> 这个外形，几乎成了玩具、滑板、吊轮行业的默认接口。</p>
+
+<h2 id="naming" data-i18n="三、轴承型号怎么读：命名规则解码">三、轴承型号怎么读：命名规则解码</h2>
+<p data-i18n="一个完整的轴承代号 = 类型代号 + 尺寸系列代号 + 内径代号 + 后缀代号。"><b>一个完整的轴承代号 = 类型代号 + 尺寸系列代号 + 内径代号 + 后缀代号。</b></p>
+<p data-i18n="以 608-2RS/C3 为例：">以 <b>608-2RS/C3</b> 为例：</p>
+<table class="data-table">
+<tr><th data-i18n="片段">片段</th><th data-i18n="含义">含义</th></tr>
+<tr><td><b>6</b></td><td data-i18n="类型代号：深沟球轴承">类型代号：深沟球轴承</td></tr>
+<tr><td><b>0</b></td><td data-i18n="尺寸系列代号（0 系列，薄壁）">尺寸系列代号（0 系列，薄壁）</td></tr>
+<tr><td><b>8</b></td><td data-i18n="内径代号：内径 8 mm（< 10 mm 时直接读数字）">内径代号：内径 8 mm（&lt; 10 mm 时直接读数字）</td></tr>
+<tr><td><b>-2RS</b></td><td data-i18n="后缀：双面橡胶接触式密封">后缀：双面橡胶接触式密封</td></tr>
+<tr><td><b>/C3</b></td><td data-i18n="后缀：径向游隙大于普通组">后缀：径向游隙大于普通组</td></tr>
+</table>
+
+<h3 data-i18n="内径速算法（三档规则）">内径速算法（三档规则）</h3>
+<table class="data-table">
+<tr><th data-i18n="内径范围">内径范围</th><th data-i18n="读法">读法</th><th data-i18n="举例">举例</th></tr>
+<tr><td data-i18n="d ≥ 20 mm（代号 04 起）">d ≥ 20 mm（代号 04 起）</td><td data-i18n="末两位 × 5 = 内径 mm">末两位 × 5 = 内径 mm</td><td data-i18n="6204 → 04 × 5 = 20 mm；6308 → 08 × 5 = 40 mm">6204 → 04 × 5 = <b>20</b> mm；6308 → 08 × 5 = <b>40</b> mm</td></tr>
+<tr><td data-i18n="d = 10 / 12 / 15 / 17 mm">d = 10 / 12 / 15 / 17 mm</td><td data-i18n="特例代号 00 / 01 / 02 / 03">特例代号 00 / 01 / 02 / 03</td><td data-i18n="6200 → 10 mm；6201 → 12 mm；6202 → 15 mm；6203 → 17 mm">6200 → <b>10</b> mm；6201 → <b>12</b> mm；6202 → <b>15</b> mm；6203 → <b>17</b> mm</td></tr>
+<tr><td data-i18n="d < 10 mm">d &lt; 10 mm</td><td data-i18n="末一位数字即内径 mm">末一位数字即内径 mm</td><td data-i18n="608 → 8 mm；627 → 7 mm；685 → 5 mm">608 → <b>8</b> mm；627 → <b>7</b> mm；685 → <b>5</b> mm；688 → <b>8</b> mm</td></tr>
+</table>
+<p class="tip" data-i18n="最常见的误读：把 608 读成「60 × 5 = 300 mm」或「08 × 5 = 40 mm」。记住分界线——内径小于 10 mm 时不乘 5，直接读末位数字。"><b>最常见的误读</b>：把 608 读成「60 × 5 = 300 mm」或「08 × 5 = 40 mm」。记住分界线——<b>内径小于 10 mm 时不乘 5，直接读末位数字</b>。</p>
+
+<h3 data-i18n="尺寸系列怎么比">尺寸系列怎么比</h3>
+<p data-i18n="同一内径下，系列数字越大，轴承越「厚」、承载越强、极限转速越低：">同一内径下，系列数字越大，轴承越「厚」、承载越强、极限转速越低：</p>
+<ul class="dot-list">
+<li data-i18n="68 系列：最薄，省空间，承载最低（如 688：8×16×5）"><b>68 系列</b>：最薄，省空间，承载最低（如 688：8×16×5）</li>
+<li data-i18n="69 系列：薄壁（如 698：8×19×6）"><b>69 系列</b>：薄壁（如 698：8×19×6）</li>
+<li data-i18n="60 系列：最通用的「标准厚度」（如 608：8×22×7）"><b>60 系列</b>：最通用的「标准厚度」（如 608：8×22×7）</li>
+<li data-i18n="62 系列：厚，承载高（如 628：8×24×8）"><b>62 系列</b>：厚，承载高（如 628：8×24×8）</li>
+<li data-i18n="63 系列：最厚，承载最高，转速最低（如 6300：10×35×11）"><b>63 系列</b>：最厚，承载最高，转速最低（如 6300：10×35×11）</li>
+</ul>
+<p class="tip" data-i18n="选型捷径：同一内径下若载荷不够，不要急着换大轴径，先试试升一个系列——608 不够用，换 628（8×24×8，外径只大 2 mm），通常就能解决。"><b>选型捷径</b>：同一内径下若载荷不够，不要急着换大轴径，先试试升一个系列——<b>608 不够用，换 628</b>（8×24×8，外径只大 2 mm），通常就能解决。</p>
+
+<h2 id="tables" data-i18n="四、全系列尺寸表">四、全系列尺寸表</h2>
+<div class="callout">
+<b data-i18n="数据口径说明">数据口径说明</b>：下表 d × D × B 单位为 mm，依据 GB/T 276 / ISO 15 及中国微型轴承行业通用样本整理。<b data-i18n="68 系列在微型段的厚度存在两套口径">68 系列在微型段的厚度存在两套口径</b>（ISO 618 薄壁系列 vs 微型轴承行业惯例），下表采用<b data-i18n="中国微型轴承厂通用尺寸">中国微型轴承厂通用尺寸</b>，实际采购时请以具体厂家样本复核。倒角 r 为最小值。
+</div>
+<div class="series-nav">
+<a href="#s68">68 系列</a><a href="#s69">69 系列</a><a href="#s60">60 系列</a><a href="#s62">62 系列</a><a href="#s63">63 系列</a><a href="#smr">MR 系列</a><a href="#sr">R 系列（英制）</a><a href="#sf">F 系列（法兰）</a>
+</div>
+
+<h3 id="s68" data-i18n="4.1 68 系列（超薄壁）">4.1 68 系列（超薄壁）</h3>
+<p data-i18n="68 系列是同内径下外径最小、高度最薄的系列，用于径向空间极其受限的场合（模型、微型电机、医疗器械）。">68 系列是同内径下外径最小、高度最薄的系列，用于径向空间极其受限的场合（模型、微型电机、医疗器械）。</p>
+<div class="size-wrap">
+<table class="size-table">
+<thead><tr><th data-i18n="型号">型号</th><th data-i18n="内径 d">内径 d</th><th data-i18n="外径 D">外径 D</th><th data-i18n="高度 B">高度 B</th><th data-i18n="r min">r min</th><th data-i18n="型号">型号</th><th data-i18n="内径 d">内径 d</th><th data-i18n="外径 D">外径 D</th><th data-i18n="高度 B">高度 B</th><th data-i18n="r min">r min</th></tr></thead>
+<tbody>
+<tr><td>682</td><td>2</td><td>5</td><td>2.3</td><td>0.1</td><td>6800</td><td>10</td><td>19</td><td>5</td><td>0.3</td></tr>
+<tr><td>683</td><td>3</td><td>7</td><td>3</td><td>0.1</td><td>6801</td><td>12</td><td>21</td><td>5</td><td>0.3</td></tr>
+<tr><td>684</td><td>4</td><td>9</td><td>4</td><td>0.1</td><td>6802</td><td>15</td><td>24</td><td>5</td><td>0.3</td></tr>
+<tr><td>685</td><td>5</td><td>11</td><td>5</td><td>0.15</td><td>6803</td><td>17</td><td>26</td><td>5</td><td>0.3</td></tr>
+<tr><td>686</td><td>6</td><td>13</td><td>5</td><td>0.15</td><td>6804</td><td>20</td><td>32</td><td>7</td><td>0.3</td></tr>
+<tr><td>687</td><td>7</td><td>14</td><td>5</td><td>0.15</td><td>6805</td><td>25</td><td>37</td><td>7</td><td>0.3</td></tr>
+<tr><td>688</td><td>8</td><td>16</td><td>5</td><td>0.2</td><td>6806</td><td>30</td><td>42</td><td>7</td><td>0.3</td></tr>
+<tr><td>689</td><td>9</td><td>17</td><td>5</td><td>0.2</td><td>6807</td><td>35</td><td>47</td><td>7</td><td>0.3</td></tr>
+<tr><td>—</td><td></td><td></td><td></td><td></td><td>6808</td><td>40</td><td>52</td><td>7</td><td>0.3</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3 id="s69" data-i18n="4.2 69 系列（薄壁）">4.2 69 系列（薄壁）</h3>
+<div class="size-wrap">
+<table class="size-table">
+<thead><tr><th data-i18n="型号">型号</th><th data-i18n="内径 d">内径 d</th><th data-i18n="外径 D">外径 D</th><th data-i18n="高度 B">高度 B</th><th data-i18n="r min">r min</th><th data-i18n="型号">型号</th><th data-i18n="内径 d">内径 d</th><th data-i18n="外径 D">外径 D</th><th data-i18n="高度 B">高度 B</th><th data-i18n="r min">r min</th></tr></thead>
+<tbody>
+<tr><td>692</td><td>2</td><td>6</td><td>3</td><td>0.15</td><td>6001</td><td>12</td><td>28</td><td>8</td><td>0.3</td></tr>
+<tr><td>693</td><td>3</td><td>8</td><td>4</td><td>0.15</td><td>6002</td><td>15</td><td>32</td><td>9</td><td>0.3</td></tr>
+<tr><td>694</td><td>4</td><td>11</td><td>4</td><td>0.15</td><td>6003</td><td>17</td><td>35</td><td>10</td><td>0.3</td></tr>
+<tr><td>695</td><td>5</td><td>13</td><td>4</td><td>0.2</td><td>6004</td><td>20</td><td>42</td><td>12</td><td>0.6</td></tr>
+<tr><td>696</td><td>6</td><td>15</td><td>5</td><td>0.2</td><td>6005</td><td>25</td><td>47</td><td>12</td><td>0.6</td></tr>
+<tr><td>697</td><td>7</td><td>17</td><td>5</td><td>0.3</td><td>6006</td><td>30</td><td>55</td><td>13</td><td>1</td></tr>
+<tr><td>698</td><td>8</td><td>19</td><td>6</td><td>0.3</td><td>6007</td><td>35</td><td>62</td><td>14</td><td>1</td></tr>
+<tr><td>699</td><td>9</td><td>20</td><td>6</td><td>0.3</td><td>6008</td><td>40</td><td>68</td><td>15</td><td>1</td></tr>
+<tr><td>6000</td><td>10</td><td>26</td><td>8</td><td>0.3</td><td>—</td><td></td><td></td><td></td><td></td></tr>
+</tbody>
+</table>
+</div>
+
+<h3 id="s60" data-i18n="4.3 60 系列（微型与小型主力段）">4.3 60 系列（微型与小型主力段）</h3>
+<p data-i18n="608 就在这个系列。60 系列是微型轴承中用量最大的一段，也是潮磊的主力区间。"><b>608 就在这个系列。</b>60 系列是微型轴承中用量最大的一段，也是潮磊的主力区间。</p>
+<div class="size-wrap">
+<table class="size-table">
+<thead><tr><th data-i18n="型号">型号</th><th data-i18n="内径 d">内径 d</th><th data-i18n="外径 D">外径 D</th><th data-i18n="高度 B">高度 B</th><th data-i18n="r min">r min</th><th data-i18n="型号">型号</th><th data-i18n="内径 d">内径 d</th><th data-i18n="外径 D">外径 D</th><th data-i18n="高度 B">高度 B</th><th data-i18n="r min">r min</th></tr></thead>
+<tbody>
+<tr><td>604</td><td>4</td><td>12</td><td>4</td><td>0.2</td><td>6001</td><td>12</td><td>28</td><td>8</td><td>0.3</td></tr>
+<tr><td>605</td><td>5</td><td>14</td><td>5</td><td>0.2</td><td>6002</td><td>15</td><td>32</td><td>9</td><td>0.3</td></tr>
+<tr><td>606</td><td>6</td><td>17</td><td>6</td><td>0.3</td><td>6003</td><td>17</td><td>35</td><td>10</td><td>0.3</td></tr>
+<tr><td>607</td><td>7</td><td>19</td><td>6</td><td>0.3</td><td>6004</td><td>20</td><td>42</td><td>12</td><td>0.6</td></tr>
+<tr class="row-key"><td>608</td><td>8</td><td>22</td><td>7</td><td>0.3</td><td>6005</td><td>25</td><td>47</td><td>12</td><td>0.6</td></tr>
+<tr><td>609</td><td>9</td><td>24</td><td>7</td><td>0.3</td><td>6006</td><td>30</td><td>55</td><td>13</td><td>1</td></tr>
+<tr><td>6000</td><td>10</td><td>26</td><td>8</td><td>0.3</td><td>6007</td><td>35</td><td>62</td><td>14</td><td>1</td></tr>
+<tr><td>—</td><td></td><td></td><td></td><td></td><td>6008</td><td>40</td><td>68</td><td>15</td><td>1</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3 id="s62" data-i18n="4.4 62 系列（承载增强）">4.4 62 系列（承载增强）</h3>
+<div class="size-wrap">
+<table class="size-table">
+<thead><tr><th data-i18n="型号">型号</th><th data-i18n="内径 d">内径 d</th><th data-i18n="外径 D">外径 D</th><th data-i18n="高度 B">高度 B</th><th data-i18n="r min">r min</th><th data-i18n="型号">型号</th><th data-i18n="内径 d">内径 d</th><th data-i18n="外径 D">外径 D</th><th data-i18n="高度 B">高度 B</th><th data-i18n="r min">r min</th></tr></thead>
+<tbody>
+<tr><td>623</td><td>3</td><td>10</td><td>4</td><td>0.15</td><td>6204</td><td>20</td><td>47</td><td>14</td><td>1</td></tr>
+<tr><td>624</td><td>4</td><td>13</td><td>5</td><td>0.2</td><td>6205</td><td>25</td><td>52</td><td>15</td><td>1</td></tr>
+<tr><td>625</td><td>5</td><td>16</td><td>5</td><td>0.3</td><td>6206</td><td>30</td><td>62</td><td>16</td><td>1</td></tr>
+<tr><td>626</td><td>6</td><td>19</td><td>6</td><td>0.3</td><td>6207</td><td>35</td><td>72</td><td>17</td><td>1.1</td></tr>
+<tr><td>627</td><td>7</td><td>22</td><td>7</td><td>0.3</td><td>6208</td><td>40</td><td>80</td><td>18</td><td>1.1</td></tr>
+<tr><td>628</td><td>8</td><td>24</td><td>8</td><td>0.3</td><td>6209</td><td>45</td><td>85</td><td>19</td><td>1.1</td></tr>
+<tr><td>629</td><td>9</td><td>26</td><td>8</td><td>0.3</td><td>6210</td><td>50</td><td>90</td><td>20</td><td>1.1</td></tr>
+<tr><td>6200</td><td>10</td><td>30</td><td>9</td><td>0.6</td><td>—</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>6201</td><td>12</td><td>32</td><td>10</td><td>0.6</td><td>—</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>6202</td><td>15</td><td>35</td><td>11</td><td>0.6</td><td>—</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>6203</td><td>17</td><td>40</td><td>12</td><td>0.6</td><td>—</td><td></td><td></td><td></td><td></td></tr>
+</tbody>
+</table>
+</div>
+
+<h3 id="s63" data-i18n="4.5 63 系列（中大型，重载低速）">4.5 63 系列（中大型，重载低速）</h3>
+<div class="size-wrap">
+<table class="size-table">
+<thead><tr><th data-i18n="型号">型号</th><th data-i18n="内径 d">内径 d</th><th data-i18n="外径 D">外径 D</th><th data-i18n="高度 B">高度 B</th><th data-i18n="r min">r min</th><th data-i18n="型号">型号</th><th data-i18n="内径 d">内径 d</th><th data-i18n="外径 D">外径 D</th><th data-i18n="高度 B">高度 B</th><th data-i18n="r min">r min</th></tr></thead>
+<tbody>
+<tr><td>6300</td><td>10</td><td>35</td><td>11</td><td>0.6</td><td>6304</td><td>20</td><td>52</td><td>15</td><td>1.1</td></tr>
+<tr><td>6301</td><td>12</td><td>37</td><td>12</td><td>1</td><td>6305</td><td>25</td><td>62</td><td>17</td><td>1.1</td></tr>
+<tr><td>6302</td><td>15</td><td>42</td><td>13</td><td>1</td><td>6306</td><td>30</td><td>72</td><td>19</td><td>1.1</td></tr>
+<tr><td>6303</td><td>17</td><td>47</td><td>14</td><td>1</td><td>6307</td><td>35</td><td>80</td><td>21</td><td>1.5</td></tr>
+<tr><td>—</td><td></td><td></td><td></td><td></td><td>6308</td><td>40</td><td>90</td><td>23</td><td>1.5</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3 id="smr" data-i18n="4.6 MR 系列（公制微型，内径 < 10 mm）">4.6 MR 系列（公制微型，内径 &lt; 10 mm）</h3>
+<p data-i18n="MR 系列是微型轴承中「小而扁」的一支，常见于模型、微型电机、精密仪器。高度普遍在 2.5–4 mm。">MR 系列是微型轴承中「小而扁」的一支，常见于模型、微型电机、精密仪器。高度普遍在 2.5–4 mm。</p>
+<div class="size-wrap">
+<table class="size-table">
+<thead><tr><th data-i18n="型号">型号</th><th data-i18n="内径 d">内径 d</th><th data-i18n="外径 D">外径 D</th><th data-i18n="高度 B">高度 B</th><th data-i18n="r min">r min</th><th data-i18n="型号">型号</th><th data-i18n="内径 d">内径 d</th><th data-i18n="外径 D">外径 D</th><th data-i18n="高度 B">高度 B</th><th data-i18n="r min">r min</th></tr></thead>
+<tbody>
+<tr><td>MR52</td><td>2</td><td>5</td><td>2.5</td><td>0.1</td><td>MR105</td><td>5</td><td>10</td><td>4</td><td>0.2</td></tr>
+<tr><td>MR63</td><td>3</td><td>6</td><td>2.5</td><td>0.1</td><td>MR106</td><td>6</td><td>10</td><td>3</td><td>0.15</td></tr>
+<tr><td>MR74</td><td>4</td><td>7</td><td>2.5</td><td>0.1</td><td>MR115</td><td>5</td><td>11</td><td>4</td><td>0.2</td></tr>
+<tr><td>MR83</td><td>3</td><td>8</td><td>3</td><td>0.15</td><td>MR117</td><td>7</td><td>11</td><td>3</td><td>0.15</td></tr>
+<tr><td>MR84</td><td>4</td><td>8</td><td>3</td><td>0.1</td><td>MR126</td><td>6</td><td>12</td><td>4</td><td>0.2</td></tr>
+<tr><td>MR93</td><td>3</td><td>9</td><td>4</td><td>0.2</td><td>MR128</td><td>8</td><td>12</td><td>3.5</td><td>0.15</td></tr>
+<tr><td>MR95</td><td>5</td><td>9</td><td>3</td><td>0.15</td><td>MR137</td><td>7</td><td>13</td><td>4</td><td>0.2</td></tr>
+<tr><td>MR104</td><td>4</td><td>10</td><td>4</td><td>0.2</td><td>MR148</td><td>8</td><td>14</td><td>4</td><td>0.2</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3 id="sr" data-i18n="4.7 R 系列（英制微型）">4.7 R 系列（英制微型）</h3>
+<p data-i18n="英制轴承的尺寸直接以英寸定义，换毫米后带小数，不能与公制型号直接互换（除非尺寸完全吻合）。常见于进口设备维修与美标产品配套。">英制轴承的尺寸直接以英寸定义，换毫米后带小数，<b>不能与公制型号直接互换</b>（除非尺寸完全吻合）。常见于进口设备维修与美标产品配套。</p>
+<div class="size-wrap">
+<table class="size-table">
+<thead><tr><th data-i18n="型号">型号</th><th data-i18n="内径 d (mm)">内径 d (mm)</th><th data-i18n="外径 D (mm)">外径 D (mm)</th><th data-i18n="高度 B (mm)">高度 B (mm)</th><th data-i18n="英制规格 (in)">英制规格 (in)</th></tr></thead>
+<tbody>
+<tr><td>R1</td><td>1.397</td><td>4.762</td><td>2.779</td><td>0.055 × 0.1875 × 0.1094</td></tr>
+<tr><td>R1-4</td><td>1.984</td><td>6.350</td><td>3.571</td><td>0.0781 × 0.25 × 0.1406</td></tr>
+<tr><td>R2</td><td>3.175</td><td>9.525</td><td>3.967</td><td>1/8 × 3/8 × 5/32</td></tr>
+<tr><td>R2-5</td><td>3.175</td><td>12.700</td><td>4.366</td><td>1/8 × 1/2 × 0.1719</td></tr>
+<tr><td>R3</td><td>4.762</td><td>12.700</td><td>4.978</td><td>3/16 × 1/2 × 0.196</td></tr>
+<tr><td>R4</td><td>6.350</td><td>15.875</td><td>4.978</td><td>1/4 × 5/8 × 0.196</td></tr>
+<tr><td>R6</td><td>9.525</td><td>22.225</td><td>5.558</td><td>3/8 × 7/8 × 0.2188</td></tr>
+<tr><td>R8</td><td>12.700</td><td>28.575</td><td>7.938</td><td>1/2 × 1-1/8 × 5/16</td></tr>
+</tbody>
+</table>
+</div>
+<p class="tip" data-i18n="英制陷阱：R6 的内径 9.525 mm 与公制 10 mm 只差 0.475 mm，外径 22.225 mm 与 608 的 22 mm 只差 0.225 mm——看起来能塞进去，实际是错误配合。轴径与孔径的公差带不重叠，装上去就是跑圈或胀裂。英制设备必须配英制轴承。"><b>英制陷阱</b>：R6 的内径 9.525 mm 与公制 10 mm 只差 0.475 mm，外径 22.225 mm 与 608 的 22 mm 只差 0.225 mm——<b>看起来能塞进去，实际是错误配合</b>。轴径与孔径的公差带不重叠，装上去就是跑圈或胀裂。英制设备必须配英制轴承。</p>
+
+<h3 id="sf" data-i18n="4.8 F 系列（带法兰，微型段）">4.8 F 系列（带法兰，微型段）</h3>
+<p data-i18n="法兰轴承在外圈上多出一圈凸缘，用于轴向定位——法兰面抵住座孔端面，省掉一个挡圈或台阶。表中 D1 为法兰外径，C1 为法兰厚度。">法兰轴承在外圈上多出一圈凸缘，用于<b>轴向定位</b>——法兰面抵住座孔端面，省掉一个挡圈或台阶。表中 D1 为法兰外径，C1 为法兰厚度。</p>
+<div class="size-wrap">
+<table class="size-table">
+<thead><tr><th data-i18n="型号">型号</th><th data-i18n="内径 d">内径 d</th><th data-i18n="外径 D">外径 D</th><th data-i18n="高度 B">高度 B</th><th data-i18n="法兰外径 D1">法兰外径 D1</th><th data-i18n="法兰厚度 C1">法兰厚度 C1</th></tr></thead>
+<tbody>
+<tr><td>F684</td><td>4</td><td>9</td><td>4</td><td>10.3</td><td>1</td></tr>
+<tr><td>F685</td><td>5</td><td>11</td><td>5</td><td>12.5</td><td>1</td></tr>
+<tr><td>F686</td><td>6</td><td>13</td><td>5</td><td>15</td><td>1</td></tr>
+<tr><td>F687</td><td>7</td><td>14</td><td>5</td><td>16</td><td>1</td></tr>
+<tr><td>F688</td><td>8</td><td>16</td><td>5</td><td>18</td><td>1</td></tr>
+<tr><td>F623</td><td>3</td><td>10</td><td>4</td><td>11.5</td><td>1</td></tr>
+<tr><td>F624</td><td>4</td><td>13</td><td>5</td><td>15</td><td>1</td></tr>
+<tr><td>F625</td><td>5</td><td>16</td><td>5</td><td>18</td><td>1</td></tr>
+<tr><td>F626</td><td>6</td><td>19</td><td>6</td><td>22</td><td>1.5</td></tr>
+<tr class="row-key"><td>F608</td><td>8</td><td>22</td><td>7</td><td>25</td><td>1.5</td></tr>
+</tbody>
+</table>
+</div>
+<p class="tip" data-i18n="法兰尺寸的坑：法兰外径 D1 与厚度 C1 不是 ISO 统一值，各厂家差异较大。选型时一定要拿具体厂家的图纸，别只按型号下单。"><b>法兰尺寸的坑</b>：法兰外径 D1 与厚度 C1 <b>不是 ISO 统一值</b>，各厂家差异较大。选型时一定要拿具体厂家的图纸，别只按型号下单。</p>
+
+<h2 id="suffix" data-i18n="五、后缀代号速查表">五、后缀代号速查表</h2>
+<p data-i18n="后缀只改性能，不改 d × D × B 安装尺寸。这是选型中最容易被误解的一点。">后缀只改性能，<b>不改 d × D × B 安装尺寸</b>。这是选型中最容易被误解的一点。</p>
+
+<h3 data-i18n="5.1 密封与防尘">5.1 密封与防尘</h3>
+<table class="data-table">
+<tr><th data-i18n="代号">代号</th><th data-i18n="含义">含义</th><th data-i18n="特点">特点</th><th data-i18n="适用场景">适用场景</th></tr>
+<tr><td><b data-i18n="开放型（无后缀）">开放型（无后缀）</b></td><td data-i18n="无密封">无密封</td><td data-i18n="摩擦最小、极限转速最高、可再润滑">摩擦最小、极限转速最高、可再润滑</td><td data-i18n="主机已有密封、需定期加油的场合">主机已有密封、需定期加油的场合</td></tr>
+<tr><td><b>Z</b></td><td data-i18n="单面金属防尘盖">单面金属防尘盖</td><td data-i18n="防尘不防水，阻力小">防尘不防水，阻力小</td><td data-i18n="单侧有尘、另一侧有油路">单侧有尘、另一侧有油路</td></tr>
+<tr><td><b>ZZ / 2Z</b></td><td data-i18n="双面金属防尘盖">双面金属防尘盖</td><td data-i18n="防尘不防水，摩擦小、转速高"><b>防尘不防水</b>，摩擦小、转速高</td><td data-i18n="干燥洁净环境：室内家具、办公设备、滑板">干燥洁净环境：室内家具、办公设备、滑板</td></tr>
+<tr><td><b>RS / RSH / RS1</b></td><td data-i18n="单面橡胶接触密封">单面橡胶接触密封</td><td data-i18n="防尘防水，阻力较大">防尘防水，阻力较大</td><td data-i18n="单侧潮湿">单侧潮湿</td></tr>
+<tr><td><b>2RS / 2RSH / 2RS1</b></td><td data-i18n="双面橡胶接触密封">双面橡胶接触密封</td><td data-i18n="防尘防水最好，极限转速比 ZZ 低约 30%"><b>防尘防水最好</b>，极限转速比 ZZ 低约 30%</td><td data-i18n="潮湿多尘：卫浴吊轮、户外、农机、食品机械">潮湿多尘：卫浴吊轮、户外、农机、食品机械</td></tr>
+</table>
+<p class="tip" data-i18n="ZZ 与 2RS 怎么选：干燥洁净选 ZZ，潮湿多尘选 2RS，拿不准选 2RS。两者的外形尺寸完全一样，可以互相替换，代价只是转速与启动力矩略有差别。"><b>ZZ 与 2RS 怎么选</b>：<b>干燥洁净选 ZZ，潮湿多尘选 2RS，拿不准选 2RS。</b>两者的外形尺寸完全一样，可以互相替换，代价只是转速与启动力矩略有差别。</p>
+
+<h3 data-i18n="5.2 游隙等级（GB/T 4604.1）">5.2 游隙等级（GB/T 4604.1）</h3>
+<table class="data-table">
+<tr><th data-i18n="代号">代号</th><th data-i18n="游隙">游隙</th><th data-i18n="何时选">何时选</th></tr>
+<tr><td><b>C2</b></td><td data-i18n="小于普通组">小于普通组</td><td data-i18n="需要低振动、高旋转精度、小游隙的精密场合">需要低振动、高旋转精度、小游隙的精密场合</td></tr>
+<tr><td><b>C0</b></td><td data-i18n="普通组（默认，通常不标注）">普通组（默认，通常不标注）</td><td data-i18n="一般工况">一般工况</td></tr>
+<tr><td><b>C3</b></td><td data-i18n="大于普通组">大于普通组</td><td data-i18n="电机、高温工况、过盈配合、轴与座温差大——最常见的非标选择"><b>电机、高温工况、过盈配合、轴与座温差大</b>——最常见的非标选择</td></tr>
+<tr><td><b>C4 / C5</b></td><td data-i18n="更大">更大</td><td data-i18n="严重过盈、高温差、振动筛等特重工况">严重过盈、高温差、振动筛等特重工况</td></tr>
+</table>
+<p class="tip" data-i18n="什么时候必须选 C3：电机轴因发热膨胀、轴承与轴/孔采用过盈配合时，装配后游隙会被「吃掉」一部分，用普通组 C0 容易导致运转发紧甚至卡死。电机类应用默认选 C3。"><b>什么时候必须选 C3</b>：电机轴因发热膨胀、轴承与轴/孔采用过盈配合时，装配后游隙会被「吃掉」一部分，用普通组 C0 容易导致运转发紧甚至卡死。<b>电机类应用默认选 C3</b>。</p>
+
+<h3 data-i18n="5.3 公差 / 精度等级">5.3 公差 / 精度等级</h3>
+<table class="data-table">
+<tr><th data-i18n="中国 GB/T 307.1">中国 GB/T 307.1</th><th data-i18n="美标 ABEC（近似对应）">美标 ABEC（近似对应）</th><th data-i18n="说明">说明</th></tr>
+<tr><td><b>P0</b></td><td>ABEC-1</td><td data-i18n="普通级，默认不标注，绝大多数应用够用">普通级，默认不标注，绝大多数应用够用</td></tr>
+<tr><td>P6</td><td>ABEC-3</td><td data-i18n="提高旋转精度，用于中等精密主轴">提高旋转精度，用于中等精密主轴</td></tr>
+<tr><td>P5</td><td>ABEC-5</td><td data-i18n="精密机床主轴、高速电机">精密机床主轴、高速电机</td></tr>
+<tr><td>P4</td><td>ABEC-7</td><td data-i18n="高精度主轴">高精度主轴</td></tr>
+<tr><td>P2</td><td>ABEC-9</td><td data-i18n="超精密">超精密</td></tr>
+</table>
+<p class="tip" data-i18n="务实判断：ABEC 等级只衡量尺寸与旋转精度，不衡量材料、噪声、寿命。一颗 ABEC-5 的碳钢轴承，实际寿命可能远不如一颗 P0 的 GCr15 轴承。别把精度等级当质量等级买。"><b>务实判断</b>：ABEC 等级只衡量<b>尺寸与旋转精度</b>，<b>不衡量材料、噪声、寿命</b>。一颗 ABEC-5 的碳钢轴承，实际寿命可能远不如一颗 P0 的 GCr15 轴承。<b>别把精度等级当质量等级买。</b></p>
+
+<h3 data-i18n="5.4 振动（噪声）等级（GB/T 32325）">5.4 振动（噪声）等级（GB/T 32325）</h3>
+<table class="data-table">
+<tr><th data-i18n="代号">代号</th><th data-i18n="说明">说明</th></tr>
+<tr><td><b data-i18n="Z / Z1">Z / Z1</b></td><td data-i18n="基础级（部分厂家不标 Z）">基础级（部分厂家不标 Z）</td></tr>
+<tr><td><b>Z2</b></td><td data-i18n="低振动，通用静音场合够用">低振动，通用静音场合够用</td></tr>
+<tr><td><b>Z3</b></td><td data-i18n="更低振动，家电电机、静音风扇">更低振动，家电电机、静音风扇</td></tr>
+<tr><td><b>Z4</b></td><td data-i18n="最低振动，精密仪器、高静音要求">最低振动，精密仪器、高静音要求</td></tr>
+</table>
+<p class="tip" data-i18n="代号数字越大，振动限值越严（越安静）。速度级对应代号为 V / V1 / V2 / V3 / V4。">代号数字越大，振动限值越严（越安静）。速度级对应代号为 V / V1 / V2 / V3 / V4。</p>
+
+<h3 data-i18n="5.5 其他常见后缀">5.5 其他常见后缀</h3>
+<table class="data-table">
+<tr><th data-i18n="代号">代号</th><th data-i18n="含义">含义</th></tr>
+<tr><td><b>N</b></td><td data-i18n="外圈带止动槽">外圈带止动槽</td></tr>
+<tr><td><b>NR</b></td><td data-i18n="外圈带止动槽 + 止动环">外圈带止动槽 + 止动环</td></tr>
+<tr><td><b>SS / S</b></td><td data-i18n="不锈钢（常见 SUS440C），用于食品、医疗、潮湿腐蚀环境">不锈钢（常见 SUS440C），用于食品、医疗、潮湿腐蚀环境</td></tr>
+<tr><td><b>-T9H / HT</b></td><td data-i18n="高温润滑脂">高温润滑脂</td></tr>
+<tr><td><b>K</b></td><td data-i18n="锥孔（内孔带 1:12 锥度）">锥孔（内孔带 1:12 锥度）</td></tr>
+</table>
+
+<h2 id="selection" data-i18n="六、选型三步法">六、选型三步法</h2>
+<ol class="step-list">
+<li data-i18n="第 1 步：定尺寸。轴径 → 选 d；座孔 → 选 D；轴向空间 → 选 B。三项锁定后，型号基本唯一。"><b>定尺寸。</b>轴径 → 选 d；座孔 → 选 D；轴向空间 → 选 B。三项锁定后，型号基本唯一。</li>
+<li data-i18n="第 2 步：定后缀。按工况对照下表选择密封、游隙、法兰或材质。"><b>定后缀。</b>按工况对照下表选择密封、游隙、法兰或材质。</li>
+<li data-i18n="第 3 步：复核载荷与转速。用额定动载荷 Cr 与工况当量动载荷 P 比对，按 ISO 281 计算寿命 L10。"><b>复核载荷与转速。</b>用额定动载荷 Cr 与工况当量动载荷 P 比对，按 ISO 281 计算寿命 L10。</li>
+</ol>
+<table class="data-table">
+<tr><th data-i18n="工况">工况</th><th data-i18n="推荐后缀">推荐后缀</th></tr>
+<tr><td data-i18n="干燥室内、追求转速与低阻力">干燥室内、追求转速与低阻力</td><td><b>ZZ</b></td></tr>
+<tr><td data-i18n="潮湿、多尘、户外">潮湿、多尘、户外</td><td><b>2RS</b></td></tr>
+<tr><td data-i18n="电机、轴会发热">电机、轴会发热</td><td><b>C3</b>（游隙）</td></tr>
+<tr><td data-i18n="有轴向定位需求、不便做台阶">有轴向定位需求、不便做台阶</td><td><b>F</b>（法兰）</td></tr>
+<tr><td data-i18n="食品、医疗、腐蚀环境">食品、医疗、腐蚀环境</td><td><b>SS</b>（不锈钢）</td></tr>
+</table>
+<div class="callout">
+<b data-i18n="寿命公式（ISO 281）">寿命公式（ISO 281）</b>：<br/>
+<span data-i18n="L10（转）= (Cr / P)³ × 10⁶">L10（转）= (C<sub>r</sub> / P)<sup>3</sup> × 10<sup>6</sup></span>，
+<span data-i18n="L10（小时）= L10（转）÷ (60 × 转速 n)">L10（小时）= L10（转）÷ (60 × 转速 n)</span>
+<p style="margin:8px 0 0;"><b data-i18n="实用判据">实用判据</b>：<span data-i18n="实际载荷不超过 Cr 的 1/10 时，寿命基本不是问题；超过 1/3 就需要重新核算。">实际载荷不超过 Cr 的 1/10 时，寿命基本不是问题；超过 1/3 就需要重新核算。</span></p>
+</div>
+
+<h3 data-i18n="常用型号额定载荷速查（典型值）">常用型号额定载荷速查（典型值）</h3>
+<div class="size-wrap">
+<table class="size-table">
+<thead><tr><th data-i18n="型号">型号</th><th data-i18n="额定动载荷 Cr (kN)">额定动载荷 Cr (kN)</th><th data-i18n="额定静载荷 C0r (kN)">额定静载荷 C0r (kN)</th><th data-i18n="脂润滑极限转速 (r/min)">脂润滑极限转速 (r/min)</th><th data-i18n="参考重量 (kg)">参考重量 (kg)</th></tr></thead>
+<tbody>
+<tr class="row-key"><td>608</td><td>≈ 3.3</td><td>≈ 1.37</td><td>≈ 34,000</td><td>≈ 0.012</td></tr>
+<tr><td>626</td><td>≈ 2.3</td><td>≈ 0.90</td><td>≈ 32,000</td><td>≈ 0.008</td></tr>
+<tr><td>6000</td><td>≈ 4.6</td><td>≈ 1.96</td><td>≈ 26,000</td><td>≈ 0.019</td></tr>
+<tr><td>6200</td><td>≈ 5.1</td><td>≈ 2.40</td><td>≈ 24,000</td><td>≈ 0.032</td></tr>
+<tr><td>6201</td><td>≈ 6.8</td><td>≈ 3.05</td><td>≈ 22,000</td><td>≈ 0.037</td></tr>
+<tr><td>6202</td><td>≈ 7.8</td><td>≈ 3.75</td><td>≈ 20,000</td><td>≈ 0.045</td></tr>
+<tr><td>6203</td><td>≈ 9.6</td><td>≈ 4.60</td><td>≈ 17,000</td><td>≈ 0.065</td></tr>
+<tr><td>6204</td><td>≈ 12.7</td><td>≈ 6.60</td><td>≈ 15,000</td><td>≈ 0.106</td></tr>
+<tr><td>6205</td><td>≈ 14.0</td><td>≈ 7.80</td><td>≈ 13,000</td><td>≈ 0.128</td></tr>
+<tr><td>6206</td><td>≈ 19.5</td><td>≈ 11.2</td><td>≈ 11,000</td><td>≈ 0.199</td></tr>
+<tr><td>6305</td><td>≈ 22.5</td><td>≈ 11.6</td><td>≈ 10,000</td><td>≈ 0.232</td></tr>
+<tr><td>6308</td><td>≈ 41.0</td><td>≈ 24.0</td><td>≈ 7,000</td><td>≈ 0.633</td></tr>
+</tbody>
+</table>
+</div>
+<div class="callout">
+<b data-i18n="重要">重要</b>：<span data-i18n="Cr / C0r 与极限转速非 ISO 统一值，随厂家内部设计（钢球数量与直径、沟道曲率、保持架形式、油脂）而变化，上表为行业典型参考值。批量采购请以供应商正式样本或技术协议为准。">Cr / C0r 与极限转速<b>非 ISO 统一值</b>，随厂家内部设计（钢球数量与直径、沟道曲率、保持架形式、油脂）而变化，上表为行业典型参考值。<b>批量采购请以供应商正式样本或技术协议为准。</b></span>
+</div>
+
+<h2 id="interchange" data-i18n="七、互换与替代：608 能用什么代替？">七、互换与替代：608 能用什么代替？</h2>
+<p data-i18n="互换的唯一判据：d、D、B 三项必须同时相同。差任何一项都不能直接替换。"><b>互换的唯一判据：d、D、B 三项必须同时相同。</b>差任何一项都不能直接替换。</p>
+
+<h3 data-i18n="7.1 可以互换的组合">7.1 可以互换的组合</h3>
+<table class="data-table">
+<tr><th data-i18n="组合">组合</th><th data-i18n="说明">说明</th></tr>
+<tr><td><b>608 / 608Z / 608ZZ / 608-2RS / 608ZZ-C3 / 608-2RS-C3</b></td><td data-i18n="全部 8×22×7，可直接互换，只是密封与游隙不同"><b>全部 8×22×7，可直接互换</b>，只是密封与游隙不同</td></tr>
+<tr><td><b>608 / 608-P6 / 608-P5</b></td><td data-i18n="精度不同，尺寸相同，可互换（高精度替换低精度没问题）">精度不同，尺寸相同，可互换（高精度替换低精度没问题）</td></tr>
+<tr><td><b>608 / 608ZZ 不锈钢（SUS440C）</b></td><td data-i18n="尺寸相同可互换，但承载能力下降约 20%，转速也更低">尺寸相同可互换，但<b>承载能力下降约 20%，转速也更低</b></td></tr>
+</table>
+
+<h3 data-i18n="7.2 常见的「看起来能换、实际不能换」">7.2 常见的「看起来能换、实际不能换」</h3>
+<table class="data-table">
+<tr><th data-i18n="组合">组合</th><th data-i18n="尺寸对比">尺寸对比</th><th data-i18n="结论">结论</th></tr>
+<tr><td><b>608 vs 627</b></td><td>8×22×7 vs <b>7</b>×22×7</td><td data-i18n="外径与高度相同，内径差 1 mm。加一个 0.5 mm 壁厚轴套可临时应急，但同心度与承载都打折，不推荐长期使用">外径与高度相同，<b>内径差 1 mm</b>。加一个 0.5 mm 壁厚轴套可临时应急，但同心度与承载都打折，<b>不推荐长期使用</b></td></tr>
+<tr><td><b>608 vs 688</b></td><td>8×22×7 vs 8×<b>16</b>×5</td><td data-i18n="内径相同，外径与高度都不同，不能换">内径相同，外径与高度都不同，<b>不能换</b></td></tr>
+<tr><td><b>608 vs 698</b></td><td>8×22×7 vs 8×<b>19</b>×6</td><td data-i18n="外径差 3 mm、高度差 1 mm，不能换">外径差 3 mm、高度差 1 mm，<b>不能换</b></td></tr>
+<tr><td><b>608 vs 628</b></td><td>8×22×7 vs 8×<b>24</b>×<b>8</b></td><td data-i18n="外径大 2 mm、高度大 1 mm，不能换（但 628 是 608 载荷不足时的首选升级）">外径大 2 mm、高度大 1 mm，<b>不能换</b>（但 628 是 608 载荷不足时的首选升级）</td></tr>
+<tr><td><b>608 vs R6（英制）</b></td><td>8×22×7 vs 9.525×22.225×5.558</td><td data-i18n="看着接近，公差带不重叠，绝对不能混用">看着接近，<b>公差带不重叠，绝对不能混用</b></td></tr>
+<tr><td><b>6200 vs 6000</b></td><td>10×30×9 vs 10×26×8</td><td data-i18n="内径相同、外径差 4 mm，不能换">内径相同、外径差 4 mm，<b>不能换</b></td></tr>
+</table>
+
+<h3 data-i18n="7.3 载荷不够时的升级路径（以 8 mm 轴为例）">7.3 载荷不够时的升级路径（以 8 mm 轴为例）</h3>
+<p data-i18n="608（8×22×7）→ 628（8×24×8）→ 加大钢球非标。"><b>608（8×22×7）→ 628（8×24×8）→ 加大钢球非标。</b></p>
+<p class="tip" data-i18n="前两步是标准型号，外径只增加 2 mm，通常座孔改一刀就能容纳，成本增加很少，承载提升明显。若还不够，就要考虑加大轴径（换 6000 系列）或改用滚针/圆锥滚子轴承——但这时通常意味着整个结构要重新设计。">前两步是标准型号，外径只增加 2 mm，通常座孔改一刀就能容纳，<b>成本增加很少，承载提升明显</b>。若还不够，就要考虑加大轴径（换 6000 系列）或改用滚针/圆锥滚子轴承——但这时通常意味着整个结构要重新设计。</p>
+
+<h2 id="supply" data-i18n="八、潮磊供货范围（诚实标注）">八、潮磊供货范围（诚实标注）</h2>
+<ul class="dot-list">
+<li data-i18n="我们做什么：608 系列微型深沟球轴承，覆盖 15 个常规规格，包括开放型、ZZ 金属防尘盖、2RS 橡胶密封、C3 大游隙、P6 精度等变体；支持 607、609 等邻近型号与非标定制（法兰、不锈钢、特殊游隙、特殊油脂）。"><b>我们做什么</b>：608 系列微型深沟球轴承，覆盖 15 个常规规格，包括开放型、ZZ 金属防尘盖、2RS 橡胶密封、C3 大游隙、P6 精度等变体；支持 607、609 等邻近型号与非标定制（法兰、不锈钢、特殊游隙、特殊油脂）。</li>
+<li data-i18n="我们不做什么：不生产大型轴承（&gt; 62 系列）、不做圆锥滚子/调心滚子等非球轴承类型、不做没有工装成本的极小批量非标。"><b>我们不做什么</b>：不生产大型轴承（&gt; 62 系列）、不做圆锥滚子/调心滚子等非球轴承类型、不做没有工装成本的极小批量非标。</li>
+</ul>
+<div class="callout">
+<span data-i18n="需要确认的具体型号清单，请直接联系业务对接人索取最新供货目录与技术参数表——本手册列出的全系列为标准尺寸参考，不代表全部为我方现货。">需要确认的具体型号清单，请直接联系业务对接人索取<b>最新供货目录与技术参数表</b>——本手册列出的全系列为标准尺寸参考，<b>不代表全部为我方现货</b>。</span>
+</div>
+
+<!-- GEO: FAQ 问答区块（AI 引擎高频提取格式） -->
+<h2 id="faq" data-i18n="常见问题">常见问题</h2>
+<div class="faq-list">
+<article class="faq-item">
+<h3><span class="q">Q</span><span data-i18n="608 轴承的尺寸到底是多少？">608 轴承的尺寸到底是多少？</span></h3>
+<p data-i18n="内径 8 mm × 外径 22 mm × 高度 7 mm，最小倒角 0.3 mm，标准依据 GB/T 276 / ISO 15。这是全球统一的互换尺寸，任何厂家生产的合格 608 都能装进同一个位置。参考重量约 0.012 kg，额定动载荷典型值约 3.3 kN。"><b>内径 8 mm × 外径 22 mm × 高度 7 mm</b>，最小倒角 0.3 mm，标准依据 GB/T 276 / ISO 15。这是全球统一的互换尺寸，任何厂家生产的合格 608 都能装进同一个位置。参考重量约 0.012 kg，额定动载荷典型值约 3.3 kN。</p>
+</article>
+<article class="faq-item">
+<h3><span class="q">Q</span><span data-i18n="608ZZ 和 608-2RS 尺寸一样吗？能互换吗？">608ZZ 和 608-2RS 尺寸一样吗？能互换吗？</span></h3>
+<p data-i18n="完全一样，都是 8×22×7，可以互换。区别只在密封形式：ZZ 是双面金属防尘盖，防尘不防水，摩擦小、极限转速高（约 34,000 r/min）；2RS 是双面橡胶接触式密封，防尘防水更好，但极限转速比 ZZ 低约 30%。干燥室内选 ZZ，潮湿多尘选 2RS。"><b>完全一样，都是 8×22×7，可以互换。</b>区别只在密封形式：ZZ 是双面金属防尘盖，防尘不防水，摩擦小、极限转速高（约 34,000 r/min）；2RS 是双面橡胶接触式密封，防尘防水更好，但极限转速比 ZZ 低约 30%。干燥室内选 ZZ，潮湿多尘选 2RS。</p>
+</article>
+<article class="faq-item">
+<h3><span class="q">Q</span><span data-i18n="轴承型号怎么看出内径？">轴承型号怎么看出内径？</span></h3>
+<p data-i18n="三档规则。①内径 ≥ 20 mm（代号 04 起）：末两位 × 5，如 6204 = 04 × 5 = 20 mm；②代号 00/01/02/03 是特例，分别对应 10 / 12 / 15 / 17 mm；③内径 < 10 mm：末一位数字直接就是内径毫米数，如 608 = 8 mm、627 = 7 mm、685 = 5 mm。最容易错的是第三种——不要把 608 读成 40 mm。"><b>三档规则。</b>①内径 ≥ 20 mm（代号 04 起）：末两位 × 5，如 6204 = 04 × 5 = 20 mm；②代号 00/01/02/03 是特例，分别对应 10 / 12 / 15 / 17 mm；③内径 &lt; 10 mm：末一位数字直接就是内径毫米数，如 608 = 8 mm、627 = 7 mm、685 = 5 mm。<b>最容易错的是第三种——不要把 608 读成 40 mm。</b></p>
+</article>
+<article class="faq-item">
+<h3><span class="q">Q</span><span data-i18n="608 不够承重用什么代替？">608 不够承重用什么代替？</span></h3>
+<p data-i18n="首选 628（8×24×8），外径只大 2 mm、高度大 1 mm，承载明显提升，座孔通常改一刀就能装。其次是 629（9×26×8），但需要把轴径从 8 mm 改到 9 mm。若这两步仍不够，说明需要重新设计结构，而不是换轴承型号。">首选 <b>628（8×24×8）</b>，外径只大 2 mm、高度大 1 mm，承载明显提升，座孔通常改一刀就能装。其次是 <b>629（9×26×8）</b>，但需要把轴径从 8 mm 改到 9 mm。若这两步仍不够，说明需要重新设计结构，而不是换轴承型号。</p>
+</article>
+<article class="faq-item">
+<h3><span class="q">Q</span><span data-i18n="ZZ、2RS、C3、P6 这些后缀会不会改变轴承尺寸？">ZZ、2RS、C3、P6 这些后缀会不会改变轴承尺寸？</span></h3>
+<p data-i18n="不会。后缀只改变密封形式、游隙、精度、材质与润滑，d × D × B 安装尺寸完全不变。所以 608ZZ、608-2RS、608ZZ/C3、608-P6 的安装尺寸都是 8×22×7，可以互相替换。唯一例外是带法兰的 F 系列（如 F608），法兰凸缘会占用额外的轴向与径向空间。"><b>不会。</b>后缀只改变密封形式、游隙、精度、材质与润滑，<b>d × D × B 安装尺寸完全不变</b>。所以 608ZZ、608-2RS、608ZZ/C3、608-P6 的安装尺寸都是 8×22×7，可以互相替换。唯一例外是带法兰的 F 系列（如 F608），法兰凸缘会占用额外的轴向与径向空间。</p>
+</article>
+<article class="faq-item">
+<h3><span class="q">Q</span><span data-i18n="什么是 C3 游隙？什么时候需要？">什么是 C3 游隙？什么时候需要？</span></h3>
+<p data-i18n="C3 表示径向游隙大于普通组（C0）。电机、轴承发热、轴与内圈过盈配合、或轴与座温差大的场合必须选 C3——因为装配过盈与热膨胀会「吃掉」一部分游隙，用 C0 容易运转发紧甚至卡死。GB/T 4604.1 的游隙顺序是 C2 < C0 < C3 < C4 < C5。">C3 表示径向游隙大于普通组（C0）。<b>电机、轴承发热、轴与内圈过盈配合、或轴与座温差大的场合必须选 C3</b>——因为装配过盈与热膨胀会「吃掉」一部分游隙，用 C0 容易运转发紧甚至卡死。GB/T 4604.1 的游隙顺序是 C2 &lt; C0 &lt; C3 &lt; C4 &lt; C5。</p>
+</article>
+<article class="faq-item">
+<h3><span class="q">Q</span><span data-i18n="ABEC-5 / ABEC-7 是不是比普通轴承质量好？">ABEC-5 / ABEC-7 是不是比普通轴承质量好？</span></h3>
+<p data-i18n="不一定。ABEC 等级只衡量尺寸公差与旋转精度，不衡量材料、热处理、噪声与寿命。一颗 ABEC-5 的碳钢轴承，实际使用寿命可能远不如一颗 P0 级的 GCr15 轴承钢轴承。采购时更该问的是：材质是不是 GCr15？超精做了吗？钢球用 G 几？振动等级是多少？"><b>不一定。</b>ABEC 等级只衡量<b>尺寸公差与旋转精度</b>，不衡量材料、热处理、噪声与寿命。一颗 ABEC-5 的碳钢轴承，实际使用寿命可能远不如一颗 P0 级的 GCr15 轴承钢轴承。采购时更该问的是：<b>材质是不是 GCr15？超精做了吗？钢球用 G 几？振动等级是多少？</b></p>
+</article>
+<article class="faq-item">
+<h3><span class="q">Q</span><span data-i18n="微型轴承的 68 系列尺寸为什么各家样本不一样？">微型轴承的 68 系列尺寸为什么各家样本不一样？</span></h3>
+<p data-i18n="因为存在两套口径：ISO 618 薄壁系列（如 618/8 = 8×16×4）与中国微型轴承行业惯例（如 688 = 8×16×5），厚度差异可达 1–2 mm。本手册采用中国微型轴承厂通用尺寸。批量采购前务必索取具体厂家的正式样本或图纸复核，不要只凭型号下单。">因为<b>存在两套口径</b>：ISO 618 薄壁系列（如 618/8 = 8×16×<b>4</b>）与中国微型轴承行业惯例（如 688 = 8×16×<b>5</b>），厚度差异可达 1–2 mm。本手册采用中国微型轴承厂通用尺寸。<b>批量采购前务必索取具体厂家的正式样本或图纸复核</b>，不要只凭型号下单。</p>
+</article>
+<article class="faq-item">
+<h3><span class="q">Q</span><span data-i18n="法兰轴承（F608）能装进普通 608 的位置吗？">法兰轴承（F608）能装进普通 608 的位置吗？</span></h3>
+<p data-i18n="通常不能。F608 的内径、外径、高度与 608 相同（8×22×7），但外圈多了一圈法兰凸缘（常见法兰外径 25 mm、厚度 1.5 mm），需要座孔端面留出相应的沉台或让位空间。而且法兰尺寸各厂不统一，必须拿具体厂家的图纸确认。"><b>通常不能。</b>F608 的内径、外径、高度与 608 相同（8×22×7），但外圈多了一圈法兰凸缘（常见法兰外径 25 mm、厚度 1.5 mm），需要座孔端面留出相应的沉台或让位空间。而且<b>法兰尺寸各厂不统一</b>，必须拿具体厂家的图纸确认。</p>
+</article>
+<article class="faq-item">
+<h3><span class="q">Q</span><span data-i18n="英制轴承 R6 能不能替换 608？">英制轴承 R6 能不能替换 608？</span></h3>
+<p data-i18n="不能。R6 是 9.525 × 22.225 × 5.558 mm，608 是 8 × 22 × 7 mm。虽然尺寸只差零点几毫米，看着能塞进去，但公差带不重叠——装上去要么松（跑圈），要么紧（胀裂内圈）。英制设备必须配英制轴承，反之亦然。"><b>不能。</b>R6 是 9.525 × 22.225 × 5.558 mm，608 是 8 × 22 × 7 mm。虽然尺寸只差零点几毫米，看着能塞进去，但<b>公差带不重叠</b>——装上去要么松（跑圈），要么紧（胀裂内圈）。英制设备必须配英制轴承，反之亦然。</p>
+</article>
+</div>
+
+<!-- GEO: 权威引用标注 -->
+<p style="font-size:13px;color:#5f5e5a;margin-top:24px;line-height:1.7;" data-i18n="参考标准：GB/T 272（滚动轴承代号方法）、GB/T 276（深沟球轴承技术条件）、GB/T 273.3（滚动轴承外形尺寸总方案）、GB/T 307.1（滚动轴承公差）、GB/T 4604.1（径向游隙）、GB/T 32325（深沟球轴承振动技术条件）、GB/T 6391 / ISO 281（额定动载荷与寿命）、ISO 15（滚动轴承外形尺寸）、GB/T 18254（高碳铬轴承钢）。">参考标准：GB/T 272（滚动轴承代号方法）、GB/T 276（深沟球轴承技术条件）、GB/T 273.3（滚动轴承外形尺寸总方案）、GB/T 307.1（滚动轴承公差）、GB/T 4604.1（径向游隙）、GB/T 32325（深沟球轴承振动技术条件）、GB/T 6391 / ISO 281（额定动载荷与寿命）、ISO 15（滚动轴承外形尺寸）、GB/T 18254（高碳铬轴承钢）。</p>
+<p style="font-size:13px;color:#5f5e5a;line-height:1.7;" data-i18n="免责声明：本表尺寸为公共标准与行业通用数据整理，供选型参考。额定载荷、极限转速与重量为典型值，随厂家设计而异；批量采购请以供应商正式样本与技术协议为准。">免责声明：本表尺寸为公共标准与行业通用数据整理，供选型参考。额定载荷、极限转速与重量为典型值，随厂家设计而异；批量采购请以供应商正式样本与技术协议为准。</p>
+
+<h2 data-i18n="关于本文作者">关于本文作者</h2>
+<p data-i18n="馆陶县潮磊轴承制造有限责任公司，位于河北馆陶（中国轻工轴承之乡），2000 年起从事微型轴承制造，专注 608 系列。自有厂房 3000㎡，磨床 100 台、超精机 50 台、合套仪 50 台，日产 40 万颗，覆盖 608 全系 15 个型号，产品供应澄海玩具市场并出口印度、巴基斯坦、欧洲、迪拜。">馆陶县潮磊轴承制造有限责任公司，位于河北馆陶（中国轻工轴承之乡），2000 年起从事微型轴承制造，专注 608 系列。自有厂房 3000㎡，磨床 100 台、超精机 50 台、合套仪 50 台，日产 40 万颗，覆盖 608 全系 15 个型号，产品供应澄海玩具市场并出口印度、巴基斯坦、欧洲、迪拜。</p>
+<p data-i18n="需要某个型号的确切尺寸、材质证明或样品实测，直接联系业务对接人——我们先寄样，您先测，再谈批量。">需要某个型号的确切尺寸、材质证明或样品实测，直接联系业务对接人——<b>我们先寄样，您先测，再谈批量</b>。</p>
+
+<!-- CTA -->
 <div class="text-center mt-4">
 <a class="btn btn-primary btn-lg" href="../contact.html" data-i18n="联系我们获取报价 / 免费样品">联系我们获取报价 / 免费样品</a>
 <a class="btn btn-navy" href="../products.html" style="margin-left:12px;" data-i18n="查看 608 等全系产品">查看 608 等全系产品</a>
