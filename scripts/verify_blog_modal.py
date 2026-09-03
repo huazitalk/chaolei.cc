@@ -21,6 +21,7 @@
 
 from __future__ import annotations
 
+import html
 import json
 import re
 import sys
@@ -134,7 +135,8 @@ if I18N.exists():
     def coverage(bodies: list[str]) -> tuple[int, int]:
         keys = set()
         for b in bodies:
-            keys |= {k for k in re.findall(r'data-i18n="([^"]+)"', b) if k}
+            # html.unescape 对齐浏览器 getAttribute 口径（如 &gt; → >）
+            keys |= {k for k in (html.unescape(r) for r in re.findall(r'data-i18n="([^"]+)"', b)) if k}
         hit = sum(1 for k in keys if f'"{k}"' in i18n_src or f"'{k}'" in i18n_src)
         return hit, len(keys)
 
