@@ -50,6 +50,20 @@ ALREADY_MARKERS = (
 
 HEAD_CLOSE_RE = re.compile(r'</head\s*>', re.I)
 
+# Google Search Console「HTML 文件上传」验证文件：内容形如
+#   google-site-verification: googleXXXXXXXX.html
+# 这类文件是纯文本凭据而不是网页，本就没有 </head>，必须原样保留、
+# 不得注入任何脚本，也不能因此判定为失败（否则会让 CI 部署中断）。
+GOOGLE_VERIFY_CONTENT_RE = re.compile(r'^\s*google-site-verification:', re.I)
+GOOGLE_VERIFY_NAME_RE = re.compile(r'^google[0-9a-z]+\.html$', re.I)
+
+
+def is_verification_stub(path: str, html: str) -> bool:
+    """是否为搜索引擎站点验证文件（按内容或文件名判定）。"""
+    if GOOGLE_VERIFY_CONTENT_RE.match(html):
+        return True
+    return bool(GOOGLE_VERIFY_NAME_RE.match(os.path.basename(path)))
+
 
 def already_injected(html: str) -> bool:
     return any(m in html for m in ALREADY_MARKERS)
@@ -92,6 +106,10 @@ def main():
         except Exception as e:
             print(f"[skip] {f}: 读取失败 {e}", file=sys.stderr)
             failed += 1
+            continue
+        if is_verification_stub(f, html):
+            print(f"[skip] {f}: 站点验证文件，保持原样")
+            skipped += 1
             continue
         if already_injected(html):
             print(f"[skip] {f}: 已含百度自动推送")
