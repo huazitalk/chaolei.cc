@@ -659,10 +659,23 @@
       "mainEntityOfPage": "https://www.chaolei.cc/blog/miniature-bearing-size-chart",
       "image": "https://www.chaolei.cc/img/workshop/ws-01.jpg",
       "about": [
-        {"@type": "Thing", "name": "深沟球轴承", "sameAs": "https://en.wikipedia.org/wiki/Deep-groove_ball_bearing"},
-        {"@type": "Thing", "name": "608轴承"},
-        {"@type": "Thing", "name": "微型轴承"},
-        {"@type": "Thing", "name": "轴承尺寸表"}
+        {
+          "@type": "Thing",
+          "name": "深沟球轴承",
+          "sameAs": "https://en.wikipedia.org/wiki/Deep-groove_ball_bearing"
+        },
+        {
+          "@type": "Thing",
+          "name": "608轴承"
+        },
+        {
+          "@type": "Thing",
+          "name": "微型轴承"
+        },
+        {
+          "@type": "Thing",
+          "name": "轴承尺寸表"
+        }
       ],
       "citation": [
         "ISO 15:2017 Rolling bearings — Boundary dimensions",
@@ -679,10 +692,10 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "608 轴承的尺寸是多少？",
+          "name": "608 轴承的尺寸到底是多少？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "608 轴承的尺寸是内径 8 mm、外径 22 mm、高度 7 mm，最小倒角 0.3 mm，依据 GB/T 276 与 ISO 15。这是全球统一的互换尺寸，参考重量约 0.012 kg，额定动载荷典型值约 3.3 kN，额定静载荷约 1.37 kN，脂润滑极限转速约 34000 r/min。"
+            "text": "内径 8 mm × 外径 22 mm × 高度 7 mm，最小倒角 0.3 mm，标准依据 GB/T 276 / ISO 15。这是全球统一的互换尺寸，任何厂家生产的合格 608 都能装进同一个位置。参考重量约 0.012 kg，额定动载荷典型值约 3.3 kN。"
           }
         },
         {
@@ -690,47 +703,63 @@
           "name": "608ZZ 和 608-2RS 尺寸一样吗？能互换吗？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "完全一样，都是 8×22×7 mm，可以直接互换。区别只在密封形式：ZZ 为双面金属防尘盖，防尘不防水，摩擦小、极限转速高（约 34000 r/min）；2RS 为双面橡胶接触式密封，防尘防水更好，极限转速比 ZZ 低约 30%。干燥洁净环境选 ZZ，潮湿多尘环境选 2RS。"
+            "text": "完全一样，都是 8×22×7，可以互换。区别只在密封形式：ZZ 是双面金属防尘盖，防尘不防水，摩擦小、极限转速高（约 34,000 r/min）；2RS 是双面橡胶接触式密封，防尘防水更好，但极限转速比 ZZ 低约 30%。干燥室内选 ZZ，潮湿多尘选 2RS。"
           }
         },
         {
           "@type": "Question",
-          "name": "轴承型号怎么看出内径大小？",
+          "name": "轴承型号怎么看出内径？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "三档规则：内径大于等于 20 mm（代号 04 起）时，型号末两位乘以 5 即为内径毫米数，如 6204 的 04×5=20 mm；代号 00、01、02、03 是特例，分别对应 10、12、15、17 mm；内径小于 10 mm 时，末一位数字直接就是内径毫米数，如 608 为 8 mm、627 为 7 mm、685 为 5 mm。"
+            "text": "三档规则。①内径 ≥ 20 mm（代号 04 起）：末两位 × 5，如 6204 = 04 × 5 = 20 mm；②代号 00/01/02/03 是特例，分别对应 10 / 12 / 15 / 17 mm；③内径 < 10 mm：末一位数字直接就是内径毫米数，如 608 = 8 mm、627 = 7 mm、685 = 5 mm。最容易错的是第三种——不要把 608 读成 40 mm。"
           }
         },
         {
           "@type": "Question",
-          "name": "608 轴承承重不够，用什么型号代替？",
+          "name": "608 不够承重用什么代替？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "首选 628（8×24×8 mm），外径只大 2 mm、高度大 1 mm，承载能力明显提升，座孔通常改一刀即可容纳。其次是 629（9×26×8 mm），但需要把轴径从 8 mm 改为 9 mm。若仍不够，需要重新设计结构，而不是更换轴承型号。注意只有内径、外径、高度三项同时相同才能互换。"
+            "text": "首选 628（8×24×8），外径只大 2 mm、高度大 1 mm，承载明显提升，座孔通常改一刀就能装。其次是 629（9×26×8），但需要把轴径从 8 mm 改到 9 mm。若这两步仍不够，说明需要重新设计结构，而不是换轴承型号。"
           }
         },
         {
           "@type": "Question",
-          "name": "ZZ、2RS、C3、P6 这些后缀会改变轴承尺寸吗？",
+          "name": "ZZ、2RS、C3、P6 这些后缀会不会改变轴承尺寸？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "不会。后缀只改变密封形式、径向游隙、公差等级、材质与润滑方式，内径外径高度的安装尺寸完全不变。因此 608ZZ、608-2RS、608ZZ/C3、608-P6 的安装尺寸都是 8×22×7 mm，可以互相替换。唯一例外是带法兰的 F 系列，如 F608 的法兰凸缘会占用额外的轴向与径向空间。"
+            "text": "不会。后缀只改变密封形式、游隙、精度、材质与润滑，d × D × B 安装尺寸完全不变。所以 608ZZ、608-2RS、608ZZ/C3、608-P6 的安装尺寸都是 8×22×7，可以互相替换。唯一例外是带法兰的 F 系列（如 F608），法兰凸缘会占用额外的轴向与径向空间。"
           }
         },
         {
           "@type": "Question",
-          "name": "什么是 C3 游隙？什么时候需要选 C3？",
+          "name": "什么是 C3 游隙？什么时候需要？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "C3 表示径向游隙大于普通组 C0。电机、轴承发热、轴与内圈过盈配合、或轴与座温差较大的场合必须选 C3，因为装配过盈与热膨胀会抵消一部分游隙，使用 C0 容易运转发紧甚至卡死。GB/T 4604.1 的游隙顺序为 C2 小于 C0 小于 C3 小于 C4 小于 C5。"
+            "text": "C3 表示径向游隙大于普通组（C0）。电机、轴承发热、轴与内圈过盈配合、或轴与座温差大的场合必须选 C3——因为装配过盈与热膨胀会「吃掉」一部分游隙，用 C0 容易运转发紧甚至卡死。GB/T 4604.1 的游隙顺序是 C2 < C0 < C3 < C4 < C5。"
           }
         },
         {
           "@type": "Question",
-          "name": "微型轴承 68 系列各厂家样本尺寸为什么不一样？",
+          "name": "ABEC-5 / ABEC-7 是不是比普通轴承质量好？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "因为存在两套口径：ISO 618 薄壁系列（如 618/8 为 8×16×4 mm）与中国微型轴承行业惯例（如 688 为 8×16×5 mm），厚度差异可达 1 至 2 mm。批量采购前必须索取具体厂家的正式样本或图纸复核，不要只凭型号下单。法兰轴承的法兰外径与厚度同样不是统一标准值。"
+            "text": "不一定。ABEC 等级只衡量尺寸公差与旋转精度，不衡量材料、热处理、噪声与寿命。一颗 ABEC-5 的碳钢轴承，实际使用寿命可能远不如一颗 P0 级的 GCr15 轴承钢轴承。采购时更该问的是：材质是不是 GCr15？超精做了吗？钢球用 G 几？振动等级是多少？"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "微型轴承的 68 系列尺寸为什么各家样本不一样？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "因为存在两套口径：ISO 618 薄壁系列（如 618/8 = 8×16×4）与中国微型轴承行业惯例（如 688 = 8×16×5），厚度差异可达 1–2 mm。本手册采用中国微型轴承厂通用尺寸。批量采购前务必索取具体厂家的正式样本或图纸复核，不要只凭型号下单。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "法兰轴承（F608）能装进普通 608 的位置吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "通常不能。F608 的内径、外径、高度与 608 相同（8×22×7），但外圈多了一圈法兰凸缘（常见法兰外径 25 mm、厚度 1.5 mm），需要座孔端面留出相应的沉台或让位空间。而且法兰尺寸各厂不统一，必须拿具体厂家的图纸确认。"
           }
         },
         {
@@ -738,7 +767,7 @@
           "name": "英制轴承 R6 能不能替换 608？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "不能。R6 是 9.525×22.225×5.558 mm，608 是 8×22×7 mm。虽然尺寸只差零点几毫米，看着能塞进去，但公差带不重叠，装上去要么松导致跑圈，要么紧导致内圈胀裂。英制设备必须配英制轴承，反之亦然。"
+            "text": "不能。R6 是 9.525 × 22.225 × 5.558 mm，608 是 8 × 22 × 7 mm。虽然尺寸只差零点几毫米，看着能塞进去，但公差带不重叠——装上去要么松（跑圈），要么紧（胀裂内圈）。英制设备必须配英制轴承，反之亦然。"
           }
         }
       ]
@@ -749,18 +778,78 @@
       "itemListOrder": "https://schema.org/ItemListUnordered",
       "numberOfItems": 12,
       "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "608 深沟球轴承 8×22×7 mm", "description": "内径 8 mm，外径 22 mm，高度 7 mm，用于滑板轮、吊轮、玩具、小家电电机"},
-        {"@type": "ListItem", "position": 2, "name": "688 深沟球轴承 8×16×5 mm", "description": "超薄系列，用于模型、微型电机、医疗器械"},
-        {"@type": "ListItem", "position": 3, "name": "698 深沟球轴承 8×19×6 mm", "description": "薄壁系列，用于径向空间受限的微型传动"},
-        {"@type": "ListItem", "position": 4, "name": "628 深沟球轴承 8×24×8 mm", "description": "608 载荷不足时的首选升级型号，外径仅大 2 mm"},
-        {"@type": "ListItem", "position": 5, "name": "607 深沟球轴承 7×19×6 mm", "description": "用于小型电机、渔线轮"},
-        {"@type": "ListItem", "position": 6, "name": "609 深沟球轴承 9×24×7 mm", "description": "用于电动工具、小型风机"},
-        {"@type": "ListItem", "position": 7, "name": "626 深沟球轴承 6×19×6 mm", "description": "用于玩具齿轮箱、微型水泵"},
-        {"@type": "ListItem", "position": 8, "name": "627 深沟球轴承 7×22×7 mm", "description": "与 608 同外径不同内径，不可直接互换"},
-        {"@type": "ListItem", "position": 9, "name": "629 深沟球轴承 9×26×8 mm", "description": "用于需要更大承载的 9 mm 轴"},
-        {"@type": "ListItem", "position": 10, "name": "6000 深沟球轴承 10×26×8 mm", "description": "通用小型机械、农机常用型号"},
-        {"@type": "ListItem", "position": 11, "name": "6200 深沟球轴承 10×30×9 mm", "description": "通用机械、输送辊常用型号"},
-        {"@type": "ListItem", "position": 12, "name": "6203 深沟球轴承 17×40×12 mm", "description": "电机、泵、风机主力型号"}
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "608 深沟球轴承 8×22×7 mm",
+          "description": "内径 8 mm，外径 22 mm，高度 7 mm，用于滑板轮、吊轮、玩具、小家电电机"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "688 深沟球轴承 8×16×5 mm",
+          "description": "超薄系列，用于模型、微型电机、医疗器械"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "698 深沟球轴承 8×19×6 mm",
+          "description": "薄壁系列，用于径向空间受限的微型传动"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "628 深沟球轴承 8×24×8 mm",
+          "description": "608 载荷不足时的首选升级型号，外径仅大 2 mm"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "607 深沟球轴承 7×19×6 mm",
+          "description": "用于小型电机、渔线轮"
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "name": "609 深沟球轴承 9×24×7 mm",
+          "description": "用于电动工具、小型风机"
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "name": "626 深沟球轴承 6×19×6 mm",
+          "description": "用于玩具齿轮箱、微型水泵"
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "name": "627 深沟球轴承 7×22×7 mm",
+          "description": "与 608 同外径不同内径，不可直接互换"
+        },
+        {
+          "@type": "ListItem",
+          "position": 9,
+          "name": "629 深沟球轴承 9×26×8 mm",
+          "description": "用于需要更大承载的 9 mm 轴"
+        },
+        {
+          "@type": "ListItem",
+          "position": 10,
+          "name": "6000 深沟球轴承 10×26×8 mm",
+          "description": "通用小型机械、农机常用型号"
+        },
+        {
+          "@type": "ListItem",
+          "position": 11,
+          "name": "6200 深沟球轴承 10×30×9 mm",
+          "description": "通用机械、输送辊常用型号"
+        },
+        {
+          "@type": "ListItem",
+          "position": 12,
+          "name": "6203 深沟球轴承 17×40×12 mm",
+          "description": "电机、泵、风机主力型号"
+        }
       ]
     },
     {
