@@ -9,7 +9,8 @@
   B. 结构化数据 JSON-LD 合法性 + 必要 @type (Organization / BreadcrumbList / Product)
   C. 地理/品牌信息字段 (address / areaServed —— 注：当前无 geo 经纬度坐标)
   D. sitemap.xml 与 robots.txt 合规
-  E. Git 本地 HEAD 与远程 main 一致性（联网时用 GitHub API）
+  E. 全站部署页 canonical / og:url 的无扩展名权威地址一致性（含与 sitemap 的集合比对）
+  F. Git 本地 HEAD 与远程 main 一致性（联网时用 GitHub API）
 
 用法：
   python3 verify_seo_geo.py            # 仅本地文件检查（离线，不联网）
@@ -23,12 +24,16 @@ import os, re, sys, json, argparse, subprocess
 # ---------- 配置 ----------
 EXPECT_DOMAIN = "https://www.chaolei.cc"          # 期望的 canonical / sitemap 域名
 BAD_DOMAIN = "chaolei-bearing.com"                # 应已清除的错误域名
-SITEMAP_URLS_EXPECT = 7                            # sitemap 应包含的目标页数量
+SITEMAP_URLS_EXPECT = 11                           # sitemap 应包含的权威 URL 数量（7 主站 + blog/ + 4 篇博文）
 REPO_API = "https://api.github.com/repos/huazitalk/chaolei.cc"
 PAGES = ["index.html", "index-markforged.html", "about.html", "applications.html",
          "capabilities.html", "contact.html", "products.html", "history.html"]
 # 这 3 页必须含 Product 结构化数据
 PRODUCT_PAGES = {"index.html", "index-markforged.html", "products.html"}
+# noindex 跳转页：只需 canonical / og:url 指向归并目标（见 README），
+# 按设计不带 OG 社交卡与 JSON-LD，故跳过这两类检查；
+# 其无扩展名权威地址一致性仍由 check_authoritative_urls() 统一把关。
+NOINDEX_REDIRECT_PAGES = {"history.html"}
 # 允许 AI 爬虫的 UA 清单（robots.txt 应逐一 Allow）
 AI_UA = ["GPTBot", "ChatGPT-User", "ClaudeBot", "anthropic-ai", "CCBot",
          "PerplexityBot", "Google-Extended", "Bytespider", "Amazonbot",
@@ -119,6 +124,10 @@ def check_pages(website_dir):
             record("canonical", pg, f"仍存在错误域名 {BAD_DOMAIN}", False)
         else:
             record("canonical", pg, f"ok ({cano})", True)
+
+        if pg in NOINDEX_REDIRECT_PAGES:
+            record("元数据", pg, "noindex 跳转页：按设计跳过 OG/Twitter/JSON-LD 检查", True, level="INFO")
+            continue
 
         for prop in ("og:image", "og:title", "og:url"):
             ok = bool(meta_content(html, "property", prop))
@@ -255,7 +264,62 @@ def check_sitemap_robots(website_dir):
     else:
         record("robots", "-", f"已放行全部 {len(AI_UA)} 类 AI 爬虫", True)
 
-# ---------- E. Git 一致性 ----------
+# ---------- E. 无扩展名权威 URL 一致性 ----------
+# 站点权威地址一律不带 .html。本检查覆盖全部部署页（不只 PAGES 白名单）：
+#   canonical 与 og:url 必须同时存在、彼此相等、均无 .html，且与 sitemap.xml 的 loc 集合完全一致。
+# 忽略项：.bak* 本地备份、preview-*.html 预览工具、Google/Bing 站点验证文件（文件名必须保留 .html）。
+_VERIFY_SKIP_PREFIX = ("preview-", "google", "yandex", "BingSiteAuth")
+_VERIFY_SKIP_DIRS = {".git", "node_modules", "__pycache__"}
+
+def _deployed_pages(website_dir):
+    for root, dirs, files in os.walk(website_dir):
+        dirs[:] = [d for d in dirs if d not in _VERIFY_SKIP_DIRS]
+        for fn in sorted(files):
+            if not fn.endswith(".html"):
+                continue
+            if ".bak" in fn or fn.startswith(_VERIFY_SKIP_PREFIX):
+                continue
+            yield os.path.relpath(os.path.join(root, fn), website_dir)
+
+def check_authoritative_urls(website_dir):
+    canonical_of = {}
+    for rel in _deployed_pages(website_dir):
+        html = open(os.path.join(website_dir, rel), encoding="utf-8").read()
+        cano = link_href(html, "canonical")
+        ogu = meta_content(html, "property", "og:url")
+        if not cano or not ogu:
+            record("权威URL", rel, f"canonical={cano} / og:url={ogu} 存在缺失", False)
+        elif cano != ogu:
+            record("权威URL", rel, f"canonical 与 og:url 不一致：{cano} ≠ {ogu}", False)
+        elif cano.endswith(".html"):
+            record("权威URL", rel, f"仍回指 .html 地址：{cano}", False)
+        elif cano != EXPECT_DOMAIN and not cano.startswith(EXPECT_DOMAIN + "/"):
+            record("权威URL", rel, f"域名异常：{cano}", False)
+        else:
+            record("权威URL", rel, f"ok（{cano}）", True)
+            canonical_of[rel] = cano
+
+    sm = os.path.join(website_dir, "sitemap.xml")
+    if not os.path.isfile(sm):
+        return
+    try:
+        import xml.dom.minidom as M
+        locs = {u.firstChild.data.strip() for u in M.parse(sm).getElementsByTagName("loc")}
+    except Exception as e:
+        record("权威URL", "sitemap.xml", f"解析失败: {e}", False)
+        return
+    canon = set(canonical_of.values())
+    not_in_sitemap = sorted(canon - locs)
+    no_page = sorted(locs - canon)
+    if not_in_sitemap:
+        record("权威URL", "sitemap.xml", f"canonical 未收录进 sitemap：{not_in_sitemap}", False)
+    if no_page:
+        record("权威URL", "sitemap.xml", f"sitemap 中无对应 canonical 页：{no_page}", False)
+    if not not_in_sitemap and not no_page:
+        record("权威URL", "sitemap.xml",
+               f"canonical 集合与 sitemap 完全一致（{len(canon)} 条）", True)
+
+# ---------- F. Git 一致性 ----------
 def check_git(website_dir, do_live):
     try:
         head = subprocess.check_output(["git", "-C", website_dir, "rev-parse", "HEAD"],
@@ -331,6 +395,7 @@ def main():
     check_pages(wd)
     check_meta(wd)
     check_sitemap_robots(wd)
+    check_authoritative_urls(wd)
     check_git(wd, args.live)
     fails = report()
     sys.exit(1 if fails else 0)
