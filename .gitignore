@@ -32,5 +32,9 @@ ENV/
 *.log
 
 # ---------- 本地临时备份（非仓库内容）----------
+# 形如 about.html.bak.vplay.20260831 / sitemap.xml.bak.html-ext.20260913。
+# 这些历史备份仍带 .html 形式的 canonical/og:url，绝不能随 Pages 发布。
 *.bak/
+*.bak
+*.bak.*
 tmp/

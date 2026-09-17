@@ -1,0 +1,47 @@
+# ============================================================
+# chaolei.cc · Cloudflare 静态资源重定向规则（_redirects）
+# 部署位置：仓库根目录（= Cloudflare 静态资源目录，随 GitHub → Cloudflare 流水线自动生效）
+#
+# 目的：把旧 .html 地址 **301 永久跳转** 到对应的无扩展名权威地址。
+#
+# 背景（为什么需要这个文件）：
+#   Cloudflare 静态资源内置的 HTML handling（默认 auto-trailing-slash）
+#   对 /xxx.html 的响应是 **307 临时跳转**，且状态码没有任何配置项可以改成 301
+#   （html_handling 只能选 URL 形态，不能选状态码）。
+#   本文件中的规则在静态资源之前生效，用显式 301 覆盖内置的 307。
+#
+# 规则约束：
+#   - 每行格式：[source] [destination] [code?]，状态码默认 302，必须显式写 301
+#   - 顺序有意义；同一个 source 只有最上面一条生效
+#   - 静态规则放前面，动态（含 * 或 :占位符）规则放后面
+#   - 新增页面时必须在下方补一行，否则新页面仍会落到内置 307
+# ============================================================
+
+# ---------- 首页 ----------
+/index.html                     /                       301
+
+# ---------- 一级页面（与 sitemap.xml 的权威地址一一对应）----------
+/index-markforged.html          /index-markforged       301
+/about.html                     /about                  301
+/products.html                  /products               301
+/applications.html              /applications           301
+/capabilities.html              /capabilities           301
+/contact.html                   /contact                301
+/history.html                   /history                301
+
+# ---------- 博客 ----------
+/blog/index.html                /blog/                                          301
+/blog/608-bearing-supplier-selection.html   /blog/608-bearing-supplier-selection     301
+/blog/folding-door-roller-bearing.html      /blog/folding-door-roller-bearing        301
+/blog/miniature-bearing-size-chart.html     /blog/miniature-bearing-size-chart       301
+/blog/608-bearing-toy-factory-sourcing.html /blog/608-bearing-toy-factory-sourcing   301
+
+# ---------- 本地预览页（非公开入口，保持一致即可）----------
+/preview-mobile.html            /preview-mobile         301
+/preview-pc.html                /preview-pc             301
+
+# ---------- 搜索引擎验证文件 ----------
+# Google Search Console 的文件式验证会请求这个 .html 原始地址。
+# 这里与全站规则保持一致改成 301（此前是 307，GSC 已验证通过）。
+# 若将来 GSC 重新验证失败，删除本行（会回落到内置 307，行为不变但不再显式 301）。
+/googleddf684c55ef13cfc.html    /googleddf684c55ef13cfc 301

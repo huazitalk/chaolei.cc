@@ -20,7 +20,7 @@
 ────────────────────────────────────────────
 【命令行用法】
   # 直接传 URL
-  python3 baidu_push.py --urls https://www.chaolei.cc/ https://www.chaolei.cc/products.html
+  python3 baidu_push.py --urls https://www.chaolei.cc/ https://www.chaolei.cc/products
   # 从文件读取（每行一个，# 开头的行为注释）
   python3 baidu_push.py --file urls.txt
   # 从标准输入读取（管道）
@@ -37,8 +37,8 @@
   from baidu_push import BaiduPushClient
   client = BaiduPushClient()                       # 自动使用默认 site / token
   res = client.push([
-      "https://www.chaolei.cc/products.html",
-      "https://www.chaolei.cc/applications.html",
+      "https://www.chaolei.cc/products",
+      "https://www.chaolei.cc/applications",
   ])
   print(res.success, res.remain)                   # 成功条数 / 当日剩余配额
 
@@ -138,7 +138,7 @@ class BaiduPushClient:
 
     示例：
         client = BaiduPushClient()                 # 使用默认 site/token
-        res = client.push(["https://www.chaolei.cc/products.html"])
+        res = client.push(["https://www.chaolei.cc/products"])
     """
     def __init__(self,
                  site: str = DEFAULT_SITE,
